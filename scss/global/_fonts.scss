@@ -1,0 +1,24 @@
+/***************************************************              FONTS             ***************************************************/
+@font-face {
+    font-family: 'Brutal Type Light';
+    src: url('../fonts/BrutalType-Light.eot');
+    src: url('../fonts/BrutalType-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BrutalType-Light.woff2') format('woff2'),
+        url('../fonts/BrutalType-Light.woff') format('woff'),
+		url('../fonts/BrutalType-Light.ttf') format('truetype'),
+        url('../fonts/BrutalType-Light.svg#BrutalType-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brutal Type Medium';
+    src: url('../fonts/BrutalType-Medium.eot');
+    src: url('../fonts/BrutalType-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BrutalType-Medium.woff2') format('woff2'),
+        url('../fonts/BrutalType-Medium.woff') format('woff'),
+		url('../fonts/BrutalType-Medium.ttf') format('truetype'),
+        url('../fonts/BrutalType-Medium.svg#BrutalType-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
