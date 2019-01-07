@@ -5,49 +5,54 @@
     position: relative;
 	line-height: 1.2;
 	
-	.block1-logo {
-		width: 199px;
-		height: 162px;
-		background-image: url(../images/block1-logo.png);
-		background-repeat: no-repeat;
-		background-size: cover;
-		position: absolute;
-		top: 91px;
-		left: 204px;
-	}
+	#wrapper {
+		width: 1110px;
+		position: relative;
+		margin: 0 auto;
 	
-	.block1-text {
-		width: 725px;
-		float: right;
-		margin-right: 110px;
-		margin-top: 30px;
-		
-		p {
-			font-size: 18px;
+		.block1-logo {
+			width: 199px;
+			height: 162px;
+			background-image: url(../images/block1-logo.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: absolute;
+			top: 90px;
+			left: 75px;
 		}
 		
-		.block1-indent {
-			margin-bottom: 30px;
-		}
-		
-		.block1-list {
-			margin-bottom: 30px;
-			line-height: 1.8;
-			margin-left: 80px;
+		.block1-text {
+			width: 725px;
+			float: right;
+			margin-top: 30px;
 			
-			li {
-				position: relative;
+			p {
+				font-size: 18px;
 			}
 			
-			li:before {
-				content: "";
-				width: 8px;
-				height: 8px;
-				border-radius: 50%;
-				background: #414f7e;
-				position: absolute;
-				left: -35px;
-				top: 12px;
+			.block1-indent {
+				margin-bottom: 30px;
+			}
+			
+			.block1-list {
+				margin-bottom: 30px;
+				line-height: 1.8;
+				margin-left: 80px;
+				
+				li {
+					position: relative;
+				}
+				
+				li:before {
+					content: "";
+					width: 8px;
+					height: 8px;
+					border-radius: 50%;
+					background: #414f7e;
+					position: absolute;
+					left: -35px;
+					top: 12px;
+				}
 			}
 		}
 	}

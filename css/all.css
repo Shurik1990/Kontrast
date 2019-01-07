@@ -133,12 +133,12 @@ aside {
   font-weight: 500;
   font-style: normal; }
 header {
-  height: 100vh;
+  height: 906px;
   width: 100%;
   background-image: url(../images/header-image.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100vw 100vh;
+  background-size: cover;
   overflow: visible;
   position: relative;
   line-height: 1.5; }
@@ -251,7 +251,7 @@ header {
     right: 0;
     margin: auto auto; }
     header .header-center h1 {
-      font-size: 90px;
+      font-size: 70px;
       color: #fff;
       font-weight: 100; }
     header .header-center p {
@@ -271,6 +271,16 @@ header {
       color: #414f7e;
       border: 1px solid rgba(255, 255, 255, 0.5);
       font-weight: bold; }
+  header .rombs {
+    position: absolute;
+    background: url(../images/rombs.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 937px;
+    height: 1055px;
+    z-index: 1;
+    top: 29%;
+    right: 56.5%; }
 
 #block1 {
   width: 100%;
@@ -278,39 +288,47 @@ header {
   background: #e6f1fa;
   position: relative;
   line-height: 1.2; }
-  #block1 .block1-logo {
-    width: 199px;
-    height: 162px;
-    background-image: url(../images/block1-logo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    top: 91px;
-    left: 204px; }
-  #block1 .block1-text {
-    width: 725px;
-    float: right;
-    margin-right: 110px;
-    margin-top: 30px; }
-    #block1 .block1-text p {
-      font-size: 18px; }
-    #block1 .block1-text .block1-indent {
-      margin-bottom: 30px; }
-    #block1 .block1-text .block1-list {
-      margin-bottom: 30px;
-      line-height: 1.8;
-      margin-left: 80px; }
-      #block1 .block1-text .block1-list li {
-        position: relative; }
-      #block1 .block1-text .block1-list li:before {
-        content: "";
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        background: #414f7e;
-        position: absolute;
-        left: -35px;
-        top: 12px; }
+  #block1 #wrapper {
+    width: 1110px;
+    position: relative;
+    margin: 0 auto; }
+    #block1 #wrapper .block1-logo {
+      width: 199px;
+      height: 162px;
+      background-image: url(../images/block1-logo.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 90px;
+      left: 75px; }
+    #block1 #wrapper .block1-text {
+      width: 725px;
+      float: right;
+      margin-top: 30px; }
+      #block1 #wrapper .block1-text p {
+        font-size: 18px; }
+      #block1 #wrapper .block1-text .block1-indent {
+        margin-bottom: 30px; }
+      #block1 #wrapper .block1-text .block1-list {
+        margin-bottom: 30px;
+        line-height: 1.8;
+        margin-left: 80px; }
+        #block1 #wrapper .block1-text .block1-list li {
+          position: relative; }
+        #block1 #wrapper .block1-text .block1-list li:before {
+          content: "";
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background: #414f7e;
+          position: absolute;
+          left: -35px;
+          top: 12px; }
+
+#block2 #wrapper {
+  width: 1110px;
+  position: relative;
+  margin: 0 auto; }
 
 footer {
   display: block;

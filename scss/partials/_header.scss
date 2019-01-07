@@ -1,10 +1,10 @@
 header {
-	height: 100vh;
+	height: 906px;
     width: 100%;
     background-image: url(../images/header-image.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100vw 100vh;
+    background-size: cover;
     overflow: visible;
     position: relative;
 	line-height: 1.5;
@@ -167,7 +167,7 @@ header {
 		margin: auto auto;
 		
 		h1 {
-		    font-size: 90px;
+		    font-size: 70px;
 			color: #fff;
 			font-weight: 100;
 		}
@@ -194,5 +194,17 @@ header {
 			border: 1px solid rgba(255, 255, 255, 0.5);
 			font-weight: bold;
 		}
+	}
+	
+	.rombs {
+		position: absolute;
+		background: url(../images/rombs.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		width: 937px;
+		height: 1055px;
+		z-index: 1;
+		top: 29%;
+		right: 56.5%;
 	}
 }
