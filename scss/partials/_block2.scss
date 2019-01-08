@@ -1,9 +1,108 @@
 #block2 {
+	width: 100%;
+    height: 1045px;
+    box-sizing: border-box;
+    position: relative;
+	padding: 30px 0 30px 0;
 	
-	#wrapper {
-		width: 1110px;
+	.block2-line {
+		background-color: $darkblue;
+		height: 270px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: -1;
+	}
+	
+	.block2-line-bottom {
+		background-color: $darkblue;
+		height: 270px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		z-index: -1;
+	}
+	
+	.block2-wrapper {
+		width: 1450px;
 		position: relative;
 		margin: 0 auto;
+		
+		.card1 {
+			position: relative;
+			float: left;
+			height: 479px;
+			max-width: 100%;
+			margin: 0 30px 30px 0;
+			
+			.description {
+				width: 190px;
+				bottom: 0;
+				right: 0;
+			}
+		}
+		
+		.card2 {
+			position: relative;
+			float: right;
+			height: 479px;
+			max-width: 100%;
+			
+			.description {
+				width: 140px;
+				bottom: 0;
+				left: 0;
+			}
+		}
+		
+		.card3 {
+			position: relative;
+			float: left;
+			height: 479px;
+			max-width: 100%;
+			
+			.description {
+				width: 145px;
+				top: 0;
+				right: 0;
+			}
+		}
+		
+		.card4 {
+			position: relative;
+			float: right;
+			height: 479px;
+			max-width: 100%;
+			
+			.description {
+				width: 170px;
+				top: 0;
+				left: 0;
+			}
+		}
+		
+		.description {
+			position: absolute;
+			z-index: 1;
+			background: $white-transparent;
+			text-align: center;
+			height: 68px;
+			line-height: 68px;
+			vertical-align: middle;
+			
+			p {
+				color: $block2-p;
+				font-size: 30px;
+				font-family: $brutal-me;
+			}
+		}
+		
+		img {
+			width: 100%;
+			height: 100%;
+		}
 	
 	}
 }

@@ -325,10 +325,84 @@ header {
           left: -35px;
           top: 12px; }
 
-#block2 #wrapper {
-  width: 1110px;
+#block2 {
+  width: 100%;
+  height: 1045px;
+  box-sizing: border-box;
   position: relative;
-  margin: 0 auto; }
+  padding: 30px 0 30px 0; }
+  #block2 .block2-line {
+    background-color: #414f7e;
+    height: 270px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1; }
+  #block2 .block2-line-bottom {
+    background-color: #414f7e;
+    height: 270px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1; }
+  #block2 .block2-wrapper {
+    width: 1450px;
+    position: relative;
+    margin: 0 auto; }
+    #block2 .block2-wrapper .card1 {
+      position: relative;
+      float: left;
+      height: 479px;
+      max-width: 100%;
+      margin: 0 30px 30px 0; }
+      #block2 .block2-wrapper .card1 .description {
+        width: 190px;
+        bottom: 0;
+        right: 0; }
+    #block2 .block2-wrapper .card2 {
+      position: relative;
+      float: right;
+      height: 479px;
+      max-width: 100%; }
+      #block2 .block2-wrapper .card2 .description {
+        width: 140px;
+        bottom: 0;
+        left: 0; }
+    #block2 .block2-wrapper .card3 {
+      position: relative;
+      float: left;
+      height: 479px;
+      max-width: 100%; }
+      #block2 .block2-wrapper .card3 .description {
+        width: 145px;
+        top: 0;
+        right: 0; }
+    #block2 .block2-wrapper .card4 {
+      position: relative;
+      float: right;
+      height: 479px;
+      max-width: 100%; }
+      #block2 .block2-wrapper .card4 .description {
+        width: 170px;
+        top: 0;
+        left: 0; }
+    #block2 .block2-wrapper .description {
+      position: absolute;
+      z-index: 1;
+      background: rgba(255, 255, 255, 0.5);
+      text-align: center;
+      height: 68px;
+      line-height: 68px;
+      vertical-align: middle; }
+      #block2 .block2-wrapper .description p {
+        color: #57607b;
+        font-size: 30px;
+        font-family: Brutal Type Medium, Arial, serif; }
+    #block2 .block2-wrapper img {
+      width: 100%;
+      height: 100%; }
 
 footer {
   display: block;
