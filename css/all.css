@@ -133,9 +133,9 @@ aside {
   font-weight: 500;
   font-style: normal; }
 header {
-  height: 906px;
+  height: 1083px;
   width: 100%;
-  background-image: url(../images/header-image.png);
+  background-image: url(../images/header-background.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -236,9 +236,13 @@ header {
     flex-direction: column;
     position: absolute;
     right: 0; }
+    header #wrapper .social a {
+      -moz-transition: all 0.3s 0.01s ease;
+      -o-transition: all 0.3s 0.01s ease;
+      -webkit-transition: all 0.3s 0.01s ease; }
     header #wrapper .social a:first-child {
       margin: 25px 0 20px 0; }
-    header #wrapper .social a img:hover {
+    header #wrapper .social a:hover {
       opacity: 0.7; }
   header .header-center {
     text-align: center;
@@ -279,7 +283,7 @@ header {
     width: 937px;
     height: 1055px;
     z-index: 1;
-    top: 29%;
+    top: 40.8%;
     right: 56.5%; }
 
 #block1 {
@@ -405,7 +409,116 @@ header {
       height: 100%; }
 
 footer {
-  display: block;
   width: 100%;
-  margin: 0 0 0;
-  padding: 0 0 0; }
+  height: 908px;
+  background-image: url(../images/footer-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 20px;
+  box-sizing: border-box; }
+  footer .callback {
+    width: 350px;
+    height: 412px;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 36px 36px 46px 36px;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.3);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.3);
+    box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.3);
+    position: absolute;
+    left: calc(50% - 175px);
+    bottom: 70px;
+    z-index: 1; }
+    footer .callback h2 {
+      width: 262px;
+      font-size: 20px;
+      line-height: 25px;
+      text-align: center;
+      font-weight: 100; }
+    footer .callback .callback-form {
+      width: 258px;
+      height: 53px;
+      outline: none;
+      border-radius: 3px;
+      margin-top: 27px;
+      font-size: 18px;
+      font-family: Brutal Type Light, Arial, sans-serif;
+      border: 1px solid #c7c7c7;
+      -webkit-box-shadow: 0px 0px 0px 1px #888888;
+      -moz-box-shadow: 0px 0px 0px 1px #888888;
+      box-shadow: 0px 0px 0px 1px #888888;
+      padding-left: 20px;
+      color: #b2b1b1; }
+    footer .callback input::-webkit-input-placeholder {
+      color: #b2b1b1; }
+    footer .callback input:-moz-placeholder {
+      color: #b2b1b1; }
+    footer .callback input:-ms-input-placeholder {
+      color: #b2b1b1; }
+    footer .callback .submit {
+      width: 280px;
+      height: 64px;
+      font-family: Brutal Type Light, Arial, sans-serif;
+      background: #414f7e;
+      border-radius: 3px;
+      margin-top: 30px;
+      font-size: 24px;
+      cursor: pointer;
+      outline: none;
+      border: none;
+      color: #fff;
+      -moz-transition: all 0.3s 0.01s ease;
+      -o-transition: all 0.3s 0.01s ease;
+      -webkit-transition: all 0.3s 0.01s ease; }
+    footer .callback .submit:hover {
+      background: #65a9df; }
+  footer #wrapper {
+    width: 1110px;
+    position: relative;
+    margin: 0 auto; }
+    footer #wrapper .text {
+      color: #fff;
+      font-size: 12px; }
+    footer #wrapper .company {
+      float: left;
+      width: 265px;
+      height: 200px;
+      line-height: 1.2;
+      margin-top: 15px; }
+      footer #wrapper .company .footer-logo img {
+        margin: 0 30px 0 -5px; }
+      footer #wrapper .company .footer-column1 {
+        margin: 25px 0 0 10px;
+        line-height: 1.5; }
+        footer #wrapper .company .footer-column1 a {
+          color: #fff;
+          font-size: 12px;
+          -moz-transition: all 0.3s 0.01s ease;
+          -o-transition: all 0.3s 0.01s ease;
+          -webkit-transition: all 0.3s 0.01s ease; }
+        footer #wrapper .company .footer-column1 a:hover {
+          color: #65a9df; }
+        footer #wrapper .company .footer-column1 .vertical {
+          display: none; }
+        footer #wrapper .company .footer-column1 ul.submenu {
+          margin-left: 10px; }
+    footer #wrapper .footer-copyright {
+      float: right;
+      text-align: right;
+      line-height: 1.5; }
+      footer #wrapper .footer-copyright .indent {
+        margin-top: 20px; }
+      footer #wrapper .footer-copyright .footer-social {
+        padding: 15px 0 5px 0; }
+        footer #wrapper .footer-copyright .footer-social a {
+          -moz-transition: all 0.3s 0.01s ease;
+          -o-transition: all 0.3s 0.01s ease;
+          -webkit-transition: all 0.3s 0.01s ease; }
+        footer #wrapper .footer-copyright .footer-social a:first-child {
+          margin-right: 15px; }
+        footer #wrapper .footer-copyright .footer-social a:hover {
+          opacity: 0.7; }
