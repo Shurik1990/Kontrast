@@ -191,14 +191,14 @@ header {
 			border: 1px solid white;
 			border-radius: 3px;
 			margin-top: 75px;
-			transition: background 0.3s linear, color 0.3s linear, border 0.3s linear, border-radius 0.3s linear, font-weight 0.3s linear;
+			-moz-transition: all 0.3s 0.01s ease;
+			-o-transition: all 0.3s 0.01s ease;
+			-webkit-transition: all 0.3s 0.01s ease;
 		}
 		
 		.call:hover {
-			background: $white-transparent;
-			color: $darkblue;
+			background: $blue;
 			border: 1px solid $white-transparent;
-			font-weight: bold;
 		}
 	}
 	

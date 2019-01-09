@@ -1,0 +1,653 @@
+#block3 {
+	width: 100%;
+    height: 975px;
+    box-sizing: border-box;
+    position: relative;
+	
+	#wrapper {
+		width: 1080px;
+		position: relative;
+		margin: 0 auto;
+		
+		ul.tabs {
+			display: block;
+			z-index: 5;
+			position: absolute;
+			text-align: center;
+				
+				li {
+					position: absolute;
+					
+					p {
+						margin-top: 260px;
+						left: -35px;
+						position: absolute;
+					}
+					
+					p:nth-child(2) {
+						margin-top: 285px;
+					}
+					
+				}
+				
+				li::after {
+					content: "";
+					background-repeat: no-repeat;
+					position: absolute;
+					z-index: 1;
+				}
+				
+				li::before {
+					content: "";
+					background-repeat: no-repeat;
+					position: absolute;
+					z-index: 1;
+				}
+						
+				li:nth-child(1)::after {
+					width: 2px;
+					height: 250px;
+					background-image: url(../images/line1.png);
+					top: 0;
+					z-index: 10;
+				}
+				
+				li:nth-child(1)::before {
+					width: 2px;
+					height: 198px;
+					background-image: url(../images/line2.png);
+					top: 285px;
+					z-index: 10;
+				}
+				
+				.tabs {
+					display: flex;
+					flex-direction: column;
+					float: left;
+					position: relative;
+					height: 975px;
+				}
+		}
+		
+		#tabs-container {
+			height: 975px;
+			width: 90%;
+			margin: 0 auto;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: row-reverse;
+			
+			.t1 {
+			
+				.block {
+					width: 1080px;
+					height: 975px;
+					float: right;
+					padding: 50px 0px 50px 15%;
+					box-sizing: border-box;
+					text-align: center;
+					position: relative;
+					margin-left: -130px;
+					
+					h3 {
+						font-size: 30px;
+						font-weight: 100;
+						margin-bottom: 30px;
+					}
+					
+					.description-t1 {
+						width: 660px;
+						font-size: 18px;
+						display: block;
+						margin: 0 auto;
+						padding-bottom: 35px;
+					}
+					
+					.our-work {
+						font-size: 18px;
+						margin-bottom: 24px;
+					}
+					
+					#list-in-tab {
+						width: 925px;
+						height: 400px;
+						text-align: left;
+						position: relative;
+						line-height: 1.3;
+						
+						#tab-logo {
+							background-image: url(../images/logo-t1.png);
+							background-repeat: no-repeat;
+							background-position: center;
+							position: absolute;
+							top: -50px;
+							right: 0;
+							left: -40px;
+							bottom: -80px;
+							z-index: 10;
+						}
+						
+						.left {
+							float: left;
+							position: relative;
+							width: 260px;
+							height: 410px;
+							
+							li::after {
+								content: "";
+								background-repeat: no-repeat;
+								position: absolute;
+								z-index: 1;
+							}
+							
+							li:nth-child(1)::after {
+								width: 142px;
+								height: 75px;
+								background-image: url(../images/line-service.png);
+								top: 35px;
+								left: 245px;
+							}
+							
+							li:nth-child(2) {
+								margin: 30px 0 30px 0;
+							}
+							
+							li:nth-child(2)::after {
+								width: 150px;
+								height: 1px;
+								background-image: url(../images/line-calls.png);
+								top: 170px;
+								left: 220px;
+							}
+							
+							li:nth-child(3)::after {
+								width: 185px;
+								height: 1px;
+								bottom: 110px;
+								left: 170px;
+								background-image: url(../images/line-work.png);
+								background-repeat: repeat-x;
+							}
+						}
+						
+						.right {
+							float: right;
+							position: relative;
+							width: 260px;
+							height: 410px;
+							
+							li::before {
+								content: "";
+								position: absolute;
+								z-index: 1;
+								background-repeat: no-repeat;
+							}
+							
+							li:nth-child(1)::before {
+								width: 82px;
+								height: 82px;
+								top: 16px;
+								right: 274px;
+								background-image: url(../images/line-comfort.png);
+							}
+							
+							li:nth-child(2) {
+								margin: 30px 0 30px 0;
+							}
+							
+							li:nth-child(2)::before {
+								width: 100px;
+								height: 1px;
+								bottom: 285px;
+								right: 267px;
+								background-image: url(../images/line-conversation.png);
+							}
+							
+							li:nth-child(3) {
+								margin: 0 0 30px 0;
+							}
+							
+							li:nth-child(3)::before {
+								width: 109px;
+								height: 50px;
+								bottom: 114px;
+								right: 269px;
+								background-image: url(../images/line-advertisement.png);
+							}
+							
+							li:nth-child(4)::before {
+								width: 178px;
+								height: 66px;
+								bottom: 0;
+								right: 267px;
+								background-image: url(../images/line-see.png);
+							}
+						}
+						
+						p {
+							font-size: 14px;
+							
+							span {
+								font-family: $brutal-me;
+								font-size: 18px;
+							}
+						}
+					}
+					
+					.our-values-t1 {
+						width: 660px;
+						margin: 0 auto;
+						padding: 70px 0 35px 0;
+						font-size: 18px;
+					}
+					
+					.more-info {
+						width: 630px;
+						display: block;
+						margin: 0 auto;
+						font-size: 18px;
+					}
+					
+					.callback-btn {
+						display: block;
+						width: 255px;
+						height: 60px;
+						line-height: 60px;
+						vertical-align: middle;
+						background: $darkblue;
+						border-radius: 3px;
+						font-size: 24px;
+						color: $white;
+						position: absolute;
+						bottom: 50px;
+						left: 45%;
+						z-index: 2;
+						-moz-transition: all 0.3s 0.01s ease;
+						-o-transition: all 0.3s 0.01s ease;
+						-webkit-transition: all 0.3s 0.01s ease;
+					}
+					
+					.callback-btn:hover {
+						background: $blue;
+					}
+				}
+			}
+			
+			.t2 {
+			
+				.block {
+					width: 1080px;
+					height: 975px;
+					float: right;
+					padding: 50px 0px 50px 15%;
+					box-sizing: border-box;
+					text-align: center;
+					position: relative;
+					margin-left: -130px;
+					
+					h3 {
+						font-size: 30px;
+						font-weight: 100;
+						margin-bottom: 30px;
+					}
+					
+					.description-t2 {
+						width: 475px;
+						font-size: 18px;
+						display: block;
+						margin: 0 auto;
+						padding-bottom: 35px;
+					}
+					
+					.our-work {
+						font-size: 18px;
+						margin-bottom: 40px;
+					}
+					
+					#list-in-tab {
+						width: 925px;
+						height: 400px;
+						text-align: left;
+						position: relative;
+						line-height: 1.3;
+						
+						#tab-logo {
+							background-image: url(../images/logo-t1.png);
+							background-repeat: no-repeat;
+							background-position: center;
+							position: absolute;
+							top: -30px;
+							right: 0;
+							left: -40px;
+							bottom: -80px;
+							z-index: 10;
+						}
+						
+						.left {
+							float: left;
+							position: relative;
+							width: 255px;
+							height: 400px;
+							
+							li::after {
+								content: "";
+								background-repeat: no-repeat;
+								position: absolute;
+								z-index: 1;
+							}
+							
+							li:nth-child(1)::after {
+								width: 204px;
+								height: 100px;
+								background-image: url(../images/line-variants.png);
+								top: 20px;
+								left: 185px;
+							}
+							
+							li:first-child {
+								margin-bottom: 55px;
+							}
+							
+							li:nth-child(2)::after {
+								width: 150px;
+								height: 1px;
+								background-image: url(../images/line-calls.png);
+								bottom: 130px;
+								left: 230px;
+							}
+						}
+						
+						.right {
+							float: right;
+							position: relative;
+							width: 260px;
+							height: 410px;
+							
+							li::before {
+								content: "";
+								position: absolute;
+								z-index: 1;
+								background-repeat: no-repeat;
+							}
+							
+							li:nth-child(1)::before {
+								width: 82px;
+								height: 82px;
+								top: 24px;
+								right: 265px;
+								background-image: url(../images/line-comfort.png);
+							}
+							
+							li:nth-child(2) {
+								margin: 40px 0 40px 0;
+							}
+							
+							li:nth-child(2)::before {
+								width: 144px;
+								height: 1px;
+								bottom: 255px;
+								right: 267px;
+								background-image: url(../images/line-conversation.png);
+							}
+							
+							li:nth-child(3)::before {
+								width: 93px;
+								height: 1px;
+								bottom: 105px;
+								right: 268px;
+								background-image: url(../images/line-conversation.png);
+							}
+						}
+						
+						p {
+							font-size: 14px;
+							
+							span {
+								font-family: $brutal-me;
+								font-size: 18px;
+							}
+						}
+					}
+					
+					.our-values-t2 {
+						width: 645px;
+						margin: 0 auto;
+						padding: 50px 0 35px 0;
+						font-size: 18px;
+					}
+					
+					.more-info {
+						width: 630px;
+						display: block;
+						margin: 0 auto;
+						font-size: 18px;
+					}
+					
+					.callback-btn {
+						display: block;
+						width: 255px;
+						height: 60px;
+						line-height: 60px;
+						vertical-align: middle;
+						background: $darkblue;
+						border-radius: 3px;
+						font-size: 24px;
+						color: $white;
+						position: absolute;
+						bottom: 50px;
+						left: 45%;
+						z-index: 2;
+						-moz-transition: all 0.3s 0.01s ease;
+						-o-transition: all 0.3s 0.01s ease;
+						-webkit-transition: all 0.3s 0.01s ease;
+					}
+					
+					.callback-btn:hover {
+						background: $blue;
+					}
+				}
+			}
+			
+			.t3 {
+			
+				.block {
+					width: 1080px;
+					height: 975px;
+					float: right;
+					padding: 50px 0px 50px 15%;
+					box-sizing: border-box;
+					text-align: center;
+					position: relative;
+					margin-left: -130px;
+					
+					h3 {
+						font-size: 30px;
+						font-weight: 100;
+						margin-bottom: 30px;
+					}
+					
+					.description-t3 {
+						width: 475px;
+						font-size: 18px;
+						display: block;
+						margin: 0 auto;
+						padding-bottom: 35px;
+					}
+					
+					.our-work {
+						font-size: 18px;
+						margin-bottom: 40px;
+					}
+					
+					#list-in-tab {
+						width: 925px;
+						height: 490px;
+						text-align: left;
+						position: relative;
+						line-height: 1.3;
+						margin-bottom: 55px;
+						
+						#tab-logo {
+							background-image: url(../images/logo-t1.png);
+							background-repeat: no-repeat;
+							background-position: center;
+							position: absolute;
+							top: -65px;
+							right: 0;
+							left: -40px;
+							bottom: -80px;
+							z-index: 10;
+						}
+						
+						.left {
+							float: left;
+							position: relative;
+							width: 305px;
+							height: 525px;
+							
+							p {
+								
+								span {
+									font-family: $brutal-me;
+									font-size: 18px;
+								}
+							
+							}
+							
+							li::after {
+								content: "";
+								background-repeat: no-repeat;
+								position: absolute;
+								z-index: 1;
+							}
+							
+							li:nth-child(1)::after {
+								background-image: url(../images/line-rent1.png);
+								width: 110px;
+								height: 105px;
+								top: 17px;
+								left: 275px;
+							}
+							
+							li:nth-child(2) {
+								margin: 65px 0 45px 35px;
+							}
+							
+							li:nth-child(2)::after {
+								width: 150px;
+								height: 1px;
+								background-image: url(../images/line-calls.png);
+								bottom: 245px;
+								left: 198px;
+							}
+							
+							li:nth-child(3)::after {
+								background-image: url(../images/line-rent2.png);
+								width: 150px;
+								height: 81px;
+								bottom: 108px;
+								left: 310px;
+							}
+						}
+						
+						.right {
+							float: right;
+							position: relative;
+							width: 260px;
+							height: 525px;
+							
+							li::before {
+								content: "";
+								position: absolute;
+								z-index: 1;
+								background-repeat: no-repeat;
+							}
+							
+							li:nth-child(1)::before {
+								width: 100px;
+								height: 1px;
+								top: 163px;
+								right: 257px;
+								background-image: url(../images/line-calls.png);
+							}
+							
+							li:nth-child(2) {
+								margin: 30px 0 40px -50px;
+							}
+							
+							li:nth-child(2)::before {
+								width: 83px;
+								height: 1px;
+								top: 248px;
+								right: 315px;
+								background-image: url(../images/line-conversation.png);
+							}
+							
+							li:nth-child(3)::before {
+								width: 100px;
+								height: 1px;
+								bottom: 160px;
+								right: 258px;
+								background-image: url(../images/line-calls.png);
+							}
+						}
+						
+						p {
+							font-size: 14px;
+							
+							span {
+								font-family: $brutal-me;
+								font-size: 18px;
+							}
+						}
+					}
+					
+					.more-info {
+						width: 630px;
+						display: block;
+						margin: 0 auto;
+						font-size: 18px;
+						margin-top: 80px;
+					}
+					
+					.callback-btn {
+						display: block;
+						width: 255px;
+						height: 60px;
+						line-height: 60px;
+						vertical-align: middle;
+						background: $darkblue;
+						border-radius: 3px;
+						font-size: 24px;
+						color: $white;
+						position: absolute;
+						bottom: 50px;
+						left: 45%;
+						z-index: 2;
+						-moz-transition: all 0.3s 0.01s ease;
+						-o-transition: all 0.3s 0.01s ease;
+						-webkit-transition: all 0.3s 0.01s ease;
+					}
+					
+					.callback-btn:hover {
+						background: $blue;
+					}
+				}
+			}
+			
+		}
+	}
+	
+	.rombs-block3 {
+		width: 811px;
+		height: 1024px;
+		background: url(../images/rombs-block3.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		position: absolute;
+		right: -11%;
+		bottom: -27.4%;
+		z-index: 1;
+	}
+}
