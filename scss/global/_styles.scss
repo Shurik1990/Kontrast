@@ -1,6 +1,9 @@
-/* wrapper */
+html {
+	scroll-behavior: smooth;
+}
 body {
 	font-family: $brutal-tl;
+	height: 100%;
 }
 .layout {
 	margin: 0 auto;

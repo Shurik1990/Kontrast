@@ -96,9 +96,12 @@ input:focus::-webkit-input-placeholder {
 /*usage  @include font-size(13);*/
 /* Fonts ------------------------------------------------*/
 /* Colors ------------------------------------------------*/
-/* wrapper */
+html {
+  scroll-behavior: smooth; }
+
 body {
-  font-family: Brutal Type Light, Arial, sans-serif; }
+  font-family: Brutal Type Light, Arial, sans-serif;
+  height: 100%; }
 
 .layout {
   margin: 0 auto;
@@ -408,6 +411,81 @@ header {
       width: 100%;
       height: 100%; }
 
+#block4 {
+  width: 100%;
+  height: 340px;
+  background: #414f7e;
+  box-sizing: border-box; }
+  #block4 .block4-wrapper {
+    width: 1205px;
+    position: relative;
+    margin: 0 auto; }
+    #block4 .block4-wrapper .bx-wrapper {
+      margin-bottom: 0 !important;
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border: none;
+      background: none; }
+      #block4 .block4-wrapper .bx-wrapper .bx-viewport {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        height: 340px !important; }
+        #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row {
+          width: 1110px;
+          height: 340px;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row .review {
+            width: 635px;
+            position: relative;
+            color: #fff;
+            font-size: 24px;
+            line-height: 30px; }
+            #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row .review .author {
+              position: absolute;
+              bottom: -45px;
+              right: -25px; }
+          #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row .review::before {
+            content: "";
+            width: 92px;
+            height: 70px;
+            background-image: url(../images/quote-1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            bottom: -35px;
+            left: -125px; }
+          #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row .review::after {
+            content: "";
+            width: 92px;
+            height: 70px;
+            background-image: url(../images/quote-2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: -25px;
+            right: -120px; }
+      #block4 .block4-wrapper .bx-wrapper .bx-controls-direction a {
+        position: absolute;
+        top: 50%;
+        margin-top: -13.5px;
+        outline: 0;
+        width: 16px;
+        height: 29px;
+        text-indent: -9999px;
+        z-index: 9999; }
+      #block4 .block4-wrapper .bx-wrapper .bx-controls-direction .bx-prev {
+        left: 0;
+        background: url(../images/slider-arrow-left.png) no-repeat 0 0 !important; }
+      #block4 .block4-wrapper .bx-wrapper .bx-controls-direction .bx-next {
+        right: 0;
+        background: url(../images/slider-arrow-right.png) no-repeat 0 0 !important; }
+      #block4 .block4-wrapper .bx-wrapper .bx-pager {
+        display: none; }
+
 #block5 {
   width: 100%;
   height: 575px;
@@ -445,7 +523,7 @@ header {
             height: 402px;
             position: relative;
             z-index: 1;
-            margin-right: 25px; }
+            margin-right: 30px; }
             #block5 .block5-wrapper .bx-wrapper .bx-viewport .slider .slider-row .person .person-name {
               width: 100%;
               height: 53px;
@@ -461,13 +539,13 @@ header {
                 font-weight: 600;
                 color: #000; }
           #block5 .block5-wrapper .bx-wrapper .bx-viewport .slider .slider-row .person:last-child {
-            margin-right: 15px; }
+            margin-right: 0; }
       #block5 .block5-wrapper .bx-wrapper .bx-controls-direction a {
         position: absolute;
         top: 50%;
         margin-top: -16px;
         outline: 0;
-        width: 32px;
+        width: 16px;
         height: 32px;
         text-indent: -9999px;
         z-index: 9999; }
