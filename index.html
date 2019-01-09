@@ -7,6 +7,14 @@
 	<link rel="stylesheet" href="css/all.css" type="text/css"/>
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<title>Контраст</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		  $('.slider').bxSlider();
+		});
+	</script>
 </head>
 <body>
 	<div class="layout">
@@ -117,6 +125,49 @@
 				</div>
 				<div class="block2-line-bottom"></div>
 			</section>
+			<section id="block5">
+				<div class="block5-wrapper">
+					<h2>Наша команда</h2>
+					<div class="slider">
+						<div class="slider-row">
+							<div class="person">
+								<img src="images/photo-ekaterina.png" alt="Екатерина" title="Екатерина">
+								<div class="person-name"><p>Екатерина</p></div>
+							</div>
+							<div class="person">
+								<img src="images/photo-valentine.png" alt="Валентин" title="Валентин">
+								<div class="person-name"><p>Валентин</p></div>
+							</div>
+							<div class="person">
+								<img src="images/photo-nikita.png" alt="Никита" title="Никита">
+								<div class="person-name"><p>Никита</p></div>
+							</div>
+							<div class="person">
+								<img src="images/photo-adalat.png" alt="Адалат" title="Адалат">
+								<div class="person-name"><p>Адалат</p></div>
+							</div>
+						</div>
+						<div class="slider-row">
+							<div class="person">
+								<img src="images/photo-ekaterina.png" alt="Екатерина" title="Екатерина">
+								<div class="person-name"><p>Екатерина</p></div>
+							</div>
+							<div class="person">
+								<img src="images/photo-valentine.png" alt="Валентин" title="Валентин">
+								<div class="person-name"><p>Валентин</p></div>
+							</div>
+							<div class="person">
+								<img src="images/photo-nikita.png" alt="Никита" title="Никита">
+								<div class="person-name"><p>Никита</p></div>
+							</div>
+							<div class="person">
+								<img src="images/photo-adalat.png" alt="Адалат" title="Адалат">
+								<div class="person-name"><p>Адалат</p></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer id="footer">
 			<div class="callback">
@@ -130,7 +181,7 @@
 			<div id="wrapper">
 				<div class="company">
 					<p class="footer-logo">
-						<a href="#header"><img alt="Лого" title="Лого" src="images/footer-logo.png"></a>
+						<a href="#header"><img alt="Контраст" title="Контраст" src="images/footer-logo.png"></a>
 						<span class="text"> Центр недвижимости Контраст продажа, покупка и аренда квартир и домов</span>
 					</p>
 					<ul class="footer-column1">
@@ -145,7 +196,7 @@
 								<li class="text"><a href="#block3">Аренда</a></li>
 							</ul>
 						</li>
-						<li class="text"><a href="#block4">Наша команда</a></li>
+						<li class="text"><a href="#block5">Наша команда</a></li>
 						<li class="vertical"><p>|</p></li>
 						<li class="text"><a href="#footer">Контакты</a></li>
 					</ul>
