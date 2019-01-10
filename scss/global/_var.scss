@@ -20,6 +20,7 @@ $tablet-small: "(max-width: 768px) and (min-width: 541px)";
 $mobile-big: "(max-width: 650px) and (min-width: 541px)";
 $mobile: "(max-width: 540px)";
 $mobile-medium: "(max-width: 495px)";
+$mobile-medium-small: "(max-width: 420px)";
 $mobile-small: "(max-width: 320px)";
 
 @mixin respond-to($media) {

@@ -291,14 +291,39 @@ header {
 
 #block1 {
   width: 100%;
-  height: 640px;
+  height: 635px;
   background: #e6f1fa;
   position: relative;
   line-height: 1.2; }
+  @media only screen and (max-width: 1300px) and (min-width: 768px) {
+    #block1 {
+      height: 986px;
+      margin: 0 auto; } }
+  @media only screen and (max-width: 768px) and (min-width: 541px) {
+    #block1 {
+      height: 1100px;
+      margin: 0 auto; } }
+  @media only screen and (max-width: 540px) {
+    #block1 {
+      height: 835px;
+      margin: 0 auto; } }
+  @media only screen and (max-width: 420px) {
+    #block1 {
+      height: 850px;
+      margin: 0 auto; } }
   #block1 .wrapper {
     width: 1110px;
     position: relative;
     margin: 0 auto; }
+    @media only screen and (max-width: 1300px) and (min-width: 768px) {
+      #block1 .wrapper {
+        width: 100%; } }
+    @media only screen and (max-width: 768px) and (min-width: 541px) {
+      #block1 .wrapper {
+        width: 100%; } }
+    @media only screen and (max-width: 540px) {
+      #block1 .wrapper {
+        width: 88%; } }
     #block1 .wrapper .block1-logo {
       width: 199px;
       height: 162px;
@@ -308,20 +333,81 @@ header {
       position: absolute;
       top: 90px;
       left: 75px; }
+      @media only screen and (max-width: 1300px) and (min-width: 768px) {
+        #block1 .wrapper .block1-logo {
+          top: 130px;
+          left: calc(50% - 100px); } }
+      @media only screen and (max-width: 768px) and (min-width: 541px) {
+        #block1 .wrapper .block1-logo {
+          top: 115px;
+          left: calc(50% - 100px); } }
+      @media only screen and (max-width: 540px) {
+        #block1 .wrapper .block1-logo {
+          top: 40px;
+          left: calc(50% - 110px); } }
+      @media only screen and (max-width: 420px) {
+        #block1 .wrapper .block1-logo {
+          top: 25px; } }
     #block1 .wrapper .block1-text {
       width: 725px;
       float: right;
       margin-top: 30px; }
+      @media only screen and (max-width: 1300px) and (min-width: 768px) {
+        #block1 .wrapper .block1-text {
+          width: 640px;
+          position: absolute;
+          left: calc(50% - 319px);
+          top: calc(50% + 320px); } }
+      @media only screen and (max-width: 768px) and (min-width: 541px) {
+        #block1 .wrapper .block1-text {
+          width: 480px;
+          position: absolute;
+          left: calc(50% - 230px);
+          top: calc(50% + 350px); } }
+      @media only screen and (max-width: 540px) {
+        #block1 .wrapper .block1-text {
+          width: 88%;
+          position: absolute;
+          left: 6%;
+          top: calc(50% + 250px);
+          margin-top: 0; } }
+      @media only screen and (max-width: 420px) {
+        #block1 .wrapper .block1-text {
+          width: 88%;
+          position: absolute;
+          left: 6%;
+          top: calc(50% + 220px);
+          margin-top: 0; } }
       #block1 .wrapper .block1-text p {
         font-size: 18px; }
+        @media only screen and (max-width: 540px) {
+          #block1 .wrapper .block1-text p {
+            font-size: 14px; } }
+        @media only screen and (max-width: 420px) {
+          #block1 .wrapper .block1-text p {
+            font-size: 13px; } }
       #block1 .wrapper .block1-text .block1-indent {
         margin-bottom: 30px; }
+        @media only screen and (max-width: 540px) {
+          #block1 .wrapper .block1-text .block1-indent {
+            margin-bottom: 20px; } }
       #block1 .wrapper .block1-text .block1-list {
         margin-bottom: 30px;
         line-height: 1.8;
         margin-left: 80px; }
+        @media only screen and (max-width: 540px) {
+          #block1 .wrapper .block1-text .block1-list {
+            margin-bottom: 20px;
+            line-height: 1.5;
+            margin-left: 50px; } }
         #block1 .wrapper .block1-text .block1-list li {
           position: relative; }
+          @media only screen and (max-width: 540px) {
+            #block1 .wrapper .block1-text .block1-list li {
+              font-size: 14px; } }
+          @media only screen and (max-width: 420px) {
+            #block1 .wrapper .block1-text .block1-list li {
+              font-size: 13px; } }
         #block1 .wrapper .block1-text .block1-list li:before {
           content: "";
           width: 8px;
@@ -331,6 +417,12 @@ header {
           position: absolute;
           left: -35px;
           top: 12px; }
+          @media only screen and (max-width: 540px) {
+            #block1 .wrapper .block1-text .block1-list li:before {
+              width: 5px;
+              height: 5px;
+              left: -25px;
+              top: 9px; } }
 
 #block2 {
   width: 100%;
