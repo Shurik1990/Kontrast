@@ -428,11 +428,17 @@ header {
       #block3 #wrapper ul.tabs li {
         position: absolute; }
         #block3 #wrapper ul.tabs li p {
-          margin-top: 260px;
           left: -35px;
-          position: absolute; }
-        #block3 #wrapper ul.tabs li p:nth-child(2) {
-          margin-top: 285px; }
+          position: absolute;
+          color: #000; }
+        #block3 #wrapper ul.tabs li .tabs-1 {
+          top: 260px; }
+        #block3 #wrapper ul.tabs li .tabs-2 {
+          top: 495px;
+          left: -45px; }
+        #block3 #wrapper ul.tabs li .tabs-3 {
+          top: 715px;
+          left: -25px; }
       #block3 #wrapper ul.tabs li::after {
         content: "";
         background-repeat: no-repeat;
@@ -448,13 +454,46 @@ header {
         height: 250px;
         background-image: url(../images/line1.png);
         top: 0;
-        z-index: 10; }
+        z-index: 1; }
       #block3 #wrapper ul.tabs li:nth-child(1)::before {
         width: 2px;
         height: 198px;
         background-image: url(../images/line2.png);
         top: 285px;
-        z-index: 10; }
+        z-index: 1; }
+      #block3 #wrapper ul.tabs li:nth-child(2)::after {
+        width: 2px;
+        height: 183px;
+        background-image: url(../images/line3.png);
+        top: 520px;
+        z-index: 1; }
+      #block3 #wrapper ul.tabs li:nth-child(3)::after {
+        width: 2px;
+        height: 250px;
+        background-image: url(../images/line4.png);
+        top: 740px;
+        z-index: 1; }
+      #block3 #wrapper ul.tabs a {
+        content: "";
+        width: 40px;
+        height: 40px;
+        border: 5px solid #414f7e;
+        transform: rotate(45deg);
+        background: #fff;
+        position: absolute;
+        left: -24px;
+        z-index: 2;
+        -moz-transition: all 0.3s 0.01s ease;
+        -o-transition: all 0.3s 0.01s ease;
+        -webkit-transition: all 0.3s 0.01s ease; }
+      #block3 #wrapper ul.tabs a:hover {
+        background: #414f7e; }
+      #block3 #wrapper ul.tabs .link-1 {
+        top: 173px; }
+      #block3 #wrapper ul.tabs .link-2 {
+        top: 410px; }
+      #block3 #wrapper ul.tabs .link-3 {
+        top: 635px; }
       #block3 #wrapper ul.tabs .tabs {
         display: flex;
         flex-direction: column;
