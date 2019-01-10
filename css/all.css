@@ -196,6 +196,10 @@ header {
         -webkit-transition: all 0.3s 0.01s ease; }
       header .header-menu nav ul a:hover {
         color: #65a9df; }
+    header .header-menu nav .submenu {
+      position: relative; }
+    header .header-menu nav .submenu:hover .nav-contain {
+      visibility: visible; }
     header .header-menu nav ul.nav-left {
       float: left;
       margin-left: -20px;
@@ -204,36 +208,30 @@ header {
     header .header-menu nav ul.nav-right {
       float: right;
       width: 285px; }
+    header .header-menu nav .fas {
+      font-size: 12px;
+      margin-left: 5px; }
     header .header-menu nav ul.nav-contain {
-      display: none;
       position: absolute;
       background: rgba(255, 255, 255, 0.5);
-      top: 165%; }
+      top: 160%;
+      display: inline-block;
+      visibility: hidden; }
       header .header-menu nav ul.nav-contain a {
         font-size: 18px;
-        color: #414f7e;
+        color: #414f7e; }
+      header .header-menu nav ul.nav-contain li {
+        position: relative;
+        padding: 10px 15px;
         -moz-transition: all 0.3s 0.01s ease;
         -o-transition: all 0.3s 0.01s ease;
         -webkit-transition: all 0.3s 0.01s ease; }
-      header .header-menu nav ul.nav-contain li {
-        display: inline-block;
-        position: relative;
-        padding: 10px 15px; }
       header .header-menu nav ul.nav-contain li:hover {
         color: #65a9df;
         background: #fff; }
     header .header-menu nav ul.nav-contain > li > a {
       padding: 10px 15px;
       position: relative; }
-    header .header-menu nav ul.nav-contain:hover {
-      display: block; }
-    header .header-menu nav ul.nav-contain li:hover::before {
-      content: '';
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      position: absolute; }
   header #wrapper .social {
     display: flex;
     flex-direction: column;
@@ -487,6 +485,8 @@ header {
         -o-transition: all 0.3s 0.01s ease;
         -webkit-transition: all 0.3s 0.01s ease; }
       #block3 #wrapper ul.tabs a:hover {
+        background: #414f7e; }
+      #block3 #wrapper ul.tabs .active a {
         background: #414f7e; }
       #block3 #wrapper ul.tabs .link-1 {
         top: 173px; }

@@ -81,6 +81,15 @@ header {
 				}
 			}
 			
+			
+			.submenu {
+				position: relative;
+			}
+			
+			.submenu:hover .nav-contain{
+				visibility: visible;
+			}
+			
 			ul.nav-left {
 				float: left;
 				margin-left: -20px;
@@ -93,45 +102,42 @@ header {
 				width: 285px;
 			}
 			
+			.fas {
+				font-size: 12px;
+				margin-left: 5px;
+			}
+			
 			ul.nav-contain {
-				display: none;
 				position: absolute;
 				background: $white-transparent;
-				top: 165%;
+				top: 160%;
+				display: inline-block;
+				visibility: hidden;
 				
 				a {
+				
 					font-size: 18px;
 					color: $darkblue;
-					-moz-transition: all 0.3s 0.01s ease;
-					-o-transition: all 0.3s 0.01s ease;
-					-webkit-transition: all 0.3s 0.01s ease;
 				}
 				
 				li {
-					display: inline-block;
 					position: relative;
 					padding: 10px 15px;
+					-moz-transition: all 0.3s 0.01s ease;
+					-o-transition: all 0.3s 0.01s ease;
+					-webkit-transition: all 0.3s 0.01s ease;
 				}
 				
 				li:hover {
 					color: $blue;
 					background: #fff;
 				}
+				
 			}
 			
 			ul.nav-contain > li > a {
 				padding: 10px 15px;
 				position: relative;
-			}
-			
-			ul.nav-contain:hover {
-				display: block;
-			}
-			
-			ul.nav-contain li:hover::before {
-				 content: '';
-				 top: 0; left: 0; right: 0; bottom: 0;
-				 position: absolute;
 			}
 			
 		}
