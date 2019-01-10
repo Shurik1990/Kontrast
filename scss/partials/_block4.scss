@@ -6,6 +6,16 @@
 	
 	.block4-wrapper {
 		width: 1205px;
+			@media (min-width: 970px) {
+				max-width: 100%;
+				width: auto;
+				padding: 0 60px 0 60px;
+			}
+			@media screen and (max-width: 780px) {
+				max-width: 100%;
+				width: 640px;
+				padding: 0 60px 0 60px;
+			}
 		position: relative;
 		margin: 0 auto;
 		
@@ -23,11 +33,18 @@
 				position: relative;
 				height: 340px !important;
 				
+				@media screen and (max-width: 780px) {
+					height: 325px !important;
+				}
+				
 				.slider {
 					
 					.slider-row {
 						width: 1110px;
 						height: 340px;
+						@media screen and (max-width: 780px) {
+							height: 325px;
+						}
 						display: flex;
 						justify-content: center;
 						align-items: center;
@@ -38,6 +55,12 @@
 							color: $white;
 							font-size: 24px;
 							line-height: 30px;
+							
+							@media screen and (max-width: 780px) {
+								width: 480px;
+								font-size: 18px;
+								line-height: 25px;
+							}
 							
 							.author {
 								position: absolute;
@@ -57,6 +80,12 @@
 							position: absolute;
 							bottom: -35px;
 							left: -125px;
+							
+							@media screen and (max-width: 780px) {
+								background-image: url(../images/quote-1-mobile.png);
+								bottom: -80px;
+								left: -80px;
+							}
 						}
 							
 						.review::after {
@@ -69,6 +98,12 @@
 							position: absolute;
 							top: -25px;
 							right: -120px;
+							
+							@media screen and (max-width: 780px) {
+								background-image: url(../images/quote-2-mobile.png);
+								top: -70px;
+								right: -75px;
+							}
 						}
 					}
 				}

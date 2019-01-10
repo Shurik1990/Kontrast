@@ -145,17 +145,17 @@ header {
   overflow: visible;
   position: relative;
   line-height: 1.5; }
-  header #wrapper {
+  header .wrapper {
     width: 1110px;
     position: relative;
     margin: 0 auto; }
-    header #wrapper .header-strip {
+    header .wrapper .header-strip {
       width: 100%;
       height: 110px;
       display: flex;
       align-items: center;
       position: relative; }
-      header #wrapper .header-strip .header-logo {
+      header .wrapper .header-strip .header-logo {
         width: 162px;
         height: 133px;
         background-image: url(../images/logo.png);
@@ -164,15 +164,15 @@ header {
         position: absolute;
         top: 35px;
         left: calc(50% - 90px); }
-      header #wrapper .header-strip .contact {
+      header .wrapper .header-strip .contact {
         position: absolute;
         top: 32px;
         right: 0;
         width: 210px; }
-        header #wrapper .header-strip .contact .number {
+        header .wrapper .header-strip .contact .number {
           font-size: 23px;
           color: #414f7e; }
-        header #wrapper .header-strip .contact .email {
+        header .wrapper .header-strip .contact .email {
           font-size: 18px;
           color: #636c8d; }
   header .header-menu nav {
@@ -187,7 +187,7 @@ header {
     justify-content: space-between; }
     header .header-menu nav ul {
       display: flex;
-      justify-content: space-around; }
+      justify-content: space-between; }
       header .header-menu nav ul a {
         font-size: 18px;
         color: #414f7e;
@@ -202,12 +202,13 @@ header {
       visibility: visible; }
     header .header-menu nav ul.nav-left {
       float: left;
-      margin-left: -20px;
+      margin-left: -30px;
       position: relative;
-      width: 285px; }
+      width: 275px; }
     header .header-menu nav ul.nav-right {
       float: right;
-      width: 285px; }
+      width: 325px;
+      margin-right: -55px; }
     header .header-menu nav .fas {
       font-size: 12px;
       margin-left: 5px; }
@@ -232,18 +233,18 @@ header {
     header .header-menu nav ul.nav-contain > li > a {
       padding: 10px 15px;
       position: relative; }
-  header #wrapper .social {
+  header .wrapper .social {
     display: flex;
     flex-direction: column;
     position: absolute;
     right: 0; }
-    header #wrapper .social a {
+    header .wrapper .social a {
       -moz-transition: all 0.3s 0.01s ease;
       -o-transition: all 0.3s 0.01s ease;
       -webkit-transition: all 0.3s 0.01s ease; }
-    header #wrapper .social a:first-child {
+    header .wrapper .social a:first-child {
       margin: 25px 0 20px 0; }
-    header #wrapper .social a:hover {
+    header .wrapper .social a:hover {
       opacity: 0.7; }
   header .header-center {
     text-align: center;
@@ -293,11 +294,11 @@ header {
   background: #e6f1fa;
   position: relative;
   line-height: 1.2; }
-  #block1 #wrapper {
+  #block1 .wrapper {
     width: 1110px;
     position: relative;
     margin: 0 auto; }
-    #block1 #wrapper .block1-logo {
+    #block1 .wrapper .block1-logo {
       width: 199px;
       height: 162px;
       background-image: url(../images/block1-logo.png);
@@ -306,21 +307,21 @@ header {
       position: absolute;
       top: 90px;
       left: 75px; }
-    #block1 #wrapper .block1-text {
+    #block1 .wrapper .block1-text {
       width: 725px;
       float: right;
       margin-top: 30px; }
-      #block1 #wrapper .block1-text p {
+      #block1 .wrapper .block1-text p {
         font-size: 18px; }
-      #block1 #wrapper .block1-text .block1-indent {
+      #block1 .wrapper .block1-text .block1-indent {
         margin-bottom: 30px; }
-      #block1 #wrapper .block1-text .block1-list {
+      #block1 .wrapper .block1-text .block1-list {
         margin-bottom: 30px;
         line-height: 1.8;
         margin-left: 80px; }
-        #block1 #wrapper .block1-text .block1-list li {
+        #block1 .wrapper .block1-text .block1-list li {
           position: relative; }
-        #block1 #wrapper .block1-text .block1-list li:before {
+        #block1 .wrapper .block1-text .block1-list li:before {
           content: "";
           width: 8px;
           height: 8px;
@@ -414,64 +415,64 @@ header {
   height: 975px;
   box-sizing: border-box;
   position: relative; }
-  #block3 #wrapper {
+  #block3 .wrapper {
     width: 1080px;
     position: relative;
     margin: 0 auto; }
-    #block3 #wrapper ul.tabs {
+    #block3 .wrapper ul.tabs {
       display: block;
       z-index: 5;
       position: absolute;
       text-align: center; }
-      #block3 #wrapper ul.tabs li {
+      #block3 .wrapper ul.tabs li {
         position: absolute; }
-        #block3 #wrapper ul.tabs li p {
+        #block3 .wrapper ul.tabs li p {
           left: -35px;
           position: absolute;
           color: #000; }
-        #block3 #wrapper ul.tabs li .tabs-1 {
+        #block3 .wrapper ul.tabs li .tabs-1 {
           top: 260px; }
-        #block3 #wrapper ul.tabs li .tabs-2 {
+        #block3 .wrapper ul.tabs li .tabs-2 {
           top: 495px;
           left: -45px; }
-        #block3 #wrapper ul.tabs li .tabs-3 {
+        #block3 .wrapper ul.tabs li .tabs-3 {
           top: 715px;
           left: -25px; }
-      #block3 #wrapper ul.tabs li::after {
+      #block3 .wrapper ul.tabs li::after {
         content: "";
         background-repeat: no-repeat;
         position: absolute;
         z-index: 1; }
-      #block3 #wrapper ul.tabs li::before {
+      #block3 .wrapper ul.tabs li::before {
         content: "";
         background-repeat: no-repeat;
         position: absolute;
         z-index: 1; }
-      #block3 #wrapper ul.tabs li:nth-child(1)::after {
+      #block3 .wrapper ul.tabs li:nth-child(1)::after {
         width: 2px;
         height: 250px;
         background-image: url(../images/line1.png);
         top: 0;
         z-index: 1; }
-      #block3 #wrapper ul.tabs li:nth-child(1)::before {
+      #block3 .wrapper ul.tabs li:nth-child(1)::before {
         width: 2px;
         height: 198px;
         background-image: url(../images/line2.png);
         top: 285px;
         z-index: 1; }
-      #block3 #wrapper ul.tabs li:nth-child(2)::after {
+      #block3 .wrapper ul.tabs li:nth-child(2)::after {
         width: 2px;
         height: 183px;
         background-image: url(../images/line3.png);
         top: 520px;
         z-index: 1; }
-      #block3 #wrapper ul.tabs li:nth-child(3)::after {
+      #block3 .wrapper ul.tabs li:nth-child(3)::after {
         width: 2px;
         height: 250px;
         background-image: url(../images/line4.png);
         top: 740px;
         z-index: 1; }
-      #block3 #wrapper ul.tabs a {
+      #block3 .wrapper ul.tabs a {
         content: "";
         width: 40px;
         height: 40px;
@@ -484,23 +485,23 @@ header {
         -moz-transition: all 0.3s 0.01s ease;
         -o-transition: all 0.3s 0.01s ease;
         -webkit-transition: all 0.3s 0.01s ease; }
-      #block3 #wrapper ul.tabs a:hover {
+      #block3 .wrapper ul.tabs a:hover {
         background: #414f7e; }
-      #block3 #wrapper ul.tabs .active a {
+      #block3 .wrapper ul.tabs .active a {
         background: #414f7e; }
-      #block3 #wrapper ul.tabs .link-1 {
+      #block3 .wrapper ul.tabs .link-1 {
         top: 173px; }
-      #block3 #wrapper ul.tabs .link-2 {
+      #block3 .wrapper ul.tabs .link-2 {
         top: 410px; }
-      #block3 #wrapper ul.tabs .link-3 {
+      #block3 .wrapper ul.tabs .link-3 {
         top: 635px; }
-      #block3 #wrapper ul.tabs .tabs {
+      #block3 .wrapper ul.tabs .tabs {
         display: flex;
         flex-direction: column;
         float: left;
         position: relative;
         height: 975px; }
-    #block3 #wrapper #tabs-container {
+    #block3 .wrapper #tabs-container {
       height: 975px;
       width: 90%;
       margin: 0 auto;
@@ -508,7 +509,7 @@ header {
       justify-content: center;
       align-items: center;
       flex-direction: row-reverse; }
-      #block3 #wrapper #tabs-container .t1 .block {
+      #block3 .wrapper #tabs-container .t1 .block {
         width: 1080px;
         height: 975px;
         float: right;
@@ -517,26 +518,26 @@ header {
         text-align: center;
         position: relative;
         margin-left: -130px; }
-        #block3 #wrapper #tabs-container .t1 .block h3 {
+        #block3 .wrapper #tabs-container .t1 .block h3 {
           font-size: 30px;
           font-weight: 100;
           margin-bottom: 30px; }
-        #block3 #wrapper #tabs-container .t1 .block .description-t1 {
+        #block3 .wrapper #tabs-container .t1 .block .description-t1 {
           width: 660px;
           font-size: 18px;
           display: block;
           margin: 0 auto;
           padding-bottom: 35px; }
-        #block3 #wrapper #tabs-container .t1 .block .our-work {
+        #block3 .wrapper #tabs-container .t1 .block .our-work {
           font-size: 18px;
           margin-bottom: 24px; }
-        #block3 #wrapper #tabs-container .t1 .block #list-in-tab {
+        #block3 .wrapper #tabs-container .t1 .block .list-in-tab {
           width: 925px;
           height: 400px;
           text-align: left;
           position: relative;
           line-height: 1.3; }
-          #block3 #wrapper #tabs-container .t1 .block #list-in-tab #tab-logo {
+          #block3 .wrapper #tabs-container .t1 .block .list-in-tab .tab-logo {
             background-image: url(../images/logo-t1.png);
             background-repeat: no-repeat;
             background-position: center;
@@ -546,91 +547,91 @@ header {
             left: -40px;
             bottom: -80px;
             z-index: 10; }
-          #block3 #wrapper #tabs-container .t1 .block #list-in-tab .left {
+          #block3 .wrapper #tabs-container .t1 .block .list-in-tab .left {
             float: left;
             position: relative;
             width: 260px;
             height: 410px; }
-            #block3 #wrapper #tabs-container .t1 .block #list-in-tab .left li::after {
+            #block3 .wrapper #tabs-container .t1 .block .list-in-tab .left li::after {
               content: "";
               background-repeat: no-repeat;
               position: absolute;
               z-index: 1; }
-            #block3 #wrapper #tabs-container .t1 .block #list-in-tab .left li:nth-child(1)::after {
+            #block3 .wrapper #tabs-container .t1 .block .list-in-tab .left li:nth-child(1)::after {
               width: 142px;
               height: 75px;
               background-image: url(../images/line-service.png);
               top: 35px;
               left: 245px; }
-            #block3 #wrapper #tabs-container .t1 .block #list-in-tab .left li:nth-child(2) {
+            #block3 .wrapper #tabs-container .t1 .block .list-in-tab .left li:nth-child(2) {
               margin: 30px 0 30px 0; }
-            #block3 #wrapper #tabs-container .t1 .block #list-in-tab .left li:nth-child(2)::after {
+            #block3 .wrapper #tabs-container .t1 .block .list-in-tab .left li:nth-child(2)::after {
               width: 150px;
               height: 1px;
               background-image: url(../images/line-calls.png);
               top: 170px;
               left: 220px; }
-            #block3 #wrapper #tabs-container .t1 .block #list-in-tab .left li:nth-child(3)::after {
+            #block3 .wrapper #tabs-container .t1 .block .list-in-tab .left li:nth-child(3)::after {
               width: 185px;
               height: 1px;
               bottom: 110px;
               left: 170px;
               background-image: url(../images/line-work.png);
               background-repeat: repeat-x; }
-          #block3 #wrapper #tabs-container .t1 .block #list-in-tab .right {
+          #block3 .wrapper #tabs-container .t1 .block .list-in-tab .right {
             float: right;
             position: relative;
             width: 260px;
             height: 410px; }
-            #block3 #wrapper #tabs-container .t1 .block #list-in-tab .right li::before {
+            #block3 .wrapper #tabs-container .t1 .block .list-in-tab .right li::before {
               content: "";
               position: absolute;
               z-index: 1;
               background-repeat: no-repeat; }
-            #block3 #wrapper #tabs-container .t1 .block #list-in-tab .right li:nth-child(1)::before {
+            #block3 .wrapper #tabs-container .t1 .block .list-in-tab .right li:nth-child(1)::before {
               width: 82px;
               height: 82px;
               top: 16px;
               right: 274px;
               background-image: url(../images/line-comfort.png); }
-            #block3 #wrapper #tabs-container .t1 .block #list-in-tab .right li:nth-child(2) {
+            #block3 .wrapper #tabs-container .t1 .block .list-in-tab .right li:nth-child(2) {
               margin: 30px 0 30px 0; }
-            #block3 #wrapper #tabs-container .t1 .block #list-in-tab .right li:nth-child(2)::before {
+            #block3 .wrapper #tabs-container .t1 .block .list-in-tab .right li:nth-child(2)::before {
               width: 100px;
               height: 1px;
               bottom: 285px;
               right: 267px;
               background-image: url(../images/line-conversation.png); }
-            #block3 #wrapper #tabs-container .t1 .block #list-in-tab .right li:nth-child(3) {
+            #block3 .wrapper #tabs-container .t1 .block .list-in-tab .right li:nth-child(3) {
               margin: 0 0 30px 0; }
-            #block3 #wrapper #tabs-container .t1 .block #list-in-tab .right li:nth-child(3)::before {
+            #block3 .wrapper #tabs-container .t1 .block .list-in-tab .right li:nth-child(3)::before {
               width: 109px;
               height: 50px;
               bottom: 114px;
               right: 269px;
               background-image: url(../images/line-advertisement.png); }
-            #block3 #wrapper #tabs-container .t1 .block #list-in-tab .right li:nth-child(4)::before {
+            #block3 .wrapper #tabs-container .t1 .block .list-in-tab .right li:nth-child(4)::before {
               width: 178px;
               height: 66px;
               bottom: 0;
               right: 267px;
               background-image: url(../images/line-see.png); }
-          #block3 #wrapper #tabs-container .t1 .block #list-in-tab p {
+          #block3 .wrapper #tabs-container .t1 .block .list-in-tab p {
             font-size: 14px; }
-            #block3 #wrapper #tabs-container .t1 .block #list-in-tab p span {
+            #block3 .wrapper #tabs-container .t1 .block .list-in-tab p span {
               font-family: Brutal Type Medium, Arial, serif;
               font-size: 18px; }
-        #block3 #wrapper #tabs-container .t1 .block .our-values-t1 {
+        #block3 .wrapper #tabs-container .t1 .block .our-values-t1 {
           width: 660px;
           margin: 0 auto;
           padding: 70px 0 35px 0;
           font-size: 18px; }
-        #block3 #wrapper #tabs-container .t1 .block .more-info {
+        #block3 .wrapper #tabs-container .t1 .block .more-info {
           width: 630px;
           display: block;
           margin: 0 auto;
           font-size: 18px; }
-        #block3 #wrapper #tabs-container .t1 .block .callback-btn {
+        #block3 .wrapper #tabs-container .t1 .block .callback-btn {
           display: block;
           width: 255px;
           height: 60px;
@@ -647,9 +648,9 @@ header {
           -moz-transition: all 0.3s 0.01s ease;
           -o-transition: all 0.3s 0.01s ease;
           -webkit-transition: all 0.3s 0.01s ease; }
-        #block3 #wrapper #tabs-container .t1 .block .callback-btn:hover {
+        #block3 .wrapper #tabs-container .t1 .block .callback-btn:hover {
           background: #65a9df; }
-      #block3 #wrapper #tabs-container .t2 .block {
+      #block3 .wrapper #tabs-container .t2 .block {
         width: 1080px;
         height: 975px;
         float: right;
@@ -658,26 +659,26 @@ header {
         text-align: center;
         position: relative;
         margin-left: -130px; }
-        #block3 #wrapper #tabs-container .t2 .block h3 {
+        #block3 .wrapper #tabs-container .t2 .block h3 {
           font-size: 30px;
           font-weight: 100;
           margin-bottom: 30px; }
-        #block3 #wrapper #tabs-container .t2 .block .description-t2 {
+        #block3 .wrapper #tabs-container .t2 .block .description-t2 {
           width: 475px;
           font-size: 18px;
           display: block;
           margin: 0 auto;
           padding-bottom: 35px; }
-        #block3 #wrapper #tabs-container .t2 .block .our-work {
+        #block3 .wrapper #tabs-container .t2 .block .our-work {
           font-size: 18px;
           margin-bottom: 40px; }
-        #block3 #wrapper #tabs-container .t2 .block #list-in-tab {
+        #block3 .wrapper #tabs-container .t2 .block .list-in-tab {
           width: 925px;
           height: 400px;
           text-align: left;
           position: relative;
           line-height: 1.3; }
-          #block3 #wrapper #tabs-container .t2 .block #list-in-tab #tab-logo {
+          #block3 .wrapper #tabs-container .t2 .block .list-in-tab .tab-logo {
             background-image: url(../images/logo-t1.png);
             background-repeat: no-repeat;
             background-position: center;
@@ -687,76 +688,76 @@ header {
             left: -40px;
             bottom: -80px;
             z-index: 10; }
-          #block3 #wrapper #tabs-container .t2 .block #list-in-tab .left {
+          #block3 .wrapper #tabs-container .t2 .block .list-in-tab .left {
             float: left;
             position: relative;
             width: 255px;
             height: 400px; }
-            #block3 #wrapper #tabs-container .t2 .block #list-in-tab .left li::after {
+            #block3 .wrapper #tabs-container .t2 .block .list-in-tab .left li::after {
               content: "";
               background-repeat: no-repeat;
               position: absolute;
               z-index: 1; }
-            #block3 #wrapper #tabs-container .t2 .block #list-in-tab .left li:nth-child(1)::after {
+            #block3 .wrapper #tabs-container .t2 .block .list-in-tab .left li:nth-child(1)::after {
               width: 204px;
               height: 100px;
               background-image: url(../images/line-variants.png);
               top: 20px;
               left: 185px; }
-            #block3 #wrapper #tabs-container .t2 .block #list-in-tab .left li:first-child {
+            #block3 .wrapper #tabs-container .t2 .block .list-in-tab .left li:first-child {
               margin-bottom: 55px; }
-            #block3 #wrapper #tabs-container .t2 .block #list-in-tab .left li:nth-child(2)::after {
+            #block3 .wrapper #tabs-container .t2 .block .list-in-tab .left li:nth-child(2)::after {
               width: 150px;
               height: 1px;
               background-image: url(../images/line-calls.png);
               bottom: 130px;
               left: 230px; }
-          #block3 #wrapper #tabs-container .t2 .block #list-in-tab .right {
+          #block3 .wrapper #tabs-container .t2 .block .list-in-tab .right {
             float: right;
             position: relative;
             width: 260px;
             height: 410px; }
-            #block3 #wrapper #tabs-container .t2 .block #list-in-tab .right li::before {
+            #block3 .wrapper #tabs-container .t2 .block .list-in-tab .right li::before {
               content: "";
               position: absolute;
               z-index: 1;
               background-repeat: no-repeat; }
-            #block3 #wrapper #tabs-container .t2 .block #list-in-tab .right li:nth-child(1)::before {
+            #block3 .wrapper #tabs-container .t2 .block .list-in-tab .right li:nth-child(1)::before {
               width: 82px;
               height: 82px;
               top: 24px;
               right: 265px;
               background-image: url(../images/line-comfort.png); }
-            #block3 #wrapper #tabs-container .t2 .block #list-in-tab .right li:nth-child(2) {
+            #block3 .wrapper #tabs-container .t2 .block .list-in-tab .right li:nth-child(2) {
               margin: 40px 0 40px 0; }
-            #block3 #wrapper #tabs-container .t2 .block #list-in-tab .right li:nth-child(2)::before {
+            #block3 .wrapper #tabs-container .t2 .block .list-in-tab .right li:nth-child(2)::before {
               width: 144px;
               height: 1px;
               bottom: 255px;
               right: 267px;
               background-image: url(../images/line-conversation.png); }
-            #block3 #wrapper #tabs-container .t2 .block #list-in-tab .right li:nth-child(3)::before {
+            #block3 .wrapper #tabs-container .t2 .block .list-in-tab .right li:nth-child(3)::before {
               width: 93px;
               height: 1px;
               bottom: 105px;
               right: 268px;
               background-image: url(../images/line-conversation.png); }
-          #block3 #wrapper #tabs-container .t2 .block #list-in-tab p {
+          #block3 .wrapper #tabs-container .t2 .block .list-in-tab p {
             font-size: 14px; }
-            #block3 #wrapper #tabs-container .t2 .block #list-in-tab p span {
+            #block3 .wrapper #tabs-container .t2 .block .list-in-tab p span {
               font-family: Brutal Type Medium, Arial, serif;
               font-size: 18px; }
-        #block3 #wrapper #tabs-container .t2 .block .our-values-t2 {
+        #block3 .wrapper #tabs-container .t2 .block .our-values-t2 {
           width: 645px;
           margin: 0 auto;
           padding: 50px 0 35px 0;
           font-size: 18px; }
-        #block3 #wrapper #tabs-container .t2 .block .more-info {
+        #block3 .wrapper #tabs-container .t2 .block .more-info {
           width: 630px;
           display: block;
           margin: 0 auto;
           font-size: 18px; }
-        #block3 #wrapper #tabs-container .t2 .block .callback-btn {
+        #block3 .wrapper #tabs-container .t2 .block .callback-btn {
           display: block;
           width: 255px;
           height: 60px;
@@ -773,9 +774,9 @@ header {
           -moz-transition: all 0.3s 0.01s ease;
           -o-transition: all 0.3s 0.01s ease;
           -webkit-transition: all 0.3s 0.01s ease; }
-        #block3 #wrapper #tabs-container .t2 .block .callback-btn:hover {
+        #block3 .wrapper #tabs-container .t2 .block .callback-btn:hover {
           background: #65a9df; }
-      #block3 #wrapper #tabs-container .t3 .block {
+      #block3 .wrapper #tabs-container .t3 .block {
         width: 1080px;
         height: 975px;
         float: right;
@@ -784,27 +785,27 @@ header {
         text-align: center;
         position: relative;
         margin-left: -130px; }
-        #block3 #wrapper #tabs-container .t3 .block h3 {
+        #block3 .wrapper #tabs-container .t3 .block h3 {
           font-size: 30px;
           font-weight: 100;
           margin-bottom: 30px; }
-        #block3 #wrapper #tabs-container .t3 .block .description-t3 {
+        #block3 .wrapper #tabs-container .t3 .block .description-t3 {
           width: 475px;
           font-size: 18px;
           display: block;
           margin: 0 auto;
           padding-bottom: 35px; }
-        #block3 #wrapper #tabs-container .t3 .block .our-work {
+        #block3 .wrapper #tabs-container .t3 .block .our-work {
           font-size: 18px;
           margin-bottom: 40px; }
-        #block3 #wrapper #tabs-container .t3 .block #list-in-tab {
+        #block3 .wrapper #tabs-container .t3 .block .list-in-tab {
           width: 925px;
           height: 490px;
           text-align: left;
           position: relative;
           line-height: 1.3;
           margin-bottom: 55px; }
-          #block3 #wrapper #tabs-container .t3 .block #list-in-tab #tab-logo {
+          #block3 .wrapper #tabs-container .t3 .block .list-in-tab .tab-logo {
             background-image: url(../images/logo-t1.png);
             background-repeat: no-repeat;
             background-position: center;
@@ -814,81 +815,81 @@ header {
             left: -40px;
             bottom: -80px;
             z-index: 10; }
-          #block3 #wrapper #tabs-container .t3 .block #list-in-tab .left {
+          #block3 .wrapper #tabs-container .t3 .block .list-in-tab .left {
             float: left;
             position: relative;
             width: 305px;
             height: 525px; }
-            #block3 #wrapper #tabs-container .t3 .block #list-in-tab .left p span {
+            #block3 .wrapper #tabs-container .t3 .block .list-in-tab .left p span {
               font-family: Brutal Type Medium, Arial, serif;
               font-size: 18px; }
-            #block3 #wrapper #tabs-container .t3 .block #list-in-tab .left li::after {
+            #block3 .wrapper #tabs-container .t3 .block .list-in-tab .left li::after {
               content: "";
               background-repeat: no-repeat;
               position: absolute;
               z-index: 1; }
-            #block3 #wrapper #tabs-container .t3 .block #list-in-tab .left li:nth-child(1)::after {
+            #block3 .wrapper #tabs-container .t3 .block .list-in-tab .left li:nth-child(1)::after {
               background-image: url(../images/line-rent1.png);
               width: 110px;
               height: 105px;
               top: 17px;
               left: 275px; }
-            #block3 #wrapper #tabs-container .t3 .block #list-in-tab .left li:nth-child(2) {
+            #block3 .wrapper #tabs-container .t3 .block .list-in-tab .left li:nth-child(2) {
               margin: 65px 0 45px 35px; }
-            #block3 #wrapper #tabs-container .t3 .block #list-in-tab .left li:nth-child(2)::after {
+            #block3 .wrapper #tabs-container .t3 .block .list-in-tab .left li:nth-child(2)::after {
               width: 150px;
               height: 1px;
               background-image: url(../images/line-calls.png);
               bottom: 245px;
               left: 198px; }
-            #block3 #wrapper #tabs-container .t3 .block #list-in-tab .left li:nth-child(3)::after {
+            #block3 .wrapper #tabs-container .t3 .block .list-in-tab .left li:nth-child(3)::after {
               background-image: url(../images/line-rent2.png);
               width: 150px;
               height: 81px;
               bottom: 108px;
               left: 310px; }
-          #block3 #wrapper #tabs-container .t3 .block #list-in-tab .right {
+          #block3 .wrapper #tabs-container .t3 .block .list-in-tab .right {
             float: right;
             position: relative;
             width: 260px;
             height: 525px; }
-            #block3 #wrapper #tabs-container .t3 .block #list-in-tab .right li::before {
+            #block3 .wrapper #tabs-container .t3 .block .list-in-tab .right li::before {
               content: "";
               position: absolute;
               z-index: 1;
               background-repeat: no-repeat; }
-            #block3 #wrapper #tabs-container .t3 .block #list-in-tab .right li:nth-child(1)::before {
+            #block3 .wrapper #tabs-container .t3 .block .list-in-tab .right li:nth-child(1)::before {
               width: 100px;
               height: 1px;
               top: 163px;
               right: 257px;
               background-image: url(../images/line-calls.png); }
-            #block3 #wrapper #tabs-container .t3 .block #list-in-tab .right li:nth-child(2) {
+            #block3 .wrapper #tabs-container .t3 .block .list-in-tab .right li:nth-child(2) {
               margin: 30px 0 40px -50px; }
-            #block3 #wrapper #tabs-container .t3 .block #list-in-tab .right li:nth-child(2)::before {
+            #block3 .wrapper #tabs-container .t3 .block .list-in-tab .right li:nth-child(2)::before {
               width: 83px;
               height: 1px;
               top: 248px;
               right: 315px;
               background-image: url(../images/line-conversation.png); }
-            #block3 #wrapper #tabs-container .t3 .block #list-in-tab .right li:nth-child(3)::before {
+            #block3 .wrapper #tabs-container .t3 .block .list-in-tab .right li:nth-child(3)::before {
               width: 100px;
               height: 1px;
               bottom: 160px;
               right: 258px;
               background-image: url(../images/line-calls.png); }
-          #block3 #wrapper #tabs-container .t3 .block #list-in-tab p {
+          #block3 .wrapper #tabs-container .t3 .block .list-in-tab p {
             font-size: 14px; }
-            #block3 #wrapper #tabs-container .t3 .block #list-in-tab p span {
+            #block3 .wrapper #tabs-container .t3 .block .list-in-tab p span {
               font-family: Brutal Type Medium, Arial, serif;
               font-size: 18px; }
-        #block3 #wrapper #tabs-container .t3 .block .more-info {
+        #block3 .wrapper #tabs-container .t3 .block .more-info {
           width: 630px;
           display: block;
           margin: 0 auto;
           font-size: 18px;
           margin-top: 80px; }
-        #block3 #wrapper #tabs-container .t3 .block .callback-btn {
+        #block3 .wrapper #tabs-container .t3 .block .callback-btn {
           display: block;
           width: 255px;
           height: 60px;
@@ -905,7 +906,7 @@ header {
           -moz-transition: all 0.3s 0.01s ease;
           -o-transition: all 0.3s 0.01s ease;
           -webkit-transition: all 0.3s 0.01s ease; }
-        #block3 #wrapper #tabs-container .t3 .block .callback-btn:hover {
+        #block3 .wrapper #tabs-container .t3 .block .callback-btn:hover {
           background: #65a9df; }
   #block3 .rombs-block3 {
     width: 811px;
@@ -927,6 +928,16 @@ header {
     width: 1205px;
     position: relative;
     margin: 0 auto; }
+    @media (min-width: 970px) {
+      #block4 .block4-wrapper {
+        max-width: 100%;
+        width: auto;
+        padding: 0 60px 0 60px; } }
+    @media screen and (max-width: 780px) {
+      #block4 .block4-wrapper {
+        max-width: 100%;
+        width: 640px;
+        padding: 0 60px 0 60px; } }
     #block4 .block4-wrapper .bx-wrapper {
       margin-bottom: 0 !important;
       -moz-box-shadow: none;
@@ -939,18 +950,29 @@ header {
         overflow: hidden;
         position: relative;
         height: 340px !important; }
+        @media screen and (max-width: 780px) {
+          #block4 .block4-wrapper .bx-wrapper .bx-viewport {
+            height: 325px !important; } }
         #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row {
           width: 1110px;
           height: 340px;
           display: flex;
           justify-content: center;
           align-items: center; }
+          @media screen and (max-width: 780px) {
+            #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row {
+              height: 325px; } }
           #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row .review {
             width: 635px;
             position: relative;
             color: #fff;
             font-size: 24px;
             line-height: 30px; }
+            @media screen and (max-width: 780px) {
+              #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row .review {
+                width: 480px;
+                font-size: 18px;
+                line-height: 25px; } }
             #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row .review .author {
               position: absolute;
               bottom: -45px;
@@ -965,6 +987,11 @@ header {
             position: absolute;
             bottom: -35px;
             left: -125px; }
+            @media screen and (max-width: 780px) {
+              #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row .review::before {
+                background-image: url(../images/quote-1-mobile.png);
+                bottom: -80px;
+                left: -80px; } }
           #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row .review::after {
             content: "";
             width: 92px;
@@ -975,6 +1002,11 @@ header {
             position: absolute;
             top: -25px;
             right: -120px; }
+            @media screen and (max-width: 780px) {
+              #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row .review::after {
+                background-image: url(../images/quote-2-mobile.png);
+                top: -70px;
+                right: -75px; } }
       #block4 .block4-wrapper .bx-wrapper .bx-controls-direction a {
         position: absolute;
         top: 50%;
@@ -1133,49 +1165,49 @@ footer {
       -webkit-transition: all 0.3s 0.01s ease; }
     footer .callback .submit:hover {
       background: #65a9df; }
-  footer #wrapper {
+  footer .wrapper {
     width: 1110px;
     position: relative;
     margin: 0 auto; }
-    footer #wrapper .text {
+    footer .wrapper .text {
       color: #fff;
       font-size: 12px; }
-    footer #wrapper .company {
+    footer .wrapper .company {
       float: left;
       width: 265px;
       height: 200px;
       line-height: 1.2;
       margin-top: 15px; }
-      footer #wrapper .company .footer-logo img {
+      footer .wrapper .company .footer-logo img {
         margin: 0 30px 0 -5px; }
-      footer #wrapper .company .footer-column1 {
+      footer .wrapper .company .footer-column1 {
         margin: 25px 0 0 10px;
         line-height: 1.5; }
-        footer #wrapper .company .footer-column1 a {
+        footer .wrapper .company .footer-column1 a {
           color: #fff;
           font-size: 12px;
           -moz-transition: all 0.3s 0.01s ease;
           -o-transition: all 0.3s 0.01s ease;
           -webkit-transition: all 0.3s 0.01s ease; }
-        footer #wrapper .company .footer-column1 a:hover {
+        footer .wrapper .company .footer-column1 a:hover {
           color: #65a9df; }
-        footer #wrapper .company .footer-column1 .vertical {
+        footer .wrapper .company .footer-column1 .vertical {
           display: none; }
-        footer #wrapper .company .footer-column1 ul.submenu {
+        footer .wrapper .company .footer-column1 ul.submenu {
           margin-left: 10px; }
-    footer #wrapper .footer-copyright {
+    footer .wrapper .footer-copyright {
       float: right;
       text-align: right;
       line-height: 1.5; }
-      footer #wrapper .footer-copyright .indent {
+      footer .wrapper .footer-copyright .indent {
         margin-top: 20px; }
-      footer #wrapper .footer-copyright .footer-social {
+      footer .wrapper .footer-copyright .footer-social {
         padding: 15px 0 5px 0; }
-        footer #wrapper .footer-copyright .footer-social a {
+        footer .wrapper .footer-copyright .footer-social a {
           -moz-transition: all 0.3s 0.01s ease;
           -o-transition: all 0.3s 0.01s ease;
           -webkit-transition: all 0.3s 0.01s ease; }
-        footer #wrapper .footer-copyright .footer-social a:first-child {
+        footer .wrapper .footer-copyright .footer-social a:first-child {
           margin-right: 15px; }
-        footer #wrapper .footer-copyright .footer-social a:hover {
+        footer .wrapper .footer-copyright .footer-social a:hover {
           opacity: 0.7; }

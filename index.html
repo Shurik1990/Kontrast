@@ -9,9 +9,9 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<title>Контраст</title>
-	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="js/jquery.bxslider.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/main.js"></script>
 	<script>
 		$(document).ready(function(){
 		  $('.slider').bxSlider();
@@ -21,7 +21,7 @@
 <body>
 	<div class="layout">
 		<header id="header">
-			<div id="wrapper">
+			<div class="wrapper">
 				<div class="header-strip">
 					<a class="header-logo" href="#"></a>
 					<div class="contact">
@@ -48,7 +48,7 @@
 					</ul>
 				</nav>
 			</div>
-			<div id="wrapper">
+			<div class="wrapper">
 				<div class="social">
 					<a href="https://www.facebook.com/">
 						<img src="images/header-facebook.png" alt="Facebook" title="Facebook">
@@ -66,8 +66,8 @@
 			<div class="rombs"></div>
 		</header>
 		<main>
-			<section id="block1">
-				<div id="wrapper">
+			<div id="block1">
+				<div class="wrapper">
 					<div class="block1-logo"></div>
 					<div class="block1-text">
 						<div class="block1-indent">
@@ -96,8 +96,8 @@
 						</div>
 					</div>
 				</div>
-			</section>
-			<section id="block2">
+			</div>
+			<div id="block2">
 				<div class="block2-line"></div>
 				<div class="block2-wrapper">
 					<div class="card1">
@@ -126,9 +126,9 @@
 					</div>
 				</div>
 				<div class="block2-line-bottom"></div>
-			</section>
-			<section id="block3">
-				<div id="wrapper">
+			</div>
+			<div id="block3">
+				<div class="wrapper">
 				<ul id="tabs" class="tabs">
 						<li class="t1"><a class="link-1" href="#t1"></a><p class="tabs-1">Продавцу</p></li>
 						<li class="t2"><a class="link-2" href="#t2"></a><p class="tabs-2">Покупателю</p></li>
@@ -140,8 +140,8 @@
 								<h3>Продажа недвижимости</h3>
 								<p class="description-t1">- это не везение и не лотерея. Это управляемый процесс. И у нас есть технология для управления им. Наша задача - выбрать лучшего покупателя из всех имеющихся на рынке. Благодаря этому вы получите желаемую сумму за объект в оговоренные сроки</p>
 								<p class="our-work">Преимущества работы с нами:</p>
-								<div id="list-in-tab">
-									<div id="tab-logo"></div>
+								<div class="list-in-tab">
+									<div class="tab-logo"></div>
 									<ul class="left">
 										<li>
 											<p><span>Сервис</span><br>Вы не будете переживать о каждой детали, мы обо всем позаботимся<br>и подготовим отчет</p>
@@ -178,8 +178,8 @@
 								<h3>Покупка недвижимости</h3>
 								<p class="description-t2">- это непросто и ответственно. Из массы предложений нужно отфильтровать лучшее и вложится в бюджет.<br>Именно за этим и обращаются к нам</p>
 								<p class="our-work">Что мы для вас сделаем:</p>
-								<div id="list-in-tab">
-									<div id="tab-logo"></div>
+								<div class="list-in-tab">
+									<div class="tab-logo"></div>
 									<ul class="left">
 										<li>
 											<p><span>Подберем варианты</span><br>Сущесвуют разные источники,<br>о которых вы можете не знать. Проанализируем сущесвующие предложения, отберем актуальные. Таким образом, вы экономите <br>свое время</p>
@@ -210,8 +210,8 @@
 								<h3>Аренда</h3>
 								<p class="description-t3">По вашему запросу мы с радостью займемся арендой</p>
 								<p class="our-work">Поможем как сдать, так и найти недвижимость</p>
-								<div id="list-in-tab">
-									<div id="tab-logo"></div>
+								<div class="list-in-tab">
+									<div class="tab-logo"></div>
 									<ul class="left">
 										<li>
 											<p>Наши менеджеры легко ориентируются <br>в большом потоке вариантов и клиентов. <span>Отстоят ваши интересы</span>, если потребуется о чем то договариваться</p>
@@ -242,8 +242,8 @@
 					</div>
 				</div>
 				<div class="rombs-block3"></div>
-			</section>
-			<section id="block4">
+			</div>
+			<div id="block4">
 				<div class="block4-wrapper">
 					<div class="slider">
 						<div class="slider-row">
@@ -258,8 +258,8 @@
 						</div>
 					</div>
 				</div>
-			</section>
-			<section id="block5">
+			</div>
+			<div id="block5">
 				<div class="block5-wrapper">
 					<h2>Наша команда</h2>
 					<div class="slider">
@@ -301,7 +301,7 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</div>
 		</main>
 		<footer id="footer">
 			<div class="callback">
@@ -312,7 +312,7 @@
 					<input type="submit" class="submit" id="submit" value="Перезвоните мне">
 				</form>
 			</div>
-			<div id="wrapper">
+			<div class="wrapper">
 				<div class="company">
 					<p class="footer-logo">
 						<a href="#header"><img alt="Контраст" title="Контраст" src="images/footer-logo.png"></a>
