@@ -96,6 +96,7 @@ input:focus::-webkit-input-placeholder {
 /*usage  @include font-size(13);*/
 /* Fonts ------------------------------------------------*/
 /* Colors ------------------------------------------------*/
+/* Media Queries */
 html {
   scroll-behavior: smooth; }
 
@@ -924,20 +925,34 @@ header {
   height: 340px;
   background: #414f7e;
   box-sizing: border-box; }
+  @media only screen and (max-width: 1300px) and (min-width: 768px) {
+    #block4 {
+      height: 325px; } }
+  @media only screen and (max-width: 768px) and (min-width: 541px) {
+    #block4 {
+      height: 325px; } }
+  @media only screen and (max-width: 540px) {
+    #block4 {
+      height: 325px; } }
   #block4 .block4-wrapper {
     width: 1205px;
     position: relative;
     margin: 0 auto; }
-    @media (min-width: 970px) {
+    @media only screen and (max-width: 1300px) and (min-width: 768px) {
       #block4 .block4-wrapper {
-        max-width: 100%;
-        width: auto;
-        padding: 0 60px 0 60px; } }
-    @media screen and (max-width: 780px) {
+        width: 640px; } }
+    @media only screen and (max-width: 768px) and (min-width: 541px) {
       #block4 .block4-wrapper {
-        max-width: 100%;
-        width: 640px;
-        padding: 0 60px 0 60px; } }
+        width: 640px; } }
+    @media only screen and (max-width: 540px) {
+      #block4 .block4-wrapper {
+        width: 480px; } }
+    @media only screen and (max-width: 650px) and (min-width: 541px) {
+      #block4 .block4-wrapper {
+        width: 450px; } }
+    @media only screen and (max-width: 495px) {
+      #block4 .block4-wrapper {
+        width: 320px; } }
     #block4 .block4-wrapper .bx-wrapper {
       margin-bottom: 0 !important;
       -moz-box-shadow: none;
@@ -950,7 +965,16 @@ header {
         overflow: hidden;
         position: relative;
         height: 340px !important; }
-        @media screen and (max-width: 780px) {
+        @media only screen and (max-width: 1300px) and (min-width: 768px) {
+          #block4 .block4-wrapper .bx-wrapper .bx-viewport {
+            height: 325px !important; } }
+        @media only screen and (max-width: 768px) and (min-width: 541px) {
+          #block4 .block4-wrapper .bx-wrapper .bx-viewport {
+            height: 325px !important; } }
+        @media only screen and (max-width: 540px) {
+          #block4 .block4-wrapper .bx-wrapper .bx-viewport {
+            height: 325px !important; } }
+        @media only screen and (max-width: 495px) {
           #block4 .block4-wrapper .bx-wrapper .bx-viewport {
             height: 325px !important; } }
         #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row {
@@ -959,24 +983,57 @@ header {
           display: flex;
           justify-content: center;
           align-items: center; }
-          @media screen and (max-width: 780px) {
+          @media only screen and (max-width: 1300px) and (min-width: 768px) {
             #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row {
               height: 325px; } }
+          @media only screen and (max-width: 768px) and (min-width: 541px) {
+            #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row {
+              height: 325px; } }
+          @media only screen and (max-width: 540px) {
+            #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row {
+              height: 325px !important; } }
+          @media only screen and (max-width: 495px) {
+            #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row {
+              height: 325px !important; } }
           #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row .review {
             width: 635px;
             position: relative;
             color: #fff;
             font-size: 24px;
             line-height: 30px; }
-            @media screen and (max-width: 780px) {
+            @media only screen and (max-width: 1300px) and (min-width: 768px) {
               #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row .review {
                 width: 480px;
                 font-size: 18px;
                 line-height: 25px; } }
+            @media only screen and (max-width: 768px) and (min-width: 541px) {
+              #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row .review {
+                width: 480px;
+                font-size: 18px;
+                line-height: 25px; } }
+            @media only screen and (max-width: 540px) {
+              #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row .review {
+                width: 365px;
+                font-size: 18px;
+                line-height: 25px; } }
+            @media only screen and (max-width: 650px) and (min-width: 541px) {
+              #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row .review {
+                width: 365px;
+                font-size: 18px;
+                line-height: 25px; } }
+            @media only screen and (max-width: 495px) {
+              #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row .review {
+                width: 315px;
+                font-size: 14px;
+                line-height: 16px; } }
             #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row .review .author {
               position: absolute;
               bottom: -45px;
               right: -25px; }
+              @media only screen and (max-width: 495px) {
+                #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row .review .author {
+                  bottom: -30px;
+                  right: 0; } }
           #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row .review::before {
             content: "";
             width: 92px;
@@ -987,11 +1044,33 @@ header {
             position: absolute;
             bottom: -35px;
             left: -125px; }
-            @media screen and (max-width: 780px) {
+            @media only screen and (max-width: 1300px) and (min-width: 768px) {
               #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row .review::before {
                 background-image: url(../images/quote-1-mobile.png);
                 bottom: -80px;
                 left: -80px; } }
+            @media only screen and (max-width: 768px) and (min-width: 541px) {
+              #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row .review::before {
+                background-image: url(../images/quote-1-mobile.png);
+                bottom: -80px;
+                left: -80px; } }
+            @media only screen and (max-width: 540px) {
+              #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row .review::before {
+                background-image: url(../images/quote-1-mobile.png);
+                bottom: -70px;
+                left: -40px; } }
+            @media only screen and (max-width: 650px) and (min-width: 541px) {
+              #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row .review::before {
+                background-image: url(../images/quote-1-mobile.png);
+                bottom: -70px;
+                left: -40px; } }
+            @media only screen and (max-width: 495px) {
+              #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row .review::before {
+                width: 80px;
+                height: 60px;
+                background-image: url(../images/quote-1-mobile.png);
+                bottom: -60px;
+                left: 0; } }
           #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row .review::after {
             content: "";
             width: 92px;
@@ -1002,11 +1081,33 @@ header {
             position: absolute;
             top: -25px;
             right: -120px; }
-            @media screen and (max-width: 780px) {
+            @media only screen and (max-width: 1300px) and (min-width: 768px) {
               #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row .review::after {
                 background-image: url(../images/quote-2-mobile.png);
                 top: -70px;
                 right: -75px; } }
+            @media only screen and (max-width: 768px) and (min-width: 541px) {
+              #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row .review::after {
+                background-image: url(../images/quote-2-mobile.png);
+                top: -70px;
+                right: -75px; } }
+            @media only screen and (max-width: 540px) {
+              #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row .review::after {
+                background-image: url(../images/quote-2-mobile.png);
+                top: -70px;
+                right: -40px; } }
+            @media only screen and (max-width: 650px) and (min-width: 541px) {
+              #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row .review::after {
+                background-image: url(../images/quote-2-mobile.png);
+                top: -70px;
+                right: -40px; } }
+            @media only screen and (max-width: 495px) {
+              #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row .review::after {
+                width: 80px;
+                height: 60px;
+                background-image: url(../images/quote-2-mobile.png);
+                top: -60px;
+                right: 0; } }
       #block4 .block4-wrapper .bx-wrapper .bx-controls-direction a {
         position: absolute;
         top: 50%;
@@ -1019,9 +1120,15 @@ header {
       #block4 .block4-wrapper .bx-wrapper .bx-controls-direction .bx-prev {
         left: 0;
         background: url(../images/slider-arrow-left.png) no-repeat 0 0 !important; }
+        @media only screen and (max-width: 495px) {
+          #block4 .block4-wrapper .bx-wrapper .bx-controls-direction .bx-prev {
+            display: none; } }
       #block4 .block4-wrapper .bx-wrapper .bx-controls-direction .bx-next {
         right: 0;
         background: url(../images/slider-arrow-right.png) no-repeat 0 0 !important; }
+        @media only screen and (max-width: 495px) {
+          #block4 .block4-wrapper .bx-wrapper .bx-controls-direction .bx-next {
+            display: none; } }
       #block4 .block4-wrapper .bx-wrapper .bx-pager {
         display: none; }
 
@@ -1031,10 +1138,31 @@ header {
   background: #c3e0f8;
   padding: 50px 0px 50px 0px;
   box-sizing: border-box; }
+  @media only screen and (max-width: 1300px) and (min-width: 768px) {
+    #block5 {
+      height: 985px;
+      padding: 25px 0px 25px 0px; } }
+  @media only screen and (max-width: 768px) and (min-width: 541px) {
+    #block5 {
+      height: 985px;
+      padding: 25px 0px 25px 0px; } }
+  @media only screen and (max-width: 540px) {
+    #block5 {
+      height: 1790px;
+      padding: 25px 0px 25px 0px; } }
   #block5 .block5-wrapper {
     width: 1205px;
     position: relative;
     margin: 0 auto; }
+    @media only screen and (max-width: 1300px) and (min-width: 768px) {
+      #block5 .block5-wrapper {
+        width: 100%; } }
+    @media only screen and (max-width: 768px) and (min-width: 541px) {
+      #block5 .block5-wrapper {
+        width: 100%; } }
+    @media only screen and (max-width: 540px) {
+      #block5 .block5-wrapper {
+        width: 100%; } }
     #block5 .block5-wrapper h2 {
       font-size: 30px;
       font-weight: 100;
@@ -1051,18 +1179,65 @@ header {
         overflow: hidden;
         position: relative;
         height: 452px !important; }
+        @media only screen and (max-width: 1300px) and (min-width: 768px) {
+          #block5 .block5-wrapper .bx-wrapper .bx-viewport {
+            height: 985px !important; } }
+        @media only screen and (max-width: 768px) and (min-width: 541px) {
+          #block5 .block5-wrapper .bx-wrapper .bx-viewport {
+            height: 985px !important; } }
+        @media only screen and (max-width: 540px) {
+          #block5 .block5-wrapper .bx-wrapper .bx-viewport {
+            height: 1790px !important; } }
+        @media only screen and (max-width: 1300px) and (min-width: 768px) {
+          #block5 .block5-wrapper .bx-wrapper .bx-viewport .slider {
+            width: 580px !important;
+            margin: 0 auto; } }
         #block5 .block5-wrapper .bx-wrapper .bx-viewport .slider .slider-row {
           height: 400px;
           width: 1110px;
           margin-top: 50px;
           display: flex;
           justify-content: center; }
+          @media only screen and (max-width: 1300px) and (min-width: 768px) {
+            #block5 .block5-wrapper .bx-wrapper .bx-viewport .slider .slider-row {
+              float: none !important;
+              width: 580px !important;
+              margin-top: 30px;
+              height: 985px;
+              display: grid;
+              grid-template: 421px 421px/1fr 1fr;
+              justify-items: center;
+              grid-gap: 30px; } }
+          @media only screen and (max-width: 768px) and (min-width: 541px) {
+            #block5 .block5-wrapper .bx-wrapper .bx-viewport .slider .slider-row {
+              margin-top: 30px;
+              height: 985px;
+              display: grid;
+              grid-template: 421px 421px/1fr 1fr;
+              justify-items: center;
+              grid-gap: 30px; } }
+          @media only screen and (max-width: 540px) {
+            #block5 .block5-wrapper .bx-wrapper .bx-viewport .slider .slider-row {
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+              flex-wrap: wrap; } }
           #block5 .block5-wrapper .bx-wrapper .bx-viewport .slider .slider-row .person {
             width: 256px;
             height: 402px;
             position: relative;
             z-index: 1;
             margin-right: 30px; }
+            @media only screen and (max-width: 1300px) and (min-width: 768px) {
+              #block5 .block5-wrapper .bx-wrapper .bx-viewport .slider .slider-row .person {
+                margin-right: 0; } }
+            @media only screen and (max-width: 768px) and (min-width: 541px) {
+              #block5 .block5-wrapper .bx-wrapper .bx-viewport .slider .slider-row .person {
+                margin-right: 0; } }
+            @media only screen and (max-width: 540px) {
+              #block5 .block5-wrapper .bx-wrapper .bx-viewport .slider .slider-row .person {
+                margin-right: 0;
+                margin-bottom: 25px; } }
             #block5 .block5-wrapper .bx-wrapper .bx-viewport .slider .slider-row .person .person-name {
               width: 100%;
               height: 53px;
@@ -1091,9 +1266,27 @@ header {
       #block5 .block5-wrapper .bx-wrapper .bx-controls-direction .bx-prev {
         left: 0;
         background: url(../images/slider-arrow-left.png) no-repeat 0 0 !important; }
+        @media only screen and (max-width: 1300px) and (min-width: 768px) {
+          #block5 .block5-wrapper .bx-wrapper .bx-controls-direction .bx-prev {
+            display: none; } }
+        @media only screen and (max-width: 768px) and (min-width: 541px) {
+          #block5 .block5-wrapper .bx-wrapper .bx-controls-direction .bx-prev {
+            display: none; } }
+        @media only screen and (max-width: 540px) {
+          #block5 .block5-wrapper .bx-wrapper .bx-controls-direction .bx-prev {
+            display: none; } }
       #block5 .block5-wrapper .bx-wrapper .bx-controls-direction .bx-next {
         right: 0;
         background: url(../images/slider-arrow-right.png) no-repeat 0 0 !important; }
+        @media only screen and (max-width: 1300px) and (min-width: 768px) {
+          #block5 .block5-wrapper .bx-wrapper .bx-controls-direction .bx-next {
+            display: none; } }
+        @media only screen and (max-width: 768px) and (min-width: 541px) {
+          #block5 .block5-wrapper .bx-wrapper .bx-controls-direction .bx-next {
+            display: none; } }
+        @media only screen and (max-width: 540px) {
+          #block5 .block5-wrapper .bx-wrapper .bx-controls-direction .bx-next {
+            display: none; } }
       #block5 .block5-wrapper .bx-wrapper .bx-pager {
         display: none; }
 

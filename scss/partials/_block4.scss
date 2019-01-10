@@ -4,20 +4,36 @@
     background: $darkblue;
     box-sizing: border-box;
 	
+	@include respond-to($tablet-big) {
+		height: 325px;
+	}
+	@include respond-to($tablet-small) {
+		height: 325px;
+	}
+	@include respond-to($mobile) {
+		height: 325px;
+	}
+	
 	.block4-wrapper {
 		width: 1205px;
-			@media (min-width: 970px) {
-				max-width: 100%;
-				width: auto;
-				padding: 0 60px 0 60px;
-			}
-			@media screen and (max-width: 780px) {
-				max-width: 100%;
-				width: 640px;
-				padding: 0 60px 0 60px;
-			}
 		position: relative;
 		margin: 0 auto;
+		
+		@include respond-to($tablet-big) {
+			width: 640px;
+		}
+		@include respond-to($tablet-small) {
+			width: 640px;
+		}
+		@include respond-to($mobile) {
+			width: 480px;
+		}
+		@include respond-to($mobile-big) {
+			width: 450px;
+		}
+		@include respond-to($mobile-medium) {
+			width: 320px;
+		}
 		
 		.bx-wrapper {
 			margin-bottom: 0!important;
@@ -33,7 +49,16 @@
 				position: relative;
 				height: 340px !important;
 				
-				@media screen and (max-width: 780px) {
+				@include respond-to($tablet-big) {
+					height: 325px !important;
+				}
+				@include respond-to($tablet-small) {
+					height: 325px !important;
+				}
+				@include respond-to($mobile) {
+					height: 325px !important;
+				}
+				@include respond-to($mobile-medium) {
 					height: 325px !important;
 				}
 				
@@ -42,8 +67,17 @@
 					.slider-row {
 						width: 1110px;
 						height: 340px;
-						@media screen and (max-width: 780px) {
+						@include respond-to($tablet-big) {
 							height: 325px;
+						}
+						@include respond-to($tablet-small) {
+							height: 325px;
+						}
+						@include respond-to($mobile) {
+							height: 325px !important;
+						}
+						@include respond-to($mobile-medium) {
+							height: 325px !important;
 						}
 						display: flex;
 						justify-content: center;
@@ -55,17 +89,41 @@
 							color: $white;
 							font-size: 24px;
 							line-height: 30px;
-							
-							@media screen and (max-width: 780px) {
+							@include respond-to($tablet-big) {
 								width: 480px;
 								font-size: 18px;
 								line-height: 25px;
+							}
+							@include respond-to($tablet-small) {
+								width: 480px;
+								font-size: 18px;
+								line-height: 25px;
+							}
+							@include respond-to($mobile) {
+								width: 365px;
+								font-size: 18px;
+								line-height: 25px;
+							}
+							@include respond-to($mobile-big) {
+								width: 365px;
+								font-size: 18px;
+								line-height: 25px;
+							}
+							@include respond-to($mobile-medium) {
+								width: 315px;
+								font-size: 14px;
+								line-height: 16px;
 							}
 							
 							.author {
 								position: absolute;
 								bottom: -45px;
 								right: -25px;
+								
+								@include respond-to($mobile-medium) {
+									bottom: -30px;
+									right: 0;
+								}
 							}
 
 						}
@@ -81,10 +139,32 @@
 							bottom: -35px;
 							left: -125px;
 							
-							@media screen and (max-width: 780px) {
+							@include respond-to($tablet-big) {
 								background-image: url(../images/quote-1-mobile.png);
 								bottom: -80px;
 								left: -80px;
+							}
+							@include respond-to($tablet-small) {
+								background-image: url(../images/quote-1-mobile.png);
+								bottom: -80px;
+								left: -80px;
+							}
+							@include respond-to($mobile) {
+								background-image: url(../images/quote-1-mobile.png);
+								bottom: -70px;
+								left: -40px;
+							}
+							@include respond-to($mobile-big) {
+								background-image: url(../images/quote-1-mobile.png);
+								bottom: -70px;
+								left: -40px;
+							}
+							@include respond-to($mobile-medium) {
+								width: 80px;
+								height: 60px;
+								background-image: url(../images/quote-1-mobile.png);
+								bottom: -60px;
+								left: 0;
 							}
 						}
 							
@@ -99,12 +179,35 @@
 							top: -25px;
 							right: -120px;
 							
-							@media screen and (max-width: 780px) {
+							@include respond-to($tablet-big) {
 								background-image: url(../images/quote-2-mobile.png);
 								top: -70px;
 								right: -75px;
 							}
+							@include respond-to($tablet-small) {
+								background-image: url(../images/quote-2-mobile.png);
+								top: -70px;
+								right: -75px;
+							}
+							@include respond-to($mobile) {
+								background-image: url(../images/quote-2-mobile.png);
+								top: -70px;
+								right: -40px;
+							}
+							@include respond-to($mobile-big) {
+								background-image: url(../images/quote-2-mobile.png);
+								top: -70px;
+								right: -40px;
+							}
+							@include respond-to($mobile-medium) {
+								width: 80px;
+								height: 60px;
+								background-image: url(../images/quote-2-mobile.png);
+								top: -60px;
+								right: 0;
+							}
 						}
+						
 					}
 				}
 			}
@@ -125,11 +228,17 @@
 				.bx-prev {
 					left: 0;
 					background: url(../images/slider-arrow-left.png) no-repeat 0 0!important;
+					@include respond-to($mobile-medium) {
+						display: none;
+					}
 				}
 				
 				.bx-next {
 					right: 0;
 					background: url(../images/slider-arrow-right.png) no-repeat 0 0!important;
+					@include respond-to($mobile-medium) {
+						display: none;
+					}
 				}
 			}
 			

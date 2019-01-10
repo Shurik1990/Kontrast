@@ -12,3 +12,18 @@ $block1: #e6f1fa;
 $block2-p: #57607b;
 $footer-ph: #b2b1b1;
 $block5: #c3e0f8;
+
+/* Media Queries */
+$tablet-big: "(max-width: 1300px) and (min-width: 768px)";
+$tablet: "(max-width: 1000px) and (min-width: 768px)";
+$tablet-small: "(max-width: 768px) and (min-width: 541px)";
+$mobile-big: "(max-width: 650px) and (min-width: 541px)";
+$mobile: "(max-width: 540px)";
+$mobile-medium: "(max-width: 495px)";
+$mobile-small: "(max-width: 320px)";
+
+@mixin respond-to($media) {
+    @media only screen and #{$media} {
+        @content;
+    }
+}
