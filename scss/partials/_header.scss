@@ -8,11 +8,118 @@ header {
     overflow: visible;
     position: relative;
 	line-height: 1.5;
+	@include respond-to($tablet-big) {
+		height: 100vh;
+		width: 100%;
+		background-image: url(../images/header-mobile.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		overflow: visible;
+		position: relative;
+		line-height: 1.5;
+	}
+	@include respond-to($tablet-small) {
+		height: 100vh;
+		width: 100%;
+		background-image: url(../images/header-mobile.png);
+	}
+	@include respond-to($mobile) {
+		height: 100vh;
+		width: 100%;
+		background-image: url(../images/header-mobile-small.png);
+	}
+	
+	.header-callback {
+		display: none;
+		
+		@include respond-to($tablet-big) {
+			background: $darkblue;
+			color: $white;
+			font-size: 24px;
+			width: 270px;
+			height: 70px;
+			border-radius: 4px;
+			position: absolute;
+			padding: 0 35px 0 25px;
+			box-sizing: border-box;
+			top: 0;
+			right: 10%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			z-index: 1;
+			-moz-transition: all 0.3s 0.01s ease;
+			-o-transition: all 0.3s 0.01s ease;
+			-webkit-transition: all 0.3s 0.01s ease;
+			
+			@include respond-to($tablet-small) {
+				background: $darkblue;
+				color: $white;
+				font-size: 24px;
+				width: 270px;
+				height: 70px;
+				border-radius: 4px;
+				position: absolute;
+				padding: 0 35px 0 25px;
+				box-sizing: border-box;
+				top: 0;
+				right: 10%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				z-index: 1;
+				-moz-transition: all 0.3s 0.01s ease;
+				-o-transition: all 0.3s 0.01s ease;
+				-webkit-transition: all 0.3s 0.01s ease;
+			}
+			
+			@include respond-to($mobile) {
+				background: $darkblue;
+				color: $white;
+				font-size: 24px;
+				width: 270px;
+				height: 70px;
+				border-radius: 4px;
+				position: absolute;
+				padding: 0 35px 0 25px;
+				box-sizing: border-box;
+				top: 0;
+				right: 10%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				z-index: 1;
+				-moz-transition: all 0.3s 0.01s ease;
+				-o-transition: all 0.3s 0.01s ease;
+				-webkit-transition: all 0.3s 0.01s ease;
+			}
+			
+			img {
+				margin-right: 20px;
+			}
+		}
+	}
+	
+	.header-callback:hover {
+		background: $blue;
+	}
 	
 	.wrapper {
 		width: 1110px;
 		position: relative;
 		margin: 0 auto;
+		
+		@include respond-to($tablet-big) {
+			width: 80%;
+		}
+		
+		@include respond-to($tablet-small) {
+			width: 80%;
+		}
+		@include respond-to($mobile) {
+			width: 80%;
+		}
 		
 		.header-strip {
 			width: 100%;
@@ -20,6 +127,17 @@ header {
 			display: flex;
 			align-items: center;
 			position: relative;
+			
+			@include respond-to($tablet-big) {
+				height: 70px;
+			}
+			
+			@include respond-to($tablet-small) {
+				height: 70px;
+			}
+			@include respond-to($mobile) {
+				height: 70px;
+			}
 			
 			.header-logo {
 				width: 162px;
@@ -30,6 +148,42 @@ header {
 				position: absolute;
 				top: 35px;
 				left: calc(50% - 90px);
+				
+				@include respond-to($tablet-big) {
+					width: 206px;
+					height: 168px;
+					background-image: url(../images/block1-logo.png);
+					background-repeat: no-repeat;
+					background-size: cover;
+					position: absolute;
+					top: 30px;
+					left: 0;
+					z-index: 2;
+				}
+				
+				@include respond-to($tablet-small) {
+					width: 206px;
+					height: 168px;
+					background-image: url(../images/block1-logo.png);
+					background-repeat: no-repeat;
+					background-size: cover;
+					position: absolute;
+					top: 30px;
+					left: 0;
+					z-index: 2;
+				}
+				
+				@include respond-to($mobile) {
+					width: 155px;
+					height: 125px;
+					background-image: url(../images/logo.png);
+					background-repeat: no-repeat;
+					background-size: cover;
+					position: absolute;
+					top: 10px;
+					left: 0;
+					z-index: 2;
+				}
 			}
 			
 			.contact {
@@ -37,6 +191,17 @@ header {
 				top: 32px;
 				right: 0;
 				width: 210px;
+				
+				@include respond-to($tablet-big) {
+					display: none;
+				}
+				
+				@include respond-to($tablet-small) {
+					display: none;
+				}
+				@include respond-to($mobile) {
+					display: none;
+				}
 				
 				.number {
 					font-size: 23px;
@@ -63,6 +228,18 @@ header {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
+			
+			@include respond-to($tablet-big) {
+				display: none;
+			}
+			
+			@include respond-to($tablet-small) {
+				display: none;
+			}
+			
+			@include respond-to($mobile) {
+				display: none;
+			}
 			
 			ul {
 				display: flex;
@@ -95,6 +272,15 @@ header {
 				margin-left: -30px;
 				position: relative;
 				width: 275px;
+				@include respond-to($tablet-biggest) {
+					margin-right: 35%;
+				}
+				@include respond-to($tablet-small) {
+					display: none;
+				}
+				@include respond-to($mobile) {
+					display: none;
+				}
 			}
 			
 			ul.nav-right {
@@ -116,7 +302,6 @@ header {
 				visibility: hidden;
 				
 				a {
-				
 					font-size: 18px;
 					color: $darkblue;
 				}
@@ -131,7 +316,7 @@ header {
 				
 				li:hover {
 					color: $blue;
-					background: #fff;
+					background: $white;
 				}
 				
 			}
@@ -151,15 +336,85 @@ header {
 			flex-direction: column;
 			position: absolute;
 			right: 0;
+			@include respond-to($tablet-big) {
+				flex-direction: column-reverse;
+			}
+			@include respond-to($tablet-small) {
+				flex-direction: column-reverse;
+			}
+			@include respond-to($mobile) {
+				flex-direction: column-reverse;
+			}
+			
+			.mail-social {
+				display: none;
+				
+				@include respond-to($tablet-big) {
+					display: block;
+					margin-top: 40px;
+				}
+				@include respond-to($tablet-small) {
+					display: block;
+					margin-top: 40px;
+				}
+				@include respond-to($mobile) {
+					display: block;
+					margin-top: 40px;
+				}
+				
+				img {
+					width: 50px;
+					height: 35px;
+				}
+			}
 			
 			a {
 				-moz-transition: all 0.3s 0.01s ease;
 				-o-transition: all 0.3s 0.01s ease;
 				-webkit-transition: all 0.3s 0.01s ease;
+				
+				img {
+				
+					@include respond-to($tablet-big) {
+						width: 50px;
+						height: 50px;
+					}
+					@include respond-to($tablet-small) {
+						width: 50px;
+						height: 50px;
+					}
+					@include respond-to($mobile) {
+						width: 90%;
+					}
+				}
 			}
 			
 			a:first-child {
+				margin-top: 25px;
+				
+				@include respond-to($tablet-big) {
+					margin: 0;
+				}
+				@include respond-to($tablet-small) {
+					margin: 0;
+				}
+				@include respond-to($mobile) {
+					margin: 0;
+				}
+			}
+			
+			a:nth-child(2) {
 				margin: 25px 0 20px 0;
+				
+				@include respond-to($tablet-big) {
+					margin: 50px 0 50px 0;
+				}
+				@include respond-to($tablet-small) {
+					margin: 50px 0 50px 0;
+				}
+				@include respond-to($mobile) {
+					margin: 50px 0 50px 0;
+				}
 			}
 			
 			a:hover {
@@ -179,16 +434,49 @@ header {
 		right: 0;
 		margin: auto auto;
 		
+		@include respond-to($tablet-big) {
+			width: 700px;
+			height: 150px;
+		}
+		@include respond-to($tablet-small) {
+			width: 90%;
+			height: 150px;
+		}
+		@include respond-to($mobile) {
+			width: 90%;
+			height: 200px;
+		}
+		
 		h1 {
 		    font-size: 70px;
 			color: #fff;
 			font-weight: 100;
+			
+			@include respond-to($tablet-big) {
+				font-size: 60px;
+			}
+			@include respond-to($tablet-small) {
+				font-size: 60px;
+			}
+			@include respond-to($mobile) {
+				font-size: 3em;
+			}
 		}
 		
 		p {
 			font-size: 36px;
 			color: #fff;
 			margin-bottom: 75px;
+			
+			@include respond-to($tablet-big) {
+				font-size: 30px;
+			}
+			@include respond-to($tablet-small) {
+				font-size: 30px;
+			}
+			@include respond-to($mobile) {
+				font-size: 30px;
+			}
 		}
 		
 		.call {
@@ -201,12 +489,184 @@ header {
 			-moz-transition: all 0.3s 0.01s ease;
 			-o-transition: all 0.3s 0.01s ease;
 			-webkit-transition: all 0.3s 0.01s ease;
+			
+			@include respond-to($tablet-big) {
+				display: none;
+			}
+			@include respond-to($tablet-small) {
+				display: none;
+			}
+			@include respond-to($mobile) {
+				display: none;
+			}
 		}
 		
 		.call:hover {
 			background: $blue;
 			border: 1px solid $white-transparent;
 		}
+	}
+	
+	.mobile-menu {
+		display: none;
+		width: 80%;
+		height: 80px;
+		margin: 0 auto;
+		z-index: 1;
+		position: absolute;
+		bottom: 17px;
+		margin-left: 10%;
+		
+		@include respond-to($tablet-big) {
+			display: block;
+			z-index: 2;
+		}
+		@include respond-to($tablet-small) {
+			display: block;
+			z-index: 2;
+			width: 90%;
+			margin-left: 5%;
+		}
+		@include respond-to($mobile) {
+			display: block;
+			z-index: 2;
+			width: 95%;
+			margin-left: 2%;
+		}
+		
+		ul {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			
+			@include respond-to($tablet-small) {
+				justify-content: space-around;
+			}
+			@include respond-to($mobile) {
+				justify-content: space-around;
+			}
+			
+			li {
+				min-width: 150px;
+				width: 20%;
+				
+				@include respond-to($tablet-small) {
+					min-width: 110px;
+				}
+				@include respond-to($mobile) {
+					min-width: 19%;
+				}
+				
+				a {
+					background: $blue;
+					width: 100%;
+					height: 80px;
+					color: $white;
+					font-size: 18px;
+					border-radius: 6px;
+					display: flex;
+					justify-content: center;
+					flex-direction: column;
+					align-items: center;
+					-moz-transition: all 0.3s 0.01s ease;
+					-o-transition: all 0.3s 0.01s ease;
+					-webkit-transition: all 0.3s 0.01s ease;
+					
+					@include respond-to($mobile) {
+						font-size: 0.9em;
+					}
+					
+					img {
+					
+						@include respond-to($mobile) {
+							width: 30%;
+						}
+					}
+					
+					.fas {
+						font-size: 12px;
+						margin-left: 15px;
+						
+						@include respond-to($mobile) {
+							margin-left: 5px;
+						}
+					}
+				}
+				
+				a:hover {
+					background: $darkblue;
+				}
+			}
+			
+			li:nth-child(3) {
+				@include respond-to($tablet-small) {
+					min-width: 125px;
+				}
+				@include respond-to($mobile) {
+					min-width: 23%;
+					text-align: center;
+				}
+			}
+		}
+		
+		.submenu {
+			position: relative;
+		}
+		
+		.nav-contain {
+			position: absolute;
+			bottom: 110%;
+			display: inline-block;
+			visibility: hidden;
+				
+				li {
+					position: relative;
+					min-width: 130px;
+					-moz-transition: all 0.3s 0.01s ease;
+					-o-transition: all 0.3s 0.01s ease;
+					-webkit-transition: all 0.3s 0.01s ease;
+					
+					@include respond-to($mobile) {
+						min-width: 90px !important;
+					}
+					
+					li:nth-child(3) {
+						@include respond-to($mobile) {
+							min-width: 90px !important;
+						}
+					}
+					
+					a {
+						font-size: 18px;
+						color: $white;
+						height: 60px;
+						border-radius: 0;
+						background-color: $darkblue-transparent;
+						z-index: 2;
+						align-items: flex-start;
+						padding-left: 20px;
+						
+						@include respond-to($mobile) {
+							font-size: 14px;
+							height: 40px;
+						}
+					}
+					
+					a:hover {
+						background: $white-transparent;
+					}
+				}
+				
+		}
+			
+		.nav-contain > li > a {
+			position: relative;
+		}
+	
+		.submenu:hover .nav-contain{
+			visibility: visible;
+		}
+		
 	}
 	
 	.rombs {
@@ -219,5 +679,18 @@ header {
 		z-index: 1;
 		top: 40.8%;
 		right: 56.5%;
+		
+		@include respond-to($tablet-big) {
+			top: 17.8%;
+			right: 50.5%;
+		}
+		@include respond-to($tablet-small) {
+			top: 17.8%;
+			right: 50.5%;
+		}
+		@include respond-to($mobile) {
+			top: 17.8%;
+			right: 40.5%;
+		}
 	}
 }
