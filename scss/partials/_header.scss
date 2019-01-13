@@ -52,6 +52,7 @@ header {
 			-moz-transition: all 0.3s 0.01s ease;
 			-o-transition: all 0.3s 0.01s ease;
 			-webkit-transition: all 0.3s 0.01s ease;
+			}
 			
 			@include respond-to($tablet-small) {
 				background: $darkblue;
@@ -77,9 +78,9 @@ header {
 			@include respond-to($mobile) {
 				background: $darkblue;
 				color: $white;
-				font-size: 24px;
-				width: 270px;
-				height: 70px;
+				font-size: 16px;
+				width: 165px;
+				height: 50px;
 				border-radius: 4px;
 				position: absolute;
 				padding: 0 35px 0 25px;
@@ -90,6 +91,7 @@ header {
 				align-items: center;
 				justify-content: center;
 				z-index: 1;
+				right: 5%;
 				-moz-transition: all 0.3s 0.01s ease;
 				-o-transition: all 0.3s 0.01s ease;
 				-webkit-transition: all 0.3s 0.01s ease;
@@ -98,7 +100,6 @@ header {
 			img {
 				margin-right: 20px;
 			}
-		}
 	}
 	
 	.header-callback:hover {
@@ -118,7 +119,7 @@ header {
 			width: 80%;
 		}
 		@include respond-to($mobile) {
-			width: 80%;
+			width: 90%;
 		}
 		
 		.header-strip {
@@ -162,20 +163,20 @@ header {
 				}
 				
 				@include respond-to($tablet-small) {
-					width: 206px;
-					height: 168px;
-					background-image: url(../images/block1-logo.png);
+					width: 155px;
+					height: 125px;
+					background-image: url(../images/logo.png);
 					background-repeat: no-repeat;
 					background-size: cover;
 					position: absolute;
-					top: 30px;
+					top: 10px;
 					left: 0;
 					z-index: 2;
 				}
 				
 				@include respond-to($mobile) {
-					width: 155px;
-					height: 125px;
+					width: 120px;
+					height: 100px;
 					background-image: url(../images/logo.png);
 					background-repeat: no-repeat;
 					background-size: cover;
@@ -369,6 +370,11 @@ header {
 					width: 50px;
 					height: 35px;
 					
+					@include respond-to($tablet-big) {
+						width: 40px;
+						height: 25px;
+					}
+					
 					@include respond-to($mobile) {
 						width: 70%;
 						height: 26px;
@@ -384,8 +390,8 @@ header {
 				img {
 				
 					@include respond-to($tablet-big) {
-						width: 50px;
-						height: 50px;
+						width: 40px;
+						height: 40px;
 					}
 					@include respond-to($tablet-small) {
 						width: 50px;
@@ -415,7 +421,7 @@ header {
 				margin: 25px 0 20px 0;
 				
 				@include respond-to($tablet-big) {
-					margin: 50px 0 50px 0;
+					margin: 30px 0 30px 0;
 				}
 				@include respond-to($tablet-small) {
 					margin: 50px 0 50px 0;
@@ -447,7 +453,7 @@ header {
 			height: 150px;
 		}
 		@include respond-to($tablet-small) {
-			width: 90%;
+			width: 80%;
 			height: 150px;
 		}
 		@include respond-to($mobile) {
