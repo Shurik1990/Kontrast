@@ -9,6 +9,45 @@ footer {
     align-items: flex-end;
     padding-bottom: 20px;
     box-sizing: border-box;
+	@include respond-to($tablet-big-medium) {
+		width: 100%;
+		height: 1070px;
+		background-image: url(../images/footer-background-mobile.png);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		position: relative;
+		display: flex;
+		align-items: flex-end;
+		padding-bottom: 35px;
+		box-sizing: border-box;
+	}
+	@include respond-to($tablet-small) {
+		width: 100%;
+		height: 1070px;
+		background-image: url(../images/footer-background-mobile.png);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		position: relative;
+		display: flex;
+		align-items: flex-end;
+		padding-bottom: 35px;
+		box-sizing: border-box;
+	}
+	@include respond-to($mobile) {
+		width: 100%;
+		height: 1110px;
+		background-image: url(../images/footer-background-mobile.png);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		position: relative;
+		display: flex;
+		align-items: flex-end;
+		padding-bottom: 30px;
+		box-sizing: border-box;
+	}
 	
 	.callback {
 		width: 350px;
@@ -24,6 +63,48 @@ footer {
 		left: calc(50% - 175px);
 		bottom: 70px;
 		z-index: 1;
+		@include respond-to($tablet-big-medium) {
+			position: relative;
+			width: 425px;
+			height: 395px;
+			border-radius: 3px;
+			left: calc(50% - 213px);
+			bottom: 58%;
+			z-index: 2;
+			background-color: transparent;
+			-webkit-box-shadow: none;
+			-moz-box-shadow: none;
+			box-shadow: none;
+			padding: 0;
+		}
+		@include respond-to($tablet-small) {
+			position: relative;
+			width: 425px;
+			height: 395px;
+			border-radius: 3px;
+			left: calc(50% - 213px);
+			bottom: 58%;
+			z-index: 2;
+			background-color: transparent;
+			-webkit-box-shadow: none;
+			-moz-box-shadow: none;
+			box-shadow: none;
+			padding: 0;
+		}
+		@include respond-to($mobile) {
+			position: relative;
+			width: 80%;
+			height: 395px;
+			border-radius: 3px;
+			left: 10%;
+			bottom: 60%;
+			z-index: 2;
+			background-color: transparent;
+			-webkit-box-shadow: none;
+			-moz-box-shadow: none;
+			box-shadow: none;
+			padding: 0;
+		}
 		
 		h2 {
 			width: 262px;
@@ -31,6 +112,27 @@ footer {
 			line-height: 25px;
 			text-align: center;
 			font-weight: 100;
+			@include respond-to($tablet-big-medium) {
+				width: 425px;
+				font-size: 24px;
+				line-height: 25px;
+				text-align: center;
+				font-weight: 100;
+			}
+			@include respond-to($tablet-small) {
+				width: 425px;
+				font-size: 24px;
+				line-height: 25px;
+				text-align: center;
+				font-weight: 100;
+			}
+			@include respond-to($mobile) {
+				width: 100%;
+				font-size: 1.5em;
+				line-height: 25px;
+				text-align: center;
+				font-weight: 100;
+			}
 		}
 		
 		.callback-form {
@@ -47,6 +149,51 @@ footer {
 			box-shadow: 0px 0px 0px 1px #888888;
 			padding-left: 20px;
 			color: $footer-ph; 
+			@include respond-to($tablet-big-medium) {
+				width: 395px;
+				height: 80px;
+				outline: none;
+				border-radius: 3px;
+				margin-top: 35px;
+				font-size: 18px;
+				font-family: $brutal-tl;
+				border: 1px solid #c7c7c7;
+				-webkit-box-shadow: 0px 0px 0px 1px #888888;
+				-moz-box-shadow: 0px 0px 0px 1px #888888;
+				box-shadow: 0px 0px 0px 1px #888888;
+				padding-left: 25px;
+				color: $footer-ph;
+			}
+			@include respond-to($tablet-small) {
+				width: 395px;
+				height: 80px;
+				outline: none;
+				border-radius: 3px;
+				margin-top: 35px;
+				font-size: 18px;
+				font-family: $brutal-tl;
+				border: 1px solid #c7c7c7;
+				-webkit-box-shadow: 0px 0px 0px 1px #888888;
+				-moz-box-shadow: 0px 0px 0px 1px #888888;
+				box-shadow: 0px 0px 0px 1px #888888;
+				padding-left: 25px;
+				color: $footer-ph;
+			}
+			@include respond-to($mobile) {
+				width: 90%;
+				height: 80px;
+				outline: none;
+				border-radius: 3px;
+				margin-top: 35px;
+				font-size: 18px;
+				font-family: $brutal-tl;
+				border: 1px solid #c7c7c7;
+				-webkit-box-shadow: 0px 0px 0px 1px #888888;
+				-moz-box-shadow: 0px 0px 0px 1px #888888;
+				box-shadow: 0px 0px 0px 1px #888888;
+				padding-left: 25px;
+				color: $footer-ph;
+			}
 		}
 		
 		input::-webkit-input-placeholder {
@@ -74,6 +221,23 @@ footer {
 			-moz-transition: all 0.3s 0.01s ease;
 			-o-transition: all 0.3s 0.01s ease;
 			-webkit-transition: all 0.3s 0.01s ease;
+			@include respond-to($tablet-big-medium) {
+				position: absolute;
+				margin-top: 45px;
+				left: calc(50% - 140px);
+			}
+			@include respond-to($tablet-small) {
+				position: absolute;
+				margin-top: 45px;
+				left: calc(50% - 140px);
+			}
+			@include respond-to($mobile) {
+				width: 80%;
+				position: relative;
+				margin-top: 45px;
+				left: 10%;
+				font-size: 1.2em;
+			}
 		}
 		
 		.submit:hover {
@@ -85,10 +249,32 @@ footer {
 		width: 1110px;
 		position: relative;
 		margin: 0 auto;
+		@include respond-to($tablet-big-medium) {
+			width: 90%;
+			position: absolute;
+			bottom: 35px;
+			left: 5%;
+		}
+		@include respond-to($tablet-small) {
+			width: 90%;
+			position: absolute;
+			bottom: 35px;
+			left: 5%;
+		}
+		@include respond-to($mobile) {
+			width: 90%;
+			position: absolute;
+			bottom: 30px;
+			left: 5%;
+		}
 		
 		.text {
 			color: $white;
 			font-size: 12px;
+			
+			@include respond-to($mobile) {
+				font-size: 0.6em;
+			}
 		}
 		
 		.company {
@@ -97,17 +283,104 @@ footer {
 			height: 200px;
 			line-height: 1.2;
 			margin-top: 15px;
+			@include respond-to($tablet-big-medium) {
+				width: 100%;
+				height: 115px;
+				line-height: 17px;
+				margin-top: 15px;
+				position: relative;
+			}
+			@include respond-to($tablet-small) {
+				width: 100%;
+				height: 115px;
+				line-height: 17px;
+				margin-top: 15px;
+				position: relative;
+			}
+			@include respond-to($mobile) {
+				width: 100%;
+				height: 115px;
+				line-height: 15px;
+				margin-top: 15px;
+				position: relative;
+			}
 			
 			.footer-logo {
+			
+				span {
+				
+					@include respond-to($tablet-big-medium) {
+						float: right;
+						text-align: right;
+						font-size: 14px;
+					}
+					@include respond-to($tablet-small) {
+						float: right;
+						text-align: right;
+						font-size: 14px;
+					}
+					@include respond-to($mobile-special) {
+						font-size: 12px;
+					}
+					@include respond-to($mobile) {
+						font-size: 0.7em;
+						float: right;
+						text-align: right;
+					}
+				}
 				
 				img {
 					margin: 0 30px 0 -5px;
+					@include respond-to($tablet-big-medium) {
+						float: left;
+						margin-left: 110px;
+						height: 56px;
+						margin-top: -25px;
+					}
+					@include respond-to($tablet-small) {
+						float: left;
+						margin-left: 110px;
+						height: 56px;
+						margin-top: -25px;
+					}
+					@include respond-to($mobile-special) {
+						margin-left: 16%;
+					}
+					@include respond-to($mobile) {
+						height: 30px;
+						float: left;
+						margin: 0 0 0 7%;
+					}
 				}
 			}
 			
 			.footer-column1 {
 				margin: 25px 0 0 10px;
 				line-height: 1.5;
+				@include respond-to($tablet-big-medium) {
+					width: 100%;
+					display: flex;
+					justify-content: space-around;
+					position: absolute;
+					bottom: 30px;
+					margin: 0;
+				}
+				@include respond-to($tablet-small) {
+					width: 100%;
+					display: flex;
+					justify-content: space-around;
+					position: absolute;
+					bottom: 30px;
+					margin: 0;
+				}
+				@include respond-to($mobile) {
+					width: 100%;
+					display: flex;
+					justify-content: space-around;
+					position: absolute;
+					bottom: 15px;
+					margin: 0;
+				}
 				
 				a {
 					color: $white;
@@ -115,19 +388,109 @@ footer {
 					-moz-transition: all 0.3s 0.01s ease;
 					-o-transition: all 0.3s 0.01s ease;
 					-webkit-transition: all 0.3s 0.01s ease;
+					@include respond-to($tablet-big-medium) {
+						font-size: 18px;
+					}
+					@include respond-to($tablet-small) {
+						font-size: 18px;
+					}
+					@include respond-to($mobile) {
+						font-size: 12px;
+					}
 				}
 				
 				a:hover {
 					color: $blue;
 				}
 				
+				.submenu-list {
+					
+					@include respond-to($tablet-big-medium) {
+						display: none;
+					}
+					@include respond-to($tablet-small) {
+						display: none;
+					}
+					@include respond-to($mobile) {
+						display: none;
+					}
+				}
+				
 				.vertical {
 					display: none;
+					@include respond-to($tablet-big-medium) {
+						font-size: 18px;
+						display: inline-flex;
+						color: $white;
+					}
+					@include respond-to($tablet-small) {
+						font-size: 18px;
+						display: inline-flex;
+						color: $white;
+					}
+					@include respond-to($mobile) {
+						font-size: 12px;
+						display: inline-flex;
+						color: $white;
+					}
 				}
 				
 				ul.submenu {
 					margin-left: 10px;
+					@include respond-to($tablet-big-medium) {
+						 display: none;
+					}
+					@include respond-to($tablet-small) {
+						 display: none;
+					}
+					@include respond-to($mobile) {
+						 display: none;
+					}
 				}
+			}
+		}
+		
+		.map {
+			display: none;
+			@include respond-to($tablet-big-medium) {
+				display: block;
+				float: left;
+				width: 400px;
+				height: 237px;
+				background: url(../images/footer-map.png);
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+			@include respond-to($tablet-special-big) {
+				display: block;
+				float: left;
+				width: 400px;
+				height: 237px;
+				background: url(../images/footer-map.png);
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+			@include respond-to($mobile-special) {
+				display: block;
+				float: left;
+				width: 290px;
+				height: 223px;
+				background: url(../images/footer-map-mobile.png);
+				background-size: cover;
+				background-repeat: no-repeat;
+				position: absolute;
+				bottom: 0;
+			}
+			@include respond-to($mobile) {
+				display: block;
+				float: left;
+				width: 60%;
+				height: 150px;
+				background: url(../images/footer-map-mobile.png);
+				background-size: cover;
+				background-repeat: no-repeat;
+				position: absolute;
+				bottom: 0;
 			}
 		}
 		
@@ -140,17 +503,88 @@ footer {
 				margin-top: 20px;
 			}
 			
+			.indent-big {
+				@include respond-to($mobile-special) {
+					margin-top: 40px;
+				}
+				@include respond-to($mobile) {
+					margin-top: 20px;
+				}
+			}
+			
+			.two-column {
+				@include respond-to($tablet-big-medium) {
+					width: 190px;
+					margin-top: 0;
+				}
+				@include respond-to($tablet-special-big) {
+					width: 190px;
+					margin-top: 0;
+				}
+				@include respond-to($mobile-special) {
+					width: 100%;
+					margin-top: 0;
+				}
+				@include respond-to($mobile) {
+					width: 100%;
+					margin-top: 0;
+				}
+			}
+			
+			.three-column {
+				display: none;
+				@include respond-to($mobile-special) {
+					display: block;
+				}
+				@include respond-to($mobile) {
+					display: block;
+				}
+			}
+			
 			.footer-social {
 				padding: 15px 0 5px 0;
+				@include respond-to($tablet-big-medium) {
+					padding: 20px 0 10px 0;
+				}
+				@include respond-to($tablet-small) {
+					padding: 20px 0 10px 0;
+				}
+				@include respond-to($mobile-special) {
+					padding: 30px 0 15px 0;
+				}
+				@include respond-to($mobile) {
+					padding: 15px 0 10px 0;
+				}
 				
 				a {
 					-moz-transition: all 0.3s 0.01s ease;
 					-o-transition: all 0.3s 0.01s ease;
 					-webkit-transition: all 0.3s 0.01s ease;
+					
+					img {
+						@include respond-to($tablet-big-medium) {
+							width: 40px;
+						}
+						@include respond-to($tablet-small) {
+							width: 40px;
+						}
+						@include respond-to($mobile) {
+							width: 25px;
+						}
+					}
 				}
 				
 				a:first-child {
 					margin-right: 15px;
+					@include respond-to($tablet-big-medium) {
+						margin-right: 35px;
+					}
+					@include respond-to($tablet-small) {
+						margin-right: 35px;
+					}
+					@include respond-to($mobile) {
+						margin-right: 10%;
+					}
 				}
 				
 				a:hover {

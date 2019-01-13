@@ -297,7 +297,7 @@ header {
 			ul.nav-contain {
 				position: absolute;
 				background: $white-transparent;
-				top: 160%;
+				top: 165%;
 				display: inline-block;
 				visibility: hidden;
 				
@@ -338,12 +338,15 @@ header {
 			right: 0;
 			@include respond-to($tablet-big) {
 				flex-direction: column-reverse;
+				z-index: 2;
 			}
 			@include respond-to($tablet-small) {
 				flex-direction: column-reverse;
+				z-index: 2;
 			}
 			@include respond-to($mobile) {
 				flex-direction: column-reverse;
+				z-index: 2;
 			}
 			
 			.mail-social {
@@ -365,6 +368,11 @@ header {
 				img {
 					width: 50px;
 					height: 35px;
+					
+					@include respond-to($mobile) {
+						width: 70%;
+						height: 26px;
+					}
 				}
 			}
 			
@@ -384,7 +392,7 @@ header {
 						height: 50px;
 					}
 					@include respond-to($mobile) {
-						width: 90%;
+						width: 70%;
 					}
 				}
 			}
@@ -413,7 +421,7 @@ header {
 					margin: 50px 0 50px 0;
 				}
 				@include respond-to($mobile) {
-					margin: 50px 0 50px 0;
+					margin: 20px 0 20px 0;
 				}
 			}
 			
@@ -459,7 +467,7 @@ header {
 				font-size: 60px;
 			}
 			@include respond-to($mobile) {
-				font-size: 3em;
+				font-size: 2.5em;
 			}
 		}
 		
@@ -555,6 +563,7 @@ header {
 				}
 				@include respond-to($mobile) {
 					min-width: 19%;
+					text-align: center;
 				}
 				
 				a {
@@ -573,7 +582,7 @@ header {
 					-webkit-transition: all 0.3s 0.01s ease;
 					
 					@include respond-to($mobile) {
-						font-size: 0.9em;
+						font-size: 0.7em;
 					}
 					
 					img {
@@ -588,6 +597,7 @@ header {
 						margin-left: 15px;
 						
 						@include respond-to($mobile) {
+							font-size: 0.7em;
 							margin-left: 5px;
 						}
 					}
@@ -618,6 +628,9 @@ header {
 			bottom: 110%;
 			display: inline-block;
 			visibility: hidden;
+			@include respond-to($mobile) {
+				left: 0;
+			}
 				
 				li {
 					position: relative;
@@ -681,15 +694,15 @@ header {
 		right: 56.5%;
 		
 		@include respond-to($tablet-big) {
-			top: 17.8%;
+			top: 15%;
 			right: 50.5%;
 		}
 		@include respond-to($tablet-small) {
-			top: 17.8%;
+			top: 15%;
 			right: 50.5%;
 		}
 		@include respond-to($mobile) {
-			top: 17.8%;
+			top: 15%;
 			right: 40.5%;
 		}
 	}
