@@ -32,7 +32,7 @@
 			width: 450px;
 		}
 		@include respond-to($mobile-medium) {
-			width: 320px;
+			width: 90%;
 		}
 		
 		.bx-wrapper {
@@ -110,7 +110,7 @@
 								line-height: 25px;
 							}
 							@include respond-to($mobile-medium) {
-								width: 315px;
+								width: 80%;
 								font-size: 14px;
 								line-height: 16px;
 							}
@@ -228,17 +228,11 @@
 				.bx-prev {
 					left: 0;
 					background: url(../images/slider-arrow-left.png) no-repeat 0 0!important;
-					@include respond-to($mobile-medium) {
-						display: none;
-					}
 				}
 				
 				.bx-next {
 					right: 0;
 					background: url(../images/slider-arrow-right.png) no-repeat 0 0!important;
-					@include respond-to($mobile-medium) {
-						display: none;
-					}
 				}
 			}
 			

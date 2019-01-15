@@ -1130,6 +1130,13 @@ header {
   @media only screen and (max-width: 1200px) and (min-width: 768px) {
     #block3 {
       height: 1390px; } }
+  @media only screen and (max-width: 768px) {
+    #block3 {
+      height: 1420px;
+      margin-bottom: 5%; } }
+  @media only screen and (max-width: 420px) {
+    #block3 {
+      height: 1660px; } }
   #block3 .wrapper {
     width: 1080px;
     position: relative;
@@ -1139,12 +1146,20 @@ header {
         width: 85%;
         padding-top: 40px;
         min-height: 1390px; } }
+    @media only screen and (max-width: 768px) {
+      #block3 .wrapper {
+        width: 95%;
+        padding-top: 0;
+        min-height: 1420px; } }
     #block3 .wrapper ul.tabs {
       display: block;
       z-index: 5;
       position: absolute;
       text-align: center; }
       @media only screen and (max-width: 1200px) and (min-width: 768px) {
+        #block3 .wrapper ul.tabs {
+          display: none; } }
+      @media only screen and (max-width: 768px) {
         #block3 .wrapper ul.tabs {
           display: none; } }
       #block3 .wrapper ul.tabs li {
@@ -1253,6 +1268,61 @@ header {
             background: #414f7e; }
           #block3 .wrapper .tabs-mobile .active .tabs-button {
             background: #414f7e; } }
+      @media only screen and (max-width: 768px) and (min-width: 541px) {
+        #block3 .wrapper .tabs-mobile {
+          width: 100%;
+          margin: 0 auto;
+          display: flex;
+          justify-content: space-around; }
+          #block3 .wrapper .tabs-mobile .tabs-button {
+            display: block;
+            width: 160px;
+            height: 80px;
+            background: #65a9df;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 18px;
+            -moz-transition: all 0.3s 0.01s ease;
+            -o-transition: all 0.3s 0.01s ease;
+            -webkit-transition: all 0.3s 0.01s ease; }
+            #block3 .wrapper .tabs-mobile .tabs-button p {
+              padding-top: 5px; }
+          #block3 .wrapper .tabs-mobile .tabs-button:hover {
+            background: #414f7e; }
+          #block3 .wrapper .tabs-mobile .active .tabs-button {
+            background: #414f7e; } }
+      @media only screen and (max-width: 540px) {
+        #block3 .wrapper .tabs-mobile {
+          width: 100%;
+          margin: 0 auto;
+          display: flex;
+          justify-content: space-around; }
+          #block3 .wrapper .tabs-mobile .tabs-button {
+            display: block;
+            width: 80px;
+            height: 100%;
+            padding: 5px;
+            background: #65a9df;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 0.9em;
+            -moz-transition: all 0.3s 0.01s ease;
+            -o-transition: all 0.3s 0.01s ease;
+            -webkit-transition: all 0.3s 0.01s ease; }
+            #block3 .wrapper .tabs-mobile .tabs-button p {
+              padding-top: 5px; }
+          #block3 .wrapper .tabs-mobile .tabs-button:hover {
+            background: #414f7e; }
+          #block3 .wrapper .tabs-mobile .active .tabs-button {
+            background: #414f7e; } }
     #block3 .wrapper #tabs-container {
       height: 975px;
       width: 90%;
@@ -1262,6 +1332,10 @@ header {
       align-items: center;
       flex-direction: row-reverse; }
       @media only screen and (max-width: 1200px) and (min-width: 768px) {
+        #block3 .wrapper #tabs-container {
+          width: 100%;
+          height: 100%; } }
+      @media only screen and (max-width: 768px) {
         #block3 .wrapper #tabs-container {
           width: 100%;
           height: 100%; } }
@@ -1283,10 +1357,22 @@ header {
             padding: 35px 0px 45px 0px;
             background: url(../images/logo-t1-mobile.png) 50% 102px;
             background-repeat: no-repeat; } }
+        @media only screen and (max-width: 768px) {
+          #block3 .wrapper #tabs-container .t1 .block {
+            height: 1420px;
+            width: 100%;
+            margin: 0 auto;
+            float: none;
+            padding: 25px 0px 0px 0px;
+            background: url(../images/logo-t1-mobile.png) 50% 75px;
+            background-repeat: no-repeat; } }
         #block3 .wrapper #tabs-container .t1 .block h3 {
           font-size: 30px;
           font-weight: 100;
           margin-bottom: 30px; }
+          @media only screen and (max-width: 540px) {
+            #block3 .wrapper #tabs-container .t1 .block h3 {
+              margin-bottom: 20px; } }
         #block3 .wrapper #tabs-container .t1 .block .description-t1 {
           width: 660px;
           font-size: 18px;
@@ -1299,10 +1385,26 @@ header {
               text-align: left;
               line-height: 1.2;
               padding-bottom: 25px; } }
+          @media only screen and (max-width: 768px) {
+            #block3 .wrapper #tabs-container .t1 .block .description-t1 {
+              width: 100%;
+              text-align: left;
+              line-height: 1.2;
+              padding-bottom: 25px; } }
+          @media only screen and (max-width: 540px) {
+            #block3 .wrapper #tabs-container .t1 .block .description-t1 {
+              width: 95%;
+              text-align: left;
+              line-height: 1.2;
+              padding-bottom: 25px;
+              font-size: 15px; } }
         #block3 .wrapper #tabs-container .t1 .block .our-work {
           font-size: 18px;
           margin-bottom: 24px; }
           @media only screen and (max-width: 1200px) and (min-width: 768px) {
+            #block3 .wrapper #tabs-container .t1 .block .our-work {
+              text-align: left; } }
+          @media only screen and (max-width: 768px) {
             #block3 .wrapper #tabs-container .t1 .block .our-work {
               text-align: left; } }
         #block3 .wrapper #tabs-container .t1 .block .list-in-tab {
@@ -1312,6 +1414,9 @@ header {
           position: relative;
           line-height: 1.3; }
           @media only screen and (max-width: 1200px) and (min-width: 768px) {
+            #block3 .wrapper #tabs-container .t1 .block .list-in-tab {
+              width: 100%; } }
+          @media only screen and (max-width: 768px) {
             #block3 .wrapper #tabs-container .t1 .block .list-in-tab {
               width: 100%; } }
           #block3 .wrapper #tabs-container .t1 .block .list-in-tab .tab-logo {
@@ -1327,6 +1432,9 @@ header {
             @media only screen and (max-width: 1200px) and (min-width: 768px) {
               #block3 .wrapper #tabs-container .t1 .block .list-in-tab .tab-logo {
                 display: none; } }
+            @media only screen and (max-width: 768px) {
+              #block3 .wrapper #tabs-container .t1 .block .list-in-tab .tab-logo {
+                display: none; } }
           #block3 .wrapper #tabs-container .t1 .block .list-in-tab .left {
             float: left;
             position: relative;
@@ -1336,7 +1444,15 @@ header {
               #block3 .wrapper #tabs-container .t1 .block .list-in-tab .left {
                 width: 100%;
                 height: unset; } }
+            @media only screen and (max-width: 768px) {
+              #block3 .wrapper #tabs-container .t1 .block .list-in-tab .left {
+                width: 100%;
+                height: unset; } }
             @media only screen and (max-width: 1200px) and (min-width: 768px) {
+              #block3 .wrapper #tabs-container .t1 .block .list-in-tab .left li {
+                position: relative;
+                margin: 0 0 25px 80px; } }
+            @media only screen and (max-width: 768px) {
               #block3 .wrapper #tabs-container .t1 .block .list-in-tab .left li {
                 position: relative;
                 margin: 0 0 25px 80px; } }
@@ -1348,7 +1464,21 @@ header {
               @media only screen and (max-width: 1200px) and (min-width: 768px) {
                 #block3 .wrapper #tabs-container .t1 .block .list-in-tab .left li::after {
                   display: none; } }
+              @media only screen and (max-width: 768px) {
+                #block3 .wrapper #tabs-container .t1 .block .list-in-tab .left li::after {
+                  display: none; } }
             @media only screen and (max-width: 1200px) and (min-width: 768px) {
+              #block3 .wrapper #tabs-container .t1 .block .list-in-tab .left li::before {
+                content: "";
+                width: 10px;
+                height: 10px;
+                border: 3px solid #414f7e;
+                transform: rotate(45deg);
+                background: transparent;
+                position: absolute;
+                left: -40px;
+                top: 10px; } }
+            @media only screen and (max-width: 768px) {
               #block3 .wrapper #tabs-container .t1 .block .list-in-tab .left li::before {
                 content: "";
                 width: 10px;
@@ -1368,6 +1498,9 @@ header {
             #block3 .wrapper #tabs-container .t1 .block .list-in-tab .left li:nth-child(2) {
               margin: 30px 0 30px 0; }
               @media only screen and (max-width: 1200px) and (min-width: 768px) {
+                #block3 .wrapper #tabs-container .t1 .block .list-in-tab .left li:nth-child(2) {
+                  margin: 0 0 25px 80px; } }
+              @media only screen and (max-width: 768px) {
                 #block3 .wrapper #tabs-container .t1 .block .list-in-tab .left li:nth-child(2) {
                   margin: 0 0 25px 80px; } }
             #block3 .wrapper #tabs-container .t1 .block .list-in-tab .left li:nth-child(2)::after {
@@ -1392,7 +1525,15 @@ header {
               #block3 .wrapper #tabs-container .t1 .block .list-in-tab .right {
                 width: 100%;
                 height: unset; } }
+            @media only screen and (max-width: 768px) {
+              #block3 .wrapper #tabs-container .t1 .block .list-in-tab .right {
+                width: 100%;
+                height: unset; } }
             @media only screen and (max-width: 1200px) and (min-width: 768px) {
+              #block3 .wrapper #tabs-container .t1 .block .list-in-tab .right li {
+                position: relative;
+                margin: 0 0 25px 80px; } }
+            @media only screen and (max-width: 768px) {
               #block3 .wrapper #tabs-container .t1 .block .list-in-tab .right li {
                 position: relative;
                 margin: 0 0 25px 80px; } }
@@ -1402,6 +1543,17 @@ header {
               z-index: 1;
               background-repeat: no-repeat; }
               @media only screen and (max-width: 1200px) and (min-width: 768px) {
+                #block3 .wrapper #tabs-container .t1 .block .list-in-tab .right li::before {
+                  content: "";
+                  width: 10px;
+                  height: 10px;
+                  border: 3px solid #414f7e;
+                  transform: rotate(45deg);
+                  background: transparent;
+                  position: absolute;
+                  left: -40px;
+                  top: 10px; } }
+              @media only screen and (max-width: 768px) {
                 #block3 .wrapper #tabs-container .t1 .block .list-in-tab .right li::before {
                   content: "";
                   width: 10px;
@@ -1429,9 +1581,23 @@ header {
                   position: absolute;
                   left: -40px;
                   top: 10px; } }
+              @media only screen and (max-width: 768px) {
+                #block3 .wrapper #tabs-container .t1 .block .list-in-tab .right li:nth-child(1)::before {
+                  content: "";
+                  width: 10px;
+                  height: 10px;
+                  border: 3px solid #414f7e;
+                  transform: rotate(45deg);
+                  background: transparent;
+                  position: absolute;
+                  left: -40px;
+                  top: 10px; } }
             #block3 .wrapper #tabs-container .t1 .block .list-in-tab .right li:nth-child(2) {
               margin: 30px 0 30px 0; }
               @media only screen and (max-width: 1200px) and (min-width: 768px) {
+                #block3 .wrapper #tabs-container .t1 .block .list-in-tab .right li:nth-child(2) {
+                  margin: 0 0 25px 80px; } }
+              @media only screen and (max-width: 768px) {
                 #block3 .wrapper #tabs-container .t1 .block .list-in-tab .right li:nth-child(2) {
                   margin: 0 0 25px 80px; } }
             #block3 .wrapper #tabs-container .t1 .block .list-in-tab .right li:nth-child(2)::before {
@@ -1451,9 +1617,23 @@ header {
                   position: absolute;
                   left: -40px;
                   top: 10px; } }
+              @media only screen and (max-width: 768px) {
+                #block3 .wrapper #tabs-container .t1 .block .list-in-tab .right li:nth-child(2)::before {
+                  content: "";
+                  width: 10px;
+                  height: 10px;
+                  border: 3px solid #414f7e;
+                  transform: rotate(45deg);
+                  background: transparent;
+                  position: absolute;
+                  left: -40px;
+                  top: 10px; } }
             #block3 .wrapper #tabs-container .t1 .block .list-in-tab .right li:nth-child(3) {
               margin: 0 0 30px 0; }
               @media only screen and (max-width: 1200px) and (min-width: 768px) {
+                #block3 .wrapper #tabs-container .t1 .block .list-in-tab .right li:nth-child(3) {
+                  margin: 0 0 25px 80px; } }
+              @media only screen and (max-width: 768px) {
                 #block3 .wrapper #tabs-container .t1 .block .list-in-tab .right li:nth-child(3) {
                   margin: 0 0 25px 80px; } }
             #block3 .wrapper #tabs-container .t1 .block .list-in-tab .right li:nth-child(3)::before {
@@ -1463,6 +1643,17 @@ header {
               right: 269px;
               background-image: url(../images/line-promo.png); }
               @media only screen and (max-width: 1200px) and (min-width: 768px) {
+                #block3 .wrapper #tabs-container .t1 .block .list-in-tab .right li:nth-child(3)::before {
+                  content: "";
+                  width: 10px;
+                  height: 10px;
+                  border: 3px solid #414f7e;
+                  transform: rotate(45deg);
+                  background: transparent;
+                  position: absolute;
+                  left: -40px;
+                  top: 10px; } }
+              @media only screen and (max-width: 768px) {
                 #block3 .wrapper #tabs-container .t1 .block .list-in-tab .right li:nth-child(3)::before {
                   content: "";
                   width: 10px;
@@ -1490,12 +1681,29 @@ header {
                   position: absolute;
                   left: -40px;
                   top: 10px; } }
+              @media only screen and (max-width: 768px) {
+                #block3 .wrapper #tabs-container .t1 .block .list-in-tab .right li:nth-child(4)::before {
+                  content: "";
+                  width: 10px;
+                  height: 10px;
+                  border: 3px solid #414f7e;
+                  transform: rotate(45deg);
+                  background: transparent;
+                  position: absolute;
+                  left: -40px;
+                  top: 10px; } }
           #block3 .wrapper #tabs-container .t1 .block .list-in-tab p {
             font-size: 14px; }
             @media only screen and (max-width: 1200px) and (min-width: 768px) {
               #block3 .wrapper #tabs-container .t1 .block .list-in-tab p {
                 font-size: 18px; } }
+            @media only screen and (max-width: 768px) and (min-width: 541px) {
+              #block3 .wrapper #tabs-container .t1 .block .list-in-tab p {
+                font-size: 18px; } }
             @media only screen and (max-width: 1200px) and (min-width: 768px) {
+              #block3 .wrapper #tabs-container .t1 .block .list-in-tab p .mobile {
+                display: none; } }
+            @media only screen and (max-width: 768px) {
               #block3 .wrapper #tabs-container .t1 .block .list-in-tab p .mobile {
                 display: none; } }
             #block3 .wrapper #tabs-container .t1 .block .list-in-tab p span {
@@ -1514,6 +1722,17 @@ header {
               text-align: left;
               width: 95%;
               margin-right: 5%; } }
+          @media only screen and (max-width: 768px) {
+            #block3 .wrapper #tabs-container .t1 .block .our-values-t1 {
+              padding: 0 0 30px 0;
+              position: relative;
+              width: 100%;
+              text-align: left;
+              width: 95%;
+              margin-right: 5%; } }
+          @media only screen and (max-width: 420px) {
+            #block3 .wrapper #tabs-container .t1 .block .our-values-t1 {
+              font-size: 15px; } }
         #block3 .wrapper #tabs-container .t1 .block .more-info {
           width: 630px;
           display: block;
@@ -1524,6 +1743,14 @@ header {
               position: relative;
               width: 100%;
               text-align: left; } }
+          @media only screen and (max-width: 768px) {
+            #block3 .wrapper #tabs-container .t1 .block .more-info {
+              position: relative;
+              width: 100%;
+              text-align: left; } }
+          @media only screen and (max-width: 420px) {
+            #block3 .wrapper #tabs-container .t1 .block .more-info {
+              font-size: 15px; } }
         #block3 .wrapper #tabs-container .t1 .block .callback-btn {
           display: block;
           width: 255px;
@@ -1542,6 +1769,12 @@ header {
           -o-transition: all 0.3s 0.01s ease;
           -webkit-transition: all 0.3s 0.01s ease; }
           @media only screen and (max-width: 1200px) and (min-width: 768px) {
+            #block3 .wrapper #tabs-container .t1 .block .callback-btn {
+              position: relative;
+              top: 30px;
+              margin: 0 auto;
+              left: 0; } }
+          @media only screen and (max-width: 768px) {
             #block3 .wrapper #tabs-container .t1 .block .callback-btn {
               position: relative;
               top: 30px;
@@ -2094,6 +2327,9 @@ header {
       #block3 .rombs-block3 {
         right: -26%;
         bottom: -19%; } }
+    @media only screen and (max-width: 768px) {
+      #block3 .rombs-block3 {
+        display: none; } }
 
 #block4 {
   width: 100%;
@@ -2127,7 +2363,7 @@ header {
         width: 450px; } }
     @media only screen and (max-width: 495px) {
       #block4 .block4-wrapper {
-        width: 320px; } }
+        width: 90%; } }
     #block4 .block4-wrapper .bx-wrapper {
       margin-bottom: 0 !important;
       -moz-box-shadow: none;
@@ -2198,7 +2434,7 @@ header {
                 line-height: 25px; } }
             @media only screen and (max-width: 495px) {
               #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row .review {
-                width: 315px;
+                width: 80%;
                 font-size: 14px;
                 line-height: 16px; } }
             #block4 .block4-wrapper .bx-wrapper .bx-viewport .slider .slider-row .review .author {
@@ -2295,15 +2531,9 @@ header {
       #block4 .block4-wrapper .bx-wrapper .bx-controls-direction .bx-prev {
         left: 0;
         background: url(../images/slider-arrow-left.png) no-repeat 0 0 !important; }
-        @media only screen and (max-width: 495px) {
-          #block4 .block4-wrapper .bx-wrapper .bx-controls-direction .bx-prev {
-            display: none; } }
       #block4 .block4-wrapper .bx-wrapper .bx-controls-direction .bx-next {
         right: 0;
         background: url(../images/slider-arrow-right.png) no-repeat 0 0 !important; }
-        @media only screen and (max-width: 495px) {
-          #block4 .block4-wrapper .bx-wrapper .bx-controls-direction .bx-next {
-            display: none; } }
       #block4 .block4-wrapper .bx-wrapper .bx-pager {
         display: none; }
 
