@@ -268,6 +268,12 @@
 							}
 						}
 						
+						.list-img-note {
+							@include respond-to($tablet-big-special) {
+								display: none;
+							}
+						}
+						
 						.left {
 							float: left;
 							position: relative;
@@ -402,7 +408,7 @@
 							li:nth-child(2) {
 								margin: 30px 0 30px 0;
 								@include respond-to($tablet-big-special) {
-									margin: 0 0 25px 80px;
+									display: none;
 								}
 							}
 							
@@ -559,15 +565,6 @@
 					text-align: center;
 					position: relative;
 					margin-left: -40px;
-					@include respond-to($tablet-big-special) {
-						height: 1390px;
-						width: 100%;
-						margin: 0 auto;
-						float: none;
-						padding: 35px 0px 45px 0px;
-						background: url(../images/logo-t1-mobile.png) 50% 102px;
-						background-repeat: no-repeat;
-					}
 					
 					h3 {
 						font-size: 30px;
@@ -581,27 +578,11 @@
 						display: block;
 						margin: 0 auto;
 						padding-bottom: 35px;
-						@include respond-to($tablet-big-special) {
-							width: 100%;
-							text-align: justify;
-							line-height: 1.2;
-							padding-bottom: 25px;
-						}
-					}
-					
-					.mobile {
-						@include respond-to($tablet-big-special) {
-							display: none;
-						}
 					}
 					
 					.our-work {
 						font-size: 18px;
 						margin-bottom: 40px;
-						@include respond-to($tablet-big-special) {
-							text-align: left;
-							margin-bottom: 25px;
-						}
 					}
 					
 					.list-in-tab {
@@ -610,9 +591,6 @@
 						text-align: left;
 						position: relative;
 						line-height: 1.3;
-						@include respond-to($tablet-big-special) {
-							width: 100%;
-						}
 						
 						.tab-logo {
 							background-image: url(../images/logo-t1.png);
@@ -624,9 +602,6 @@
 							left: -40px;
 							bottom: -80px;
 							z-index: 10;
-							@include respond-to($tablet-big-special) {
-								display: none;
-							}
 						}
 						
 						.left {
@@ -634,41 +609,12 @@
 							position: relative;
 							width: 255px;
 							height: 400px;
-							@include respond-to($tablet-big-special) {
-								width: 100%;
-								height: unset;
-							}
-							
-							li {
-							
-								@include respond-to($tablet-big-special) {
-									position: relative;
-									margin: 0 0 25px 80px;
-								}
-							}
 							
 							li::after {
 								content: "";
 								background-repeat: no-repeat;
 								position: absolute;
 								z-index: 1;
-								@include respond-to($tablet-big-special) {
-									display: none;
-								}
-							}
-							
-							li::before {
-								@include respond-to($tablet-big-special) {
-									content: "";
-									width: 10px;
-									height: 10px;
-									border: 3px solid $darkblue;
-									transform: rotate(45deg);
-									background: transparent;
-									position: absolute;
-									left: -40px;
-									top: 10px;
-								}
 							}
 							
 							li:nth-child(1)::after {
@@ -681,9 +627,6 @@
 							
 							li:first-child {
 								margin-bottom: 55px;
-								@include respond-to($tablet-big-special) {
-									margin-bottom: 25px;
-								}
 							}
 							
 							li:nth-child(2)::after {
@@ -700,35 +643,12 @@
 							position: relative;
 							width: 260px;
 							height: 410px;
-							@include respond-to($tablet-big-special) {
-								width: 100%;
-								height: unset;
-							}
-							
-							li {
-							
-								@include respond-to($tablet-big-special) {
-									position: relative;
-									margin: 0 0 25px 80px;
-								}
-							}
 							
 							li::before {
 								content: "";
 								position: absolute;
 								z-index: 1;
 								background-repeat: no-repeat;
-								@include respond-to($tablet-big-special) {
-									content: "";
-									width: 10px;
-									height: 10px;
-									border: 3px solid $darkblue;
-									transform: rotate(45deg);
-									background: transparent;
-									position: absolute;
-									left: -40px;
-									top: 10px;
-								}
 							}
 							
 							li:nth-child(1)::before {
@@ -737,24 +657,10 @@
 								top: 24px;
 								right: 265px;
 								background-image: url(../images/line-comfort.png);
-								@include respond-to($tablet-big-special) {
-									content: "";
-									width: 10px;
-									height: 10px;
-									border: 3px solid $darkblue;
-									transform: rotate(45deg);
-									background: transparent;
-									position: absolute;
-									left: -40px;
-									top: 10px;
-								}
 							}
 							
 							li:nth-child(2) {
 								margin: 40px 0 40px 0;
-								@include respond-to($tablet-big-special) {
-									margin: 0 0 25px 80px;
-								}
 							}
 							
 							li:nth-child(2)::before {
@@ -763,17 +669,6 @@
 								bottom: 255px;
 								right: 267px;
 								background-image: url(../images/line-conversation.png);
-								@include respond-to($tablet-big-special) {
-									content: "";
-									width: 10px;
-									height: 10px;
-									border: 3px solid $darkblue;
-									transform: rotate(45deg);
-									background: transparent;
-									position: absolute;
-									left: -40px;
-									top: 10px;
-								}
 							}
 							
 							li:nth-child(3)::before {
@@ -782,31 +677,11 @@
 								bottom: 105px;
 								right: 268px;
 								background-image: url(../images/line-conversation.png);
-								@include respond-to($tablet-big-special) {
-									content: "";
-									width: 10px;
-									height: 10px;
-									border: 3px solid $darkblue;
-									transform: rotate(45deg);
-									background: transparent;
-									position: absolute;
-									left: -40px;
-									top: 10px;
-								}
 							}
 						}
 						
 						p {
 							font-size: 14px;
-							@include respond-to($tablet-big-special) {
-								font-size: 18px;
-							}
-							
-							.mobile {
-								@include respond-to($tablet-big-special) {
-									display: none;
-								}
-							}
 							
 							span {
 								font-family: $brutal-me;
@@ -820,14 +695,6 @@
 						margin: 0 auto;
 						padding: 50px 0 35px 0;
 						font-size: 18px;
-						@include respond-to($tablet-big-special) {
-							padding: 0 0 30px 0;
-							position: relative;
-							width: 100%;
-							text-align: left;
-							width: 95%;
-							margin-right: 5%;
-						}
 					}
 					
 					.more-info {
@@ -835,11 +702,6 @@
 						display: block;
 						margin: 0 auto;
 						font-size: 18px;
-						@include respond-to($tablet-big-special) {
-							position: relative;
-							width: 100%;
-							text-align: left;
-						}
 					}
 					
 					.callback-btn {
@@ -859,12 +721,6 @@
 						-moz-transition: all 0.3s 0.01s ease;
 						-o-transition: all 0.3s 0.01s ease;
 						-webkit-transition: all 0.3s 0.01s ease;
-						@include respond-to($tablet-big-special) {
-							position: relative;
-							top: 30px;
-							margin: 0 auto;
-							left: 0;
-						}
 					}
 					
 					.callback-btn:hover {
@@ -884,15 +740,6 @@
 					text-align: center;
 					position: relative;
 					margin-left: -40px;
-					@include respond-to($tablet-big-special) {
-						height: 1390px;
-						width: 100%;
-						margin: 0 auto;
-						float: none;
-						padding: 35px 0px 45px 0px;
-						background: url(../images/logo-t1-mobile.png) 50% 102px;
-						background-repeat: no-repeat;
-					}
 					
 					h3 {
 						font-size: 30px;
@@ -906,21 +753,11 @@
 						display: block;
 						margin: 0 auto;
 						padding-bottom: 35px;
-						@include respond-to($tablet-big-special) {
-							width: 100%;
-							text-align: left;
-							line-height: 1.2;
-							padding-bottom: 10px;
-						}
 					}
 					
 					.our-work {
 						font-size: 18px;
 						margin-bottom: 40px;
-						@include respond-to($tablet-big-special) {
-							text-align: left;
-							margin-bottom: 25px;
-						}
 					}
 					
 					.list-in-tab {
@@ -930,10 +767,6 @@
 						position: relative;
 						line-height: 1.3;
 						margin-bottom: 55px;
-						@include respond-to($tablet-big-special) {
-							width: 100%;
-							height: 200px;
-						}
 						
 						.tab-logo {
 							background-image: url(../images/logo-t1.png);
@@ -945,15 +778,6 @@
 							left: -40px;
 							bottom: -80px;
 							z-index: 10;
-							@include respond-to($tablet-big-special) {
-								display: none;
-							}
-						}
-						
-						.list-img-note {
-							@include respond-to($tablet-big-special) {
-								display: none;
-							}
 						}
 						
 						.left {
@@ -961,18 +785,6 @@
 							position: relative;
 							width: 305px;
 							height: 525px;
-							@include respond-to($tablet-big-special) {
-								width: 100%;
-								height: unset;
-							}
-							
-							li {
-							
-								@include respond-to($tablet-big-special) {
-									position: relative;
-									margin: 0 0 25px 80px;
-								}
-							}
 							
 							p {
 								
@@ -988,23 +800,6 @@
 								background-repeat: no-repeat;
 								position: absolute;
 								z-index: 1;
-								@include respond-to($tablet-big-special) {
-									display: none;
-								}
-							}
-							
-							li::before {
-								@include respond-to($tablet-big-special) {
-									content: "";
-									width: 10px;
-									height: 10px;
-									border: 3px solid $darkblue;
-									transform: rotate(45deg);
-									background: transparent;
-									position: absolute;
-									left: -40px;
-									top: 10px;
-								}
 							}
 							
 							li:nth-child(1)::after {
@@ -1013,9 +808,6 @@
 								height: 105px;
 								top: 17px;
 								left: 275px;
-								@include respond-to($tablet-big-special) {
-									display: none;
-								}
 							}
 							
 							li:nth-child(2) {
@@ -1028,9 +820,6 @@
 								background-image: url(../images/line-calls.png);
 								bottom: 245px;
 								left: 198px;
-								@include respond-to($tablet-big-special) {
-									display: none;
-								}
 							}
 							
 							li:nth-child(3)::after {
@@ -1039,9 +828,6 @@
 								height: 81px;
 								bottom: 108px;
 								left: 310px;
-								@include respond-to($tablet-big-special) {
-									display: none;
-								}
 							}
 						}
 						
@@ -1050,35 +836,12 @@
 							position: relative;
 							width: 260px;
 							height: 525px;
-							@include respond-to($tablet-big-special) {
-								width: 100%;
-								height: unset;
-							}
-							
-							li {
-							
-								@include respond-to($tablet-big-special) {
-									position: relative;
-									margin: 0 0 25px 80px;
-								}
-							}
 							
 							li::before {
 								content: "";
 								position: absolute;
 								z-index: 1;
 								background-repeat: no-repeat;
-								@include respond-to($tablet-big-special) {
-									content: "";
-									width: 10px;
-									height: 10px;
-									border: 3px solid $darkblue;
-									transform: rotate(45deg);
-									background: transparent;
-									position: absolute;
-									left: -40px;
-									top: 10px;
-								}
 							}
 							
 							li:nth-child(1)::before {
@@ -1087,24 +850,10 @@
 								top: 163px;
 								right: 257px;
 								background-image: url(../images/line-calls.png);
-								@include respond-to($tablet-big-special) {
-									content: "";
-									width: 10px;
-									height: 10px;
-									border: 3px solid $darkblue;
-									transform: rotate(45deg);
-									background: transparent;
-									position: absolute;
-									left: -40px;
-									top: 10px;
-								}
 							}
 							
 							li:nth-child(2) {
 								margin: 30px 0 40px -50px;
-								@include respond-to($tablet-big-special) {
-									margin: 0 0 25px 80px;
-								}
 							}
 							
 							li:nth-child(2)::before {
@@ -1113,17 +862,6 @@
 								top: 248px;
 								right: 315px;
 								background-image: url(../images/line-conversation.png);
-								@include respond-to($tablet-big-special) {
-									content: "";
-									width: 10px;
-									height: 10px;
-									border: 3px solid $darkblue;
-									transform: rotate(45deg);
-									background: transparent;
-									position: absolute;
-									left: -40px;
-									top: 10px;
-								}
 							}
 							
 							li:nth-child(3)::before {
@@ -1132,45 +870,16 @@
 								bottom: 160px;
 								right: 258px;
 								background-image: url(../images/line-calls.png);
-								@include respond-to($tablet-big-special) {
-									content: "";
-									width: 10px;
-									height: 10px;
-									border: 3px solid $darkblue;
-									transform: rotate(45deg);
-									background: transparent;
-									position: absolute;
-									left: -40px;
-									top: 10px;
-								}
 							}
 						}
 						
 						p {
 							font-size: 14px;
-							@include respond-to($tablet-big-special) {
-								font-size: 18px;
-							}
-							
-							.mobile {
-								@include respond-to($tablet-big-special) {
-									display: none;
-								}
-							}
 							
 							span {
 								font-family: $brutal-me;
 								font-size: 18px;
 							}
-						}
-					}
-					
-					.list-img-mob {
-						width: 100%;
-						display: none;
-						@include respond-to($tablet-big-special) {
-							display: flex;
-							justify-content: space-around;
 						}
 					}
 					
@@ -1180,12 +889,6 @@
 						margin: 0 auto;
 						font-size: 18px;
 						margin-top: 80px;
-						@include respond-to($tablet-big-special) {
-							position: relative;
-							width: 100%;
-							text-align: left;
-							margin-top: 40px;
-						}
 					}
 					
 					.callback-btn {
@@ -1205,12 +908,6 @@
 						-moz-transition: all 0.3s 0.01s ease;
 						-o-transition: all 0.3s 0.01s ease;
 						-webkit-transition: all 0.3s 0.01s ease;
-						@include respond-to($tablet-big-special) {
-							position: relative;
-							top: 30px;
-							margin: 0 auto;
-							left: 0;
-						}
 					}
 					
 					.callback-btn:hover {
