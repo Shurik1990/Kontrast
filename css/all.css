@@ -1364,7 +1364,7 @@ header {
             margin: 0 auto;
             float: none;
             padding: 25px 0px 0px 0px;
-            background: url(../images/logo-t1-mobile.png) 50% 75px;
+            background: url(../images/logo-t1-mobile.png) 50% 65px;
             background-repeat: no-repeat; } }
         #block3 .wrapper #tabs-container .t1 .block h3 {
           font-size: 30px;
@@ -1800,10 +1800,22 @@ header {
             padding: 35px 0px 45px 0px;
             background: url(../images/logo-t1-mobile.png) 50% 102px;
             background-repeat: no-repeat; } }
+        @media only screen and (max-width: 768px) {
+          #block3 .wrapper #tabs-container .t2 .block {
+            height: 1420px;
+            width: 100%;
+            margin: 0 auto;
+            float: none;
+            padding: 25px 0px 0px 0px;
+            background: url(../images/logo-t1-mobile.png) 50% 65px;
+            background-repeat: no-repeat; } }
         #block3 .wrapper #tabs-container .t2 .block h3 {
           font-size: 30px;
           font-weight: 100;
           margin-bottom: 30px; }
+          @media only screen and (max-width: 540px) {
+            #block3 .wrapper #tabs-container .t2 .block h3 {
+              margin-bottom: 20px; } }
         #block3 .wrapper #tabs-container .t2 .block .description-t2 {
           width: 475px;
           font-size: 18px;
@@ -1816,6 +1828,19 @@ header {
               text-align: justify;
               line-height: 1.2;
               padding-bottom: 25px; } }
+          @media only screen and (max-width: 768px) {
+            #block3 .wrapper #tabs-container .t2 .block .description-t2 {
+              width: 100%;
+              text-align: left;
+              line-height: 1.2;
+              padding-bottom: 25px; } }
+          @media only screen and (max-width: 540px) {
+            #block3 .wrapper #tabs-container .t2 .block .description-t2 {
+              width: 95%;
+              text-align: left;
+              line-height: 1.2;
+              padding-bottom: 25px;
+              font-size: 15px; } }
         @media only screen and (max-width: 1200px) and (min-width: 768px) {
           #block3 .wrapper #tabs-container .t2 .block .mobile {
             display: none; } }
@@ -1826,6 +1851,9 @@ header {
             #block3 .wrapper #tabs-container .t2 .block .our-work {
               text-align: left;
               margin-bottom: 25px; } }
+          @media only screen and (max-width: 768px) {
+            #block3 .wrapper #tabs-container .t2 .block .our-work {
+              text-align: left; } }
         #block3 .wrapper #tabs-container .t2 .block .list-in-tab {
           width: 925px;
           height: 400px;
@@ -1833,6 +1861,9 @@ header {
           position: relative;
           line-height: 1.3; }
           @media only screen and (max-width: 1200px) and (min-width: 768px) {
+            #block3 .wrapper #tabs-container .t2 .block .list-in-tab {
+              width: 100%; } }
+          @media only screen and (max-width: 768px) {
             #block3 .wrapper #tabs-container .t2 .block .list-in-tab {
               width: 100%; } }
           #block3 .wrapper #tabs-container .t2 .block .list-in-tab .tab-logo {
@@ -1848,6 +1879,9 @@ header {
             @media only screen and (max-width: 1200px) and (min-width: 768px) {
               #block3 .wrapper #tabs-container .t2 .block .list-in-tab .tab-logo {
                 display: none; } }
+            @media only screen and (max-width: 768px) {
+              #block3 .wrapper #tabs-container .t2 .block .list-in-tab .tab-logo {
+                display: none; } }
           #block3 .wrapper #tabs-container .t2 .block .list-in-tab .left {
             float: left;
             position: relative;
@@ -1857,7 +1891,15 @@ header {
               #block3 .wrapper #tabs-container .t2 .block .list-in-tab .left {
                 width: 100%;
                 height: unset; } }
+            @media only screen and (max-width: 768px) {
+              #block3 .wrapper #tabs-container .t2 .block .list-in-tab .left {
+                width: 100%;
+                height: unset; } }
             @media only screen and (max-width: 1200px) and (min-width: 768px) {
+              #block3 .wrapper #tabs-container .t2 .block .list-in-tab .left li {
+                position: relative;
+                margin: 0 0 25px 80px; } }
+            @media only screen and (max-width: 768px) {
               #block3 .wrapper #tabs-container .t2 .block .list-in-tab .left li {
                 position: relative;
                 margin: 0 0 25px 80px; } }
@@ -1869,7 +1911,21 @@ header {
               @media only screen and (max-width: 1200px) and (min-width: 768px) {
                 #block3 .wrapper #tabs-container .t2 .block .list-in-tab .left li::after {
                   display: none; } }
+              @media only screen and (max-width: 768px) {
+                #block3 .wrapper #tabs-container .t2 .block .list-in-tab .left li::after {
+                  display: none; } }
             @media only screen and (max-width: 1200px) and (min-width: 768px) {
+              #block3 .wrapper #tabs-container .t2 .block .list-in-tab .left li::before {
+                content: "";
+                width: 10px;
+                height: 10px;
+                border: 3px solid #414f7e;
+                transform: rotate(45deg);
+                background: transparent;
+                position: absolute;
+                left: -40px;
+                top: 10px; } }
+            @media only screen and (max-width: 768px) {
               #block3 .wrapper #tabs-container .t2 .block .list-in-tab .left li::before {
                 content: "";
                 width: 10px;
@@ -1891,6 +1947,9 @@ header {
               @media only screen and (max-width: 1200px) and (min-width: 768px) {
                 #block3 .wrapper #tabs-container .t2 .block .list-in-tab .left li:first-child {
                   margin-bottom: 25px; } }
+              @media only screen and (max-width: 768px) {
+                #block3 .wrapper #tabs-container .t2 .block .list-in-tab .left li:first-child {
+                  margin-bottom: 25px; } }
             #block3 .wrapper #tabs-container .t2 .block .list-in-tab .left li:nth-child(2)::after {
               width: 150px;
               height: 1px;
@@ -1906,7 +1965,15 @@ header {
               #block3 .wrapper #tabs-container .t2 .block .list-in-tab .right {
                 width: 100%;
                 height: unset; } }
+            @media only screen and (max-width: 768px) {
+              #block3 .wrapper #tabs-container .t2 .block .list-in-tab .right {
+                width: 100%;
+                height: unset; } }
             @media only screen and (max-width: 1200px) and (min-width: 768px) {
+              #block3 .wrapper #tabs-container .t2 .block .list-in-tab .right li {
+                position: relative;
+                margin: 0 0 25px 80px; } }
+            @media only screen and (max-width: 768px) {
               #block3 .wrapper #tabs-container .t2 .block .list-in-tab .right li {
                 position: relative;
                 margin: 0 0 25px 80px; } }
@@ -1916,6 +1983,17 @@ header {
               z-index: 1;
               background-repeat: no-repeat; }
               @media only screen and (max-width: 1200px) and (min-width: 768px) {
+                #block3 .wrapper #tabs-container .t2 .block .list-in-tab .right li::before {
+                  content: "";
+                  width: 10px;
+                  height: 10px;
+                  border: 3px solid #414f7e;
+                  transform: rotate(45deg);
+                  background: transparent;
+                  position: absolute;
+                  left: -40px;
+                  top: 10px; } }
+              @media only screen and (max-width: 768px) {
                 #block3 .wrapper #tabs-container .t2 .block .list-in-tab .right li::before {
                   content: "";
                   width: 10px;
@@ -1943,9 +2021,23 @@ header {
                   position: absolute;
                   left: -40px;
                   top: 10px; } }
+              @media only screen and (max-width: 768px) {
+                #block3 .wrapper #tabs-container .t2 .block .list-in-tab .right li:nth-child(1)::before {
+                  content: "";
+                  width: 10px;
+                  height: 10px;
+                  border: 3px solid #414f7e;
+                  transform: rotate(45deg);
+                  background: transparent;
+                  position: absolute;
+                  left: -40px;
+                  top: 10px; } }
             #block3 .wrapper #tabs-container .t2 .block .list-in-tab .right li:nth-child(2) {
               margin: 40px 0 40px 0; }
               @media only screen and (max-width: 1200px) and (min-width: 768px) {
+                #block3 .wrapper #tabs-container .t2 .block .list-in-tab .right li:nth-child(2) {
+                  margin: 0 0 25px 80px; } }
+              @media only screen and (max-width: 768px) {
                 #block3 .wrapper #tabs-container .t2 .block .list-in-tab .right li:nth-child(2) {
                   margin: 0 0 25px 80px; } }
             #block3 .wrapper #tabs-container .t2 .block .list-in-tab .right li:nth-child(2)::before {
@@ -1955,6 +2047,17 @@ header {
               right: 267px;
               background-image: url(../images/line-conversation.png); }
               @media only screen and (max-width: 1200px) and (min-width: 768px) {
+                #block3 .wrapper #tabs-container .t2 .block .list-in-tab .right li:nth-child(2)::before {
+                  content: "";
+                  width: 10px;
+                  height: 10px;
+                  border: 3px solid #414f7e;
+                  transform: rotate(45deg);
+                  background: transparent;
+                  position: absolute;
+                  left: -40px;
+                  top: 10px; } }
+              @media only screen and (max-width: 768px) {
                 #block3 .wrapper #tabs-container .t2 .block .list-in-tab .right li:nth-child(2)::before {
                   content: "";
                   width: 10px;
@@ -1982,12 +2085,29 @@ header {
                   position: absolute;
                   left: -40px;
                   top: 10px; } }
+              @media only screen and (max-width: 768px) {
+                #block3 .wrapper #tabs-container .t2 .block .list-in-tab .right li:nth-child(3)::before {
+                  content: "";
+                  width: 10px;
+                  height: 10px;
+                  border: 3px solid #414f7e;
+                  transform: rotate(45deg);
+                  background: transparent;
+                  position: absolute;
+                  left: -40px;
+                  top: 10px; } }
           #block3 .wrapper #tabs-container .t2 .block .list-in-tab p {
             font-size: 14px; }
             @media only screen and (max-width: 1200px) and (min-width: 768px) {
               #block3 .wrapper #tabs-container .t2 .block .list-in-tab p {
                 font-size: 18px; } }
+            @media only screen and (max-width: 768px) and (min-width: 541px) {
+              #block3 .wrapper #tabs-container .t2 .block .list-in-tab p {
+                font-size: 18px; } }
             @media only screen and (max-width: 1200px) and (min-width: 768px) {
+              #block3 .wrapper #tabs-container .t2 .block .list-in-tab p .mobile {
+                display: none; } }
+            @media only screen and (max-width: 768px) {
               #block3 .wrapper #tabs-container .t2 .block .list-in-tab p .mobile {
                 display: none; } }
             #block3 .wrapper #tabs-container .t2 .block .list-in-tab p span {
@@ -2006,6 +2126,17 @@ header {
               text-align: left;
               width: 95%;
               margin-right: 5%; } }
+          @media only screen and (max-width: 768px) {
+            #block3 .wrapper #tabs-container .t2 .block .our-values-t2 {
+              padding: 0 0 30px 0;
+              position: relative;
+              width: 100%;
+              text-align: left;
+              width: 95%;
+              margin-right: 5%; } }
+          @media only screen and (max-width: 420px) {
+            #block3 .wrapper #tabs-container .t2 .block .our-values-t2 {
+              font-size: 15px; } }
         #block3 .wrapper #tabs-container .t2 .block .more-info {
           width: 630px;
           display: block;
@@ -2016,6 +2147,14 @@ header {
               position: relative;
               width: 100%;
               text-align: left; } }
+          @media only screen and (max-width: 768px) {
+            #block3 .wrapper #tabs-container .t2 .block .more-info {
+              position: relative;
+              width: 100%;
+              text-align: left; } }
+          @media only screen and (max-width: 420px) {
+            #block3 .wrapper #tabs-container .t2 .block .more-info {
+              font-size: 15px; } }
         #block3 .wrapper #tabs-container .t2 .block .callback-btn {
           display: block;
           width: 255px;
@@ -2034,6 +2173,12 @@ header {
           -o-transition: all 0.3s 0.01s ease;
           -webkit-transition: all 0.3s 0.01s ease; }
           @media only screen and (max-width: 1200px) and (min-width: 768px) {
+            #block3 .wrapper #tabs-container .t2 .block .callback-btn {
+              position: relative;
+              top: 30px;
+              margin: 0 auto;
+              left: 0; } }
+          @media only screen and (max-width: 768px) {
             #block3 .wrapper #tabs-container .t2 .block .callback-btn {
               position: relative;
               top: 30px;
@@ -2059,10 +2204,22 @@ header {
             padding: 35px 0px 45px 0px;
             background: url(../images/logo-t1-mobile.png) 50% 102px;
             background-repeat: no-repeat; } }
+        @media only screen and (max-width: 768px) {
+          #block3 .wrapper #tabs-container .t3 .block {
+            height: 1420px;
+            width: 100%;
+            margin: 0 auto;
+            float: none;
+            padding: 25px 0px 0px 0px;
+            background: url(../images/logo-t1-mobile.png) 50% 65px;
+            background-repeat: no-repeat; } }
         #block3 .wrapper #tabs-container .t3 .block h3 {
           font-size: 30px;
           font-weight: 100;
           margin-bottom: 30px; }
+          @media only screen and (max-width: 540px) {
+            #block3 .wrapper #tabs-container .t3 .block h3 {
+              margin-bottom: 20px; } }
         #block3 .wrapper #tabs-container .t3 .block .description-t3 {
           width: 475px;
           font-size: 18px;
@@ -2075,6 +2232,19 @@ header {
               text-align: left;
               line-height: 1.2;
               padding-bottom: 10px; } }
+          @media only screen and (max-width: 768px) {
+            #block3 .wrapper #tabs-container .t3 .block .description-t3 {
+              width: 100%;
+              text-align: left;
+              line-height: 1.2;
+              padding-bottom: 25px; } }
+          @media only screen and (max-width: 540px) {
+            #block3 .wrapper #tabs-container .t3 .block .description-t3 {
+              width: 95%;
+              text-align: left;
+              line-height: 1.2;
+              padding-bottom: 25px;
+              font-size: 15px; } }
         #block3 .wrapper #tabs-container .t3 .block .our-work {
           font-size: 18px;
           margin-bottom: 40px; }
@@ -2082,6 +2252,9 @@ header {
             #block3 .wrapper #tabs-container .t3 .block .our-work {
               text-align: left;
               margin-bottom: 25px; } }
+          @media only screen and (max-width: 768px) {
+            #block3 .wrapper #tabs-container .t3 .block .our-work {
+              text-align: left; } }
         #block3 .wrapper #tabs-container .t3 .block .list-in-tab {
           width: 925px;
           height: 490px;
@@ -2090,6 +2263,10 @@ header {
           line-height: 1.3;
           margin-bottom: 55px; }
           @media only screen and (max-width: 1200px) and (min-width: 768px) {
+            #block3 .wrapper #tabs-container .t3 .block .list-in-tab {
+              width: 100%;
+              height: 200px; } }
+          @media only screen and (max-width: 768px) {
             #block3 .wrapper #tabs-container .t3 .block .list-in-tab {
               width: 100%;
               height: 200px; } }
@@ -2106,7 +2283,13 @@ header {
             @media only screen and (max-width: 1200px) and (min-width: 768px) {
               #block3 .wrapper #tabs-container .t3 .block .list-in-tab .tab-logo {
                 display: none; } }
+            @media only screen and (max-width: 768px) {
+              #block3 .wrapper #tabs-container .t3 .block .list-in-tab .tab-logo {
+                display: none; } }
           @media only screen and (max-width: 1200px) and (min-width: 768px) {
+            #block3 .wrapper #tabs-container .t3 .block .list-in-tab .list-img-note {
+              display: none; } }
+          @media only screen and (max-width: 768px) {
             #block3 .wrapper #tabs-container .t3 .block .list-in-tab .list-img-note {
               display: none; } }
           #block3 .wrapper #tabs-container .t3 .block .list-in-tab .left {
@@ -2118,13 +2301,24 @@ header {
               #block3 .wrapper #tabs-container .t3 .block .list-in-tab .left {
                 width: 100%;
                 height: unset; } }
+            @media only screen and (max-width: 768px) {
+              #block3 .wrapper #tabs-container .t3 .block .list-in-tab .left {
+                width: 100%;
+                height: unset; } }
             @media only screen and (max-width: 1200px) and (min-width: 768px) {
+              #block3 .wrapper #tabs-container .t3 .block .list-in-tab .left li {
+                position: relative;
+                margin: 0 0 25px 80px; } }
+            @media only screen and (max-width: 768px) {
               #block3 .wrapper #tabs-container .t3 .block .list-in-tab .left li {
                 position: relative;
                 margin: 0 0 25px 80px; } }
             #block3 .wrapper #tabs-container .t3 .block .list-in-tab .left p span {
               font-family: Brutal Type Medium, Arial, serif;
               font-size: 18px; }
+              @media only screen and (max-width: 768px) {
+                #block3 .wrapper #tabs-container .t3 .block .list-in-tab .left p span {
+                  font-size: 16px; } }
             #block3 .wrapper #tabs-container .t3 .block .list-in-tab .left li::after {
               content: "";
               background-repeat: no-repeat;
@@ -2133,7 +2327,21 @@ header {
               @media only screen and (max-width: 1200px) and (min-width: 768px) {
                 #block3 .wrapper #tabs-container .t3 .block .list-in-tab .left li::after {
                   display: none; } }
+              @media only screen and (max-width: 768px) {
+                #block3 .wrapper #tabs-container .t3 .block .list-in-tab .left li::after {
+                  display: none; } }
             @media only screen and (max-width: 1200px) and (min-width: 768px) {
+              #block3 .wrapper #tabs-container .t3 .block .list-in-tab .left li::before {
+                content: "";
+                width: 10px;
+                height: 10px;
+                border: 3px solid #414f7e;
+                transform: rotate(45deg);
+                background: transparent;
+                position: absolute;
+                left: -40px;
+                top: 10px; } }
+            @media only screen and (max-width: 768px) {
               #block3 .wrapper #tabs-container .t3 .block .list-in-tab .left li::before {
                 content: "";
                 width: 10px;
@@ -2153,6 +2361,9 @@ header {
               @media only screen and (max-width: 1200px) and (min-width: 768px) {
                 #block3 .wrapper #tabs-container .t3 .block .list-in-tab .left li:nth-child(1)::after {
                   display: none; } }
+              @media only screen and (max-width: 768px) {
+                #block3 .wrapper #tabs-container .t3 .block .list-in-tab .left li:nth-child(1)::after {
+                  display: none; } }
             #block3 .wrapper #tabs-container .t3 .block .list-in-tab .left li:nth-child(2) {
               margin: 65px 0 45px 35px; }
             #block3 .wrapper #tabs-container .t3 .block .list-in-tab .left li:nth-child(2)::after {
@@ -2164,6 +2375,9 @@ header {
               @media only screen and (max-width: 1200px) and (min-width: 768px) {
                 #block3 .wrapper #tabs-container .t3 .block .list-in-tab .left li:nth-child(2)::after {
                   display: none; } }
+              @media only screen and (max-width: 768px) {
+                #block3 .wrapper #tabs-container .t3 .block .list-in-tab .left li:nth-child(2)::after {
+                  display: none; } }
             #block3 .wrapper #tabs-container .t3 .block .list-in-tab .left li:nth-child(3)::after {
               background-image: url(../images/line-rent2.png);
               width: 150px;
@@ -2171,6 +2385,9 @@ header {
               bottom: 108px;
               left: 310px; }
               @media only screen and (max-width: 1200px) and (min-width: 768px) {
+                #block3 .wrapper #tabs-container .t3 .block .list-in-tab .left li:nth-child(3)::after {
+                  display: none; } }
+              @media only screen and (max-width: 768px) {
                 #block3 .wrapper #tabs-container .t3 .block .list-in-tab .left li:nth-child(3)::after {
                   display: none; } }
           #block3 .wrapper #tabs-container .t3 .block .list-in-tab .right {
@@ -2182,7 +2399,15 @@ header {
               #block3 .wrapper #tabs-container .t3 .block .list-in-tab .right {
                 width: 100%;
                 height: unset; } }
+            @media only screen and (max-width: 768px) {
+              #block3 .wrapper #tabs-container .t3 .block .list-in-tab .right {
+                width: 100%;
+                height: unset; } }
             @media only screen and (max-width: 1200px) and (min-width: 768px) {
+              #block3 .wrapper #tabs-container .t3 .block .list-in-tab .right li {
+                position: relative;
+                margin: 0 0 25px 80px; } }
+            @media only screen and (max-width: 768px) {
               #block3 .wrapper #tabs-container .t3 .block .list-in-tab .right li {
                 position: relative;
                 margin: 0 0 25px 80px; } }
@@ -2192,6 +2417,17 @@ header {
               z-index: 1;
               background-repeat: no-repeat; }
               @media only screen and (max-width: 1200px) and (min-width: 768px) {
+                #block3 .wrapper #tabs-container .t3 .block .list-in-tab .right li::before {
+                  content: "";
+                  width: 10px;
+                  height: 10px;
+                  border: 3px solid #414f7e;
+                  transform: rotate(45deg);
+                  background: transparent;
+                  position: absolute;
+                  left: -40px;
+                  top: 10px; } }
+              @media only screen and (max-width: 768px) {
                 #block3 .wrapper #tabs-container .t3 .block .list-in-tab .right li::before {
                   content: "";
                   width: 10px;
@@ -2219,9 +2455,23 @@ header {
                   position: absolute;
                   left: -40px;
                   top: 10px; } }
+              @media only screen and (max-width: 768px) {
+                #block3 .wrapper #tabs-container .t3 .block .list-in-tab .right li:nth-child(1)::before {
+                  content: "";
+                  width: 10px;
+                  height: 10px;
+                  border: 3px solid #414f7e;
+                  transform: rotate(45deg);
+                  background: transparent;
+                  position: absolute;
+                  left: -40px;
+                  top: 10px; } }
             #block3 .wrapper #tabs-container .t3 .block .list-in-tab .right li:nth-child(2) {
               margin: 30px 0 40px -50px; }
               @media only screen and (max-width: 1200px) and (min-width: 768px) {
+                #block3 .wrapper #tabs-container .t3 .block .list-in-tab .right li:nth-child(2) {
+                  margin: 0 0 25px 80px; } }
+              @media only screen and (max-width: 768px) {
                 #block3 .wrapper #tabs-container .t3 .block .list-in-tab .right li:nth-child(2) {
                   margin: 0 0 25px 80px; } }
             #block3 .wrapper #tabs-container .t3 .block .list-in-tab .right li:nth-child(2)::before {
@@ -2231,6 +2481,17 @@ header {
               right: 315px;
               background-image: url(../images/line-conversation.png); }
               @media only screen and (max-width: 1200px) and (min-width: 768px) {
+                #block3 .wrapper #tabs-container .t3 .block .list-in-tab .right li:nth-child(2)::before {
+                  content: "";
+                  width: 10px;
+                  height: 10px;
+                  border: 3px solid #414f7e;
+                  transform: rotate(45deg);
+                  background: transparent;
+                  position: absolute;
+                  left: -40px;
+                  top: 10px; } }
+              @media only screen and (max-width: 768px) {
                 #block3 .wrapper #tabs-container .t3 .block .list-in-tab .right li:nth-child(2)::before {
                   content: "";
                   width: 10px;
@@ -2258,17 +2519,37 @@ header {
                   position: absolute;
                   left: -40px;
                   top: 10px; } }
+              @media only screen and (max-width: 768px) {
+                #block3 .wrapper #tabs-container .t3 .block .list-in-tab .right li:nth-child(3)::before {
+                  content: "";
+                  width: 10px;
+                  height: 10px;
+                  border: 3px solid #414f7e;
+                  transform: rotate(45deg);
+                  background: transparent;
+                  position: absolute;
+                  left: -40px;
+                  top: 10px; } }
           #block3 .wrapper #tabs-container .t3 .block .list-in-tab p {
             font-size: 14px; }
             @media only screen and (max-width: 1200px) and (min-width: 768px) {
               #block3 .wrapper #tabs-container .t3 .block .list-in-tab p {
                 font-size: 18px; } }
+            @media only screen and (max-width: 768px) and (min-width: 541px) {
+              #block3 .wrapper #tabs-container .t3 .block .list-in-tab p {
+                font-size: 18px; } }
             @media only screen and (max-width: 1200px) and (min-width: 768px) {
+              #block3 .wrapper #tabs-container .t3 .block .list-in-tab p .mobile {
+                display: none; } }
+            @media only screen and (max-width: 768px) {
               #block3 .wrapper #tabs-container .t3 .block .list-in-tab p .mobile {
                 display: none; } }
             #block3 .wrapper #tabs-container .t3 .block .list-in-tab p span {
               font-family: Brutal Type Medium, Arial, serif;
               font-size: 18px; }
+              @media only screen and (max-width: 768px) {
+                #block3 .wrapper #tabs-container .t3 .block .list-in-tab p span {
+                  font-size: 16px; } }
         #block3 .wrapper #tabs-container .t3 .block .list-img-mob {
           width: 100%;
           display: none; }
@@ -2276,6 +2557,23 @@ header {
             #block3 .wrapper #tabs-container .t3 .block .list-img-mob {
               display: flex;
               justify-content: space-around; } }
+          @media only screen and (max-width: 768px) {
+            #block3 .wrapper #tabs-container .t3 .block .list-img-mob {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-around; } }
+          @media only screen and (max-width: 768px) {
+            #block3 .wrapper #tabs-container .t3 .block .list-img-mob img {
+              padding-bottom: 25px; } }
+          #block3 .wrapper #tabs-container .t3 .block .list-img-mob .mobile-photo {
+            display: none; }
+            @media only screen and (max-width: 540px) {
+              #block3 .wrapper #tabs-container .t3 .block .list-img-mob .mobile-photo {
+                width: 204px;
+                min-height: 100%;
+                display: flex;
+                text-align: left;
+                align-items: center; } }
         #block3 .wrapper #tabs-container .t3 .block .more-info {
           width: 630px;
           display: block;
@@ -2288,6 +2586,17 @@ header {
               width: 100%;
               text-align: left;
               margin-top: 40px; } }
+          @media only screen and (max-width: 768px) {
+            #block3 .wrapper #tabs-container .t3 .block .more-info {
+              position: relative;
+              width: 100%;
+              text-align: left; } }
+          @media only screen and (max-width: 420px) {
+            #block3 .wrapper #tabs-container .t3 .block .more-info {
+              font-size: 15px; } }
+          @media only screen and (max-width: 540px) {
+            #block3 .wrapper #tabs-container .t3 .block .more-info {
+              display: none; } }
         #block3 .wrapper #tabs-container .t3 .block .callback-btn {
           display: block;
           width: 255px;
@@ -2306,6 +2615,12 @@ header {
           -o-transition: all 0.3s 0.01s ease;
           -webkit-transition: all 0.3s 0.01s ease; }
           @media only screen and (max-width: 1200px) and (min-width: 768px) {
+            #block3 .wrapper #tabs-container .t3 .block .callback-btn {
+              position: relative;
+              top: 30px;
+              margin: 0 auto;
+              left: 0; } }
+          @media only screen and (max-width: 768px) {
             #block3 .wrapper #tabs-container .t3 .block .callback-btn {
               position: relative;
               top: 30px;

@@ -308,7 +308,7 @@
 						margin: 0 auto;
 						float: none;
 						padding: 25px 0px 0px 0px;
-						background: url(../images/logo-t1-mobile.png) 50% 75px;
+						background: url(../images/logo-t1-mobile.png) 50% 65px;
 						background-repeat: no-repeat;
 					}
 					
@@ -815,11 +815,23 @@
 						background: url(../images/logo-t1-mobile.png) 50% 102px;
 						background-repeat: no-repeat;
 					}
+					@include respond-to($mobile-special-big) {
+						height: 1420px;
+						width: 100%;
+						margin: 0 auto;
+						float: none;
+						padding: 25px 0px 0px 0px;
+						background: url(../images/logo-t1-mobile.png) 50% 65px;
+						background-repeat: no-repeat;
+					}
 					
 					h3 {
 						font-size: 30px;
 						font-weight: 100;
 						margin-bottom: 30px;
+						@include respond-to($mobile) {
+							margin-bottom: 20px;
+						}
 					}
 					
 					.description-t2 {
@@ -833,6 +845,19 @@
 							text-align: justify;
 							line-height: 1.2;
 							padding-bottom: 25px;
+						}
+						@include respond-to($mobile-special-big) {
+							width: 100%;
+							text-align: left;
+							line-height: 1.2;
+							padding-bottom: 25px;
+						}
+						@include respond-to($mobile) {
+							width: 95%;
+							text-align: left;
+							line-height: 1.2;
+							padding-bottom: 25px;
+							font-size: 15px;
 						}
 					}
 					
@@ -849,6 +874,9 @@
 							text-align: left;
 							margin-bottom: 25px;
 						}
+						@include respond-to($mobile-special-big) {
+							text-align: left;
+						}
 					}
 					
 					.list-in-tab {
@@ -858,6 +886,9 @@
 						position: relative;
 						line-height: 1.3;
 						@include respond-to($tablet-big-special) {
+							width: 100%;
+						}
+						@include respond-to($mobile-special-big) {
 							width: 100%;
 						}
 						
@@ -874,6 +905,9 @@
 							@include respond-to($tablet-big-special) {
 								display: none;
 							}
+							@include respond-to($mobile-special-big) {
+								display: none;
+							}
 						}
 						
 						.left {
@@ -885,10 +919,18 @@
 								width: 100%;
 								height: unset;
 							}
+							@include respond-to($mobile-special-big) {
+								width: 100%;
+								height: unset;
+							}
 							
 							li {
 							
 								@include respond-to($tablet-big-special) {
+									position: relative;
+									margin: 0 0 25px 80px;
+								}
+								@include respond-to($mobile-special-big) {
 									position: relative;
 									margin: 0 0 25px 80px;
 								}
@@ -902,10 +944,24 @@
 								@include respond-to($tablet-big-special) {
 									display: none;
 								}
+								@include respond-to($mobile-special-big) {
+									display: none;
+								}
 							}
 							
 							li::before {
 								@include respond-to($tablet-big-special) {
+									content: "";
+									width: 10px;
+									height: 10px;
+									border: 3px solid $darkblue;
+									transform: rotate(45deg);
+									background: transparent;
+									position: absolute;
+									left: -40px;
+									top: 10px;
+								}
+								@include respond-to($mobile-special-big) {
 									content: "";
 									width: 10px;
 									height: 10px;
@@ -931,6 +987,9 @@
 								@include respond-to($tablet-big-special) {
 									margin-bottom: 25px;
 								}
+								@include respond-to($mobile-special-big) {
+									margin-bottom: 25px;
+								}
 							}
 							
 							li:nth-child(2)::after {
@@ -951,10 +1010,18 @@
 								width: 100%;
 								height: unset;
 							}
+							@include respond-to($mobile-special-big) {
+								width: 100%;
+								height: unset;
+							}
 							
 							li {
 							
 								@include respond-to($tablet-big-special) {
+									position: relative;
+									margin: 0 0 25px 80px;
+								}
+								@include respond-to($mobile-special-big) {
 									position: relative;
 									margin: 0 0 25px 80px;
 								}
@@ -966,6 +1033,17 @@
 								z-index: 1;
 								background-repeat: no-repeat;
 								@include respond-to($tablet-big-special) {
+									content: "";
+									width: 10px;
+									height: 10px;
+									border: 3px solid $darkblue;
+									transform: rotate(45deg);
+									background: transparent;
+									position: absolute;
+									left: -40px;
+									top: 10px;
+								}
+								@include respond-to($mobile-special-big) {
 									content: "";
 									width: 10px;
 									height: 10px;
@@ -995,11 +1073,25 @@
 									left: -40px;
 									top: 10px;
 								}
+								@include respond-to($mobile-special-big) {
+									content: "";
+									width: 10px;
+									height: 10px;
+									border: 3px solid $darkblue;
+									transform: rotate(45deg);
+									background: transparent;
+									position: absolute;
+									left: -40px;
+									top: 10px;
+								}
 							}
 							
 							li:nth-child(2) {
 								margin: 40px 0 40px 0;
 								@include respond-to($tablet-big-special) {
+									margin: 0 0 25px 80px;
+								}
+								@include respond-to($mobile-special-big) {
 									margin: 0 0 25px 80px;
 								}
 							}
@@ -1011,6 +1103,17 @@
 								right: 267px;
 								background-image: url(../images/line-conversation.png);
 								@include respond-to($tablet-big-special) {
+									content: "";
+									width: 10px;
+									height: 10px;
+									border: 3px solid $darkblue;
+									transform: rotate(45deg);
+									background: transparent;
+									position: absolute;
+									left: -40px;
+									top: 10px;
+								}
+								@include respond-to($mobile-special-big) {
 									content: "";
 									width: 10px;
 									height: 10px;
@@ -1040,6 +1143,17 @@
 									left: -40px;
 									top: 10px;
 								}
+								@include respond-to($mobile-special-big) {
+									content: "";
+									width: 10px;
+									height: 10px;
+									border: 3px solid $darkblue;
+									transform: rotate(45deg);
+									background: transparent;
+									position: absolute;
+									left: -40px;
+									top: 10px;
+								}
 							}
 						}
 						
@@ -1048,9 +1162,15 @@
 							@include respond-to($tablet-big-special) {
 								font-size: 18px;
 							}
+							@include respond-to($tablet-small) {
+								font-size: 18px;
+							}
 							
 							.mobile {
 								@include respond-to($tablet-big-special) {
+									display: none;
+								}
+								@include respond-to($mobile-special-big) {
 									display: none;
 								}
 							}
@@ -1075,6 +1195,17 @@
 							width: 95%;
 							margin-right: 5%;
 						}
+						@include respond-to($mobile-special-big) {
+							padding: 0 0 30px 0;
+							position: relative;
+							width: 100%;
+							text-align: left;
+							width: 95%;
+							margin-right: 5%;
+						}
+						@include respond-to($mobile-medium-small) {
+							font-size: 15px;
+						}
 					}
 					
 					.more-info {
@@ -1086,6 +1217,14 @@
 							position: relative;
 							width: 100%;
 							text-align: left;
+						}
+						@include respond-to($mobile-special-big) {
+							position: relative;
+							width: 100%;
+							text-align: left;
+						}
+						@include respond-to($mobile-medium-small) {
+							font-size: 15px;
 						}
 					}
 					
@@ -1107,6 +1246,12 @@
 						-o-transition: all 0.3s 0.01s ease;
 						-webkit-transition: all 0.3s 0.01s ease;
 						@include respond-to($tablet-big-special) {
+							position: relative;
+							top: 30px;
+							margin: 0 auto;
+							left: 0;
+						}
+						@include respond-to($mobile-special-big) {
 							position: relative;
 							top: 30px;
 							margin: 0 auto;
@@ -1140,11 +1285,23 @@
 						background: url(../images/logo-t1-mobile.png) 50% 102px;
 						background-repeat: no-repeat;
 					}
+					@include respond-to($mobile-special-big) {
+						height: 1420px;
+						width: 100%;
+						margin: 0 auto;
+						float: none;
+						padding: 25px 0px 0px 0px;
+						background: url(../images/logo-t1-mobile.png) 50% 65px;
+						background-repeat: no-repeat;
+					}
 					
 					h3 {
 						font-size: 30px;
 						font-weight: 100;
 						margin-bottom: 30px;
+						@include respond-to($mobile) {
+							margin-bottom: 20px;
+						}
 					}
 					
 					.description-t3 {
@@ -1159,6 +1316,19 @@
 							line-height: 1.2;
 							padding-bottom: 10px;
 						}
+						@include respond-to($mobile-special-big) {
+							width: 100%;
+							text-align: left;
+							line-height: 1.2;
+							padding-bottom: 25px;
+						}
+							@include respond-to($mobile) {
+							width: 95%;
+							text-align: left;
+							line-height: 1.2;
+							padding-bottom: 25px;
+							font-size: 15px;
+						}
 					}
 					
 					.our-work {
@@ -1167,6 +1337,9 @@
 						@include respond-to($tablet-big-special) {
 							text-align: left;
 							margin-bottom: 25px;
+						}
+						@include respond-to($mobile-special-big) {
+							text-align: left;
 						}
 					}
 					
@@ -1178,6 +1351,10 @@
 						line-height: 1.3;
 						margin-bottom: 55px;
 						@include respond-to($tablet-big-special) {
+							width: 100%;
+							height: 200px;
+						}
+						@include respond-to($mobile-special-big) {
 							width: 100%;
 							height: 200px;
 						}
@@ -1195,10 +1372,16 @@
 							@include respond-to($tablet-big-special) {
 								display: none;
 							}
+							@include respond-to($mobile-special-big) {
+								display: none;
+							}
 						}
 						
 						.list-img-note {
 							@include respond-to($tablet-big-special) {
+								display: none;
+							}
+							@include respond-to($mobile-special-big) {
 								display: none;
 							}
 						}
@@ -1212,10 +1395,18 @@
 								width: 100%;
 								height: unset;
 							}
+							@include respond-to($mobile-special-big) {
+								width: 100%;
+								height: unset;
+							}
 							
 							li {
 							
 								@include respond-to($tablet-big-special) {
+									position: relative;
+									margin: 0 0 25px 80px;
+								}
+								@include respond-to($mobile-special-big) {
 									position: relative;
 									margin: 0 0 25px 80px;
 								}
@@ -1226,6 +1417,9 @@
 								span {
 									font-family: $brutal-me;
 									font-size: 18px;
+									@include respond-to($mobile-special-big) {
+										font-size: 16px;
+									}
 								}
 							
 							}
@@ -1238,10 +1432,24 @@
 								@include respond-to($tablet-big-special) {
 									display: none;
 								}
+								@include respond-to($mobile-special-big) {
+									display: none;
+								}
 							}
 							
 							li::before {
 								@include respond-to($tablet-big-special) {
+									content: "";
+									width: 10px;
+									height: 10px;
+									border: 3px solid $darkblue;
+									transform: rotate(45deg);
+									background: transparent;
+									position: absolute;
+									left: -40px;
+									top: 10px;
+								}
+								@include respond-to($mobile-special-big) {
 									content: "";
 									width: 10px;
 									height: 10px;
@@ -1263,6 +1471,9 @@
 								@include respond-to($tablet-big-special) {
 									display: none;
 								}
+								@include respond-to($mobile-special-big) {
+									display: none;
+								}
 							}
 							
 							li:nth-child(2) {
@@ -1278,6 +1489,9 @@
 								@include respond-to($tablet-big-special) {
 									display: none;
 								}
+								@include respond-to($mobile-special-big) {
+									display: none;
+								}
 							}
 							
 							li:nth-child(3)::after {
@@ -1287,6 +1501,9 @@
 								bottom: 108px;
 								left: 310px;
 								@include respond-to($tablet-big-special) {
+									display: none;
+								}
+								@include respond-to($mobile-special-big) {
 									display: none;
 								}
 							}
@@ -1301,10 +1518,18 @@
 								width: 100%;
 								height: unset;
 							}
+							@include respond-to($mobile-special-big) {
+								width: 100%;
+								height: unset;
+							}
 							
 							li {
 							
 								@include respond-to($tablet-big-special) {
+									position: relative;
+									margin: 0 0 25px 80px;
+								}
+								@include respond-to($mobile-special-big) {
 									position: relative;
 									margin: 0 0 25px 80px;
 								}
@@ -1316,6 +1541,17 @@
 								z-index: 1;
 								background-repeat: no-repeat;
 								@include respond-to($tablet-big-special) {
+									content: "";
+									width: 10px;
+									height: 10px;
+									border: 3px solid $darkblue;
+									transform: rotate(45deg);
+									background: transparent;
+									position: absolute;
+									left: -40px;
+									top: 10px;
+								}
+								@include respond-to($mobile-special-big) {
 									content: "";
 									width: 10px;
 									height: 10px;
@@ -1345,11 +1581,25 @@
 									left: -40px;
 									top: 10px;
 								}
+								@include respond-to($mobile-special-big) {
+									content: "";
+									width: 10px;
+									height: 10px;
+									border: 3px solid $darkblue;
+									transform: rotate(45deg);
+									background: transparent;
+									position: absolute;
+									left: -40px;
+									top: 10px;
+								}
 							}
 							
 							li:nth-child(2) {
 								margin: 30px 0 40px -50px;
 								@include respond-to($tablet-big-special) {
+									margin: 0 0 25px 80px;
+								}
+								@include respond-to($mobile-special-big) {
 									margin: 0 0 25px 80px;
 								}
 							}
@@ -1361,6 +1611,17 @@
 								right: 315px;
 								background-image: url(../images/line-conversation.png);
 								@include respond-to($tablet-big-special) {
+									content: "";
+									width: 10px;
+									height: 10px;
+									border: 3px solid $darkblue;
+									transform: rotate(45deg);
+									background: transparent;
+									position: absolute;
+									left: -40px;
+									top: 10px;
+								}
+								@include respond-to($mobile-special-big) {
 									content: "";
 									width: 10px;
 									height: 10px;
@@ -1390,6 +1651,17 @@
 									left: -40px;
 									top: 10px;
 								}
+								@include respond-to($mobile-special-big) {
+									content: "";
+									width: 10px;
+									height: 10px;
+									border: 3px solid $darkblue;
+									transform: rotate(45deg);
+									background: transparent;
+									position: absolute;
+									left: -40px;
+									top: 10px;
+								}
 							}
 						}
 						
@@ -1398,9 +1670,15 @@
 							@include respond-to($tablet-big-special) {
 								font-size: 18px;
 							}
+							@include respond-to($tablet-small) {
+								font-size: 18px;
+							}
 							
 							.mobile {
 								@include respond-to($tablet-big-special) {
+									display: none;
+								}
+								@include respond-to($mobile-special-big) {
 									display: none;
 								}
 							}
@@ -1408,6 +1686,9 @@
 							span {
 								font-family: $brutal-me;
 								font-size: 18px;
+								@include respond-to($mobile-special-big) {
+									font-size: 16px;
+								}
 							}
 						}
 					}
@@ -1418,6 +1699,27 @@
 						@include respond-to($tablet-big-special) {
 							display: flex;
 							justify-content: space-around;
+						}
+						@include respond-to($mobile-special-big) {
+							display: flex;
+							flex-wrap: wrap;
+							justify-content: space-around;
+						}
+						
+						img {
+							@include respond-to($mobile-special-big) {
+								padding-bottom: 25px;
+							}
+						}
+						.mobile-photo {
+							display: none;
+							@include respond-to($mobile) {
+								width: 204px;
+								min-height: 100%;
+								display: flex;
+								text-align: left;
+								align-items: center;
+							}
 						}
 					}
 					
@@ -1432,6 +1734,17 @@
 							width: 100%;
 							text-align: left;
 							margin-top: 40px;
+						}
+						@include respond-to($mobile-special-big) {
+							position: relative;
+							width: 100%;
+							text-align: left;
+						}
+						@include respond-to($mobile-medium-small) {
+							font-size: 15px;
+						}
+						@include respond-to($mobile) {
+							display: none;
 						}
 					}
 					
@@ -1453,6 +1766,12 @@
 						-o-transition: all 0.3s 0.01s ease;
 						-webkit-transition: all 0.3s 0.01s ease;
 						@include respond-to($tablet-big-special) {
+							position: relative;
+							top: 30px;
+							margin: 0 auto;
+							left: 0;
+						}
+						@include respond-to($mobile-special-big) {
 							position: relative;
 							top: 30px;
 							margin: 0 auto;
