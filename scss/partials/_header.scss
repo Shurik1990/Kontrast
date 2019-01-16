@@ -700,15 +700,15 @@ header {
 		right: 56.5%;
 		
 		@include respond-to($tablet-big) {
-			top: 15%;
+			top: 12.8%;
 			right: 50.5%;
 		}
 		@include respond-to($tablet-small) {
-			top: 15%;
+			top: 12.8%;
 			right: 50.5%;
 		}
 		@include respond-to($mobile) {
-			top: 15%;
+			top: 12.8%;
 			right: 40.5%;
 		}
 	}
